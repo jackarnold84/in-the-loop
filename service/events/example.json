@@ -1,0 +1,7 @@
+{
+    "path": "/el-track",
+    "httpMethod": "GET",
+    "queryStringParameters": {
+        "city": "chicago"
+    }
+}

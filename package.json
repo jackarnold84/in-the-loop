@@ -1,8 +1,8 @@
 {
-  "name": "my-gatsby-site",
+  "name": "el-track",
   "version": "1.0.0",
-  "private": true,
-  "description": "my-gatsby-site",
+  "private": false,
+  "description": "Chicago CTA Transit Tracker",
   "author": "Jack Arnold",
   "keywords": [
     "gatsby"

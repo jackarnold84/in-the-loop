@@ -2,3 +2,9 @@ node_modules/
 .cache/
 public
 package-lock.json
+.aws-sam/
+.out/
+
+# contains credentials
+samconfig.toml
+environment.json

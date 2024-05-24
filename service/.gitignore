@@ -1,0 +1,5 @@
+.aws-sam/
+.out/
+
+# contains credentials
+samconfig.toml

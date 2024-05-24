@@ -71,7 +71,7 @@ const Layout = ({ children }) => {
                 <Button type="primary" icon={<MenuOutlined />} onClick={showMenu} />
               </MenuButtonHolder>
               <Link to="/" className="plain-link white-text">
-                <h3>Gatsby Template</h3>
+                <h3>EL Track</h3>
               </Link>
             </HeaderContent>
           </Header>
@@ -92,7 +92,7 @@ const Layout = ({ children }) => {
                 size="small"
                 style={{ color: "white", fontSize: "14px" }}
                 icon={<BootIcon name="github" />}
-                href="https://github.com/jackarnold84/gatsby-template"
+                href="https://github.com/jackarnold84/el-track"
               >
                 Github
               </Button>
@@ -101,7 +101,7 @@ const Layout = ({ children }) => {
         </Footer>
       </ConfigProvider>
 
-      <Drawer title="Gatsby Template" onClose={closeMenu} open={openMenu} placement="top">
+      <Drawer title="EL Track" onClose={closeMenu} open={openMenu} placement="top">
         <Navigation closeMenu={closeMenu} />
       </Drawer >
     </>

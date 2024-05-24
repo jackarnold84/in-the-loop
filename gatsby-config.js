@@ -3,8 +3,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `My Gatsby Site`,
-    siteUrl: `https://jackarnold84.github.io/gatsby-template/`
+    title: `El Track`,
+    siteUrl: `https://jackarnold84.github.io/el-track/`
   },
   pathPrefix: "/gatsby-template",
   plugins: [
@@ -15,8 +15,8 @@ module.exports = {
         name: "GatsbyJS",
         short_name: "GatsbyJS",
         start_url: "/",
-        background_color: "#6b37bf",
-        theme_color: "#6b37bf",
+        background_color: "#2166b1",
+        theme_color: "#2166b1",
         display: "standalone",
         icon: "src/images/icon.png",
       },
