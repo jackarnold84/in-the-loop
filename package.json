@@ -1,0 +1,33 @@
+{
+  "name": "my-gatsby-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "my-gatsby-site",
+  "author": "Jack Arnold",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve -H 0.0.0.0",
+    "clean": "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.3.1",
+    "antd": "^5.15.2",
+    "babel-plugin-styled-components": "^2.1.1",
+    "gatsby": "^5.9.0",
+    "gatsby-plugin-manifest": "^5.9.0",
+    "gatsby-plugin-styled-components": "^6.9.0",
+    "gh-pages": "^5.0.0",
+    "plotly.js": "^2.21.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-loadable": "^5.5.0",
+    "react-plotly.js": "^2.6.0",
+    "styled-components": "^5.3.10"
+  }
+}
