@@ -7,12 +7,6 @@ Parameters:
     Type: String
     Description: specifies environment stage (local, dev, prod)
     Default: dev
-  TrainApiKey:
-    Type: String
-    Description: CTA Train Tracker API Key
-  BusApiKey:
-    Type: String
-    Description: CTA Bus Tracker API Key
 
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:

@@ -21,7 +21,6 @@ var testEvent = events.APIGatewayProxyRequest{
 func TestDebug(t *testing.T) {
 	t.Skip("this test is for debugging purposes")
 
-	// env vars must be set (TRAIN_API_KEY, BUS_API_KEY)
 	require.NotEmpty(t, env.Cfg.TrainAPIKey)
 	require.NotEmpty(t, env.Cfg.BusAPIKey)
 
