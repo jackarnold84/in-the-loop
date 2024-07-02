@@ -14,6 +14,11 @@ type Config struct {
 	BusAPIKey   string
 }
 
+type Credentials struct {
+	TrainAPIKey string `json:"trainApiKey"`
+	BusAPIKey   string `json:"busApiKey"`
+}
+
 //go:embed credentials.json
 var credsJSON string
 
@@ -23,8 +28,8 @@ func init() {
 	creds := getCredentials()
 	Cfg = Config{
 		Env:         getEnvOrDefault("ENV", "dev"),
-		TrainAPIKey: creds["trainApiKey"],
-		BusAPIKey:   creds["busApiKey"],
+		TrainAPIKey: creds.TrainAPIKey,
+		BusAPIKey:   creds.BusAPIKey,
 	}
 }
 
@@ -41,9 +46,8 @@ func (c Config) IsLocal() bool {
 }
 
 // getCredentials reads the credentials from the embedded JSON file at 'internal/env/credentials.json'
-// it must be created if it doesn't exist
-func getCredentials() map[string]string {
-	var creds map[string]string
+func getCredentials() Credentials {
+	var creds Credentials
 	err := json.Unmarshal([]byte(credsJSON), &creds)
 	if err != nil {
 		log.Fatalf("failed to read credentials from internal/env/credentials.json: %v", err)
