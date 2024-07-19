@@ -1,34 +1,53 @@
 package main
 
 import (
+	"bytes"
 	"context"
+	"encoding/json"
 	"fmt"
-	"multi-lambda/internal/env"
 	"testing"
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
-var testEvent = events.APIGatewayProxyRequest{
-	HTTPMethod: "GET",
-	QueryStringParameters: map[string]string{
-		"city": "Chicago",
-	},
+func TestHealthCheck(t *testing.T) {
+	req := events.APIGatewayProxyRequest{
+		HTTPMethod: "GET",
+		Path:       "/health",
+	}
+	res, err := handler(context.Background(), req)
+	assert.NoError(t, err)
+	assert.Equal(t, 200, res.StatusCode)
 }
 
-func TestDebug(t *testing.T) {
+func TestDebugTrackArrivals(t *testing.T) {
 	t.Skip("this test is for debugging purposes")
 
-	require.NotEmpty(t, env.Cfg.TrainAPIKey)
-	require.NotEmpty(t, env.Cfg.BusAPIKey)
-
-	env.Cfg.Env = "test"
-	res, err := handler(context.Background(), testEvent)
+	req := events.APIGatewayProxyRequest{
+		HTTPMethod: "GET",
+		Path:       "/track-arrivals",
+		QueryStringParameters: map[string]string{
+			"transit":   "train",
+			"routes":    "Green,Pink",
+			"arrival":   "30221",
+			"departure": "30074",
+		},
+	}
+	res, err := handler(context.Background(), req)
 	assert.NoError(t, err)
-	fmt.Println(res.StatusCode)
-	fmt.Println(res.Body)
+	assert.Equal(t, 200, res.StatusCode)
 
+	prettyPrintJSON(res.Body)
 	t.Fatal()
+}
+
+func prettyPrintJSON(s string) {
+	var prettyJSON bytes.Buffer
+	err := json.Indent(&prettyJSON, []byte(s), "", "  ")
+	if err != nil {
+		fmt.Println("Error formatting JSON:", err)
+		return
+	}
+	fmt.Println(prettyJSON.String())
 }
