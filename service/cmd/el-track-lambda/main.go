@@ -42,10 +42,10 @@ func handler(ctx context.Context, request events.APIGatewayProxyRequest) (events
 	}
 
 	switch request.Path {
-	case "/health":
+	case "/el-track/health":
 		return lamb.Success(healthCheckResponse{Message: "healthy"}), nil
 
-	case "/track-arrivals":
+	case "/el-track/track-arrivals":
 		var input trackArrivalsQuery
 		if err := lamb.ParseQueryStrings(request.QueryStringParameters, &input); err != nil {
 			return lamb.BadRequest(err), nil
@@ -57,7 +57,7 @@ func handler(ctx context.Context, request events.APIGatewayProxyRequest) (events
 		}
 		return lamb.Success(trackArrivalsResponse{Arrivals: vehicleTrips}), nil
 
-	case "/follow-vehicle":
+	case "/el-track/follow-vehicle":
 		var input followVehicleQuery
 		if err := lamb.ParseQueryStrings(request.QueryStringParameters, &input); err != nil {
 			return lamb.BadRequest(err), nil

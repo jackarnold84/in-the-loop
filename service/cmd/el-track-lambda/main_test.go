@@ -14,7 +14,7 @@ import (
 func TestHealthCheck(t *testing.T) {
 	req := events.APIGatewayProxyRequest{
 		HTTPMethod: "GET",
-		Path:       "/health",
+		Path:       "/el-track/health",
 	}
 	res, err := handler(context.Background(), req)
 	assert.NoError(t, err)
@@ -26,7 +26,7 @@ func TestDebugTrackArrivals(t *testing.T) {
 
 	req := events.APIGatewayProxyRequest{
 		HTTPMethod: "GET",
-		Path:       "/track-arrivals",
+		Path:       "/el-track/track-arrivals",
 		QueryStringParameters: map[string]string{
 			"transit":   "train",
 			"routes":    "Green,Pink",
