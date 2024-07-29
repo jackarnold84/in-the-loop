@@ -1,7 +1,10 @@
 {
-    "path": "/el-track",
+    "path": "/el-track/track-arrivals",
     "httpMethod": "GET",
     "queryStringParameters": {
-        "city": "chicago"
+        "transit": "train",
+        "routes": "Green,Pink",
+        "arrival": "30221",
+        "departure": "30074"
     }
 }
