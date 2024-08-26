@@ -1,7 +1,8 @@
-import { HomeOutlined, NodeIndexOutlined } from "@ant-design/icons"
 import { Button, List } from "antd"
 import { Link } from "gatsby"
 import * as React from "react"
+import { FaHome } from "react-icons/fa"
+import { FaTrainSubway } from "react-icons/fa6"
 import styled from "styled-components"
 
 const NavLink = styled(Link)`
@@ -11,8 +12,8 @@ const NavLink = styled(Link)`
 
 const Navigation = ({ closeMenu }) => {
   const links = [
-    { to: "/", icon: <HomeOutlined />, text: "Home" },
-    { to: "/api", icon: <NodeIndexOutlined />, text: "API" },
+    { to: "/", icon: <FaHome style={{ verticalAlign: 'middle' }} />, text: "Home" },
+    { to: "/track", icon: <FaTrainSubway style={{ verticalAlign: 'middle' }} />, text: "Track" },
   ]
 
   return (
