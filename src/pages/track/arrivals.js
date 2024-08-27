@@ -1,86 +1,52 @@
 import { Table } from "antd";
 import * as React from "react";
+import { fetchArrivalData } from "../../api/track";
 import Layout from "../../components/Layout";
 import TransitIcon from "../../components/TransitIcon";
 import Container from "../../components/common/Container";
 import { displayTime, displayTimeUntil } from "../../utils/time";
 
-// sample data
-const arrivalData = [
-  [
-    {
-      "transitType": "train",
-      "route": "Pink",
-      "run": "312",
-      "destination": "Loop",
-      "direction": "Southbound",
-      "arrival": {
+const tripCatalog = {
+  "clinton-to-loop": {
+    "name": "Clinton to Loop",
+    "options": [
+      {
+        "transitType": "train",
         "stopId": "30221",
-        "stopName": "Clinton",
-        "time": "2024-07-29T14:26:59",
-        "isApproaching": false,
-        "isDelayed": false,
-        "isLive": true
-      },
-      "departure": {
-        "stopId": "30074",
-        "stopName": "Clark/Lake",
-        "time": "2024-07-29T14:28:59",
-        "isApproaching": false,
-        "isDelayed": false,
-        "isLive": true
-      },
-    },
-    {
-      "transitType": "train",
-      "route": "Green",
-      "run": "611",
-      "destination": "Cottage Grove",
-      "direction": "Southbound",
-      "arrival": {
-        "stopId": "30221",
-        "stopName": "Clinton",
-        "time": "2024-07-29T14:27:54",
-        "isApproaching": false,
-        "isDelayed": false,
-        "isLive": true
-      },
-      "departure": {
-        "stopId": "30074",
-        "stopName": "Clark/Lake",
-        "time": "2024-07-29T14:29:54",
-        "isApproaching": false,
-        "isDelayed": false,
-        "isLive": true
-      },
-    },
-  ],
-  [
-    {
-      "transitType": "bus",
-      "route": "20",
-      "run": "1429",
-      "destination": "Irving Park",
-      "direction": "Northbound",
-      "arrival": {
-        "stopId": "17177",
-        "stopName": "Ashland & Adams",
-        "time": "2024-07-29T17:12:38",
-        "isApproaching": false,
-        "isDelayed": false,
-        "isLive": true
-      },
-      "departure": {
-        "stopId": "14783",
-        "stopName": "Ashland & Lake (Green Line)",
-        "time": "2024-07-29T17:17:29",
-        "isApproaching": false,
-        "isDelayed": false,
-        "isLive": true
+        "routes": ["Pink", "Green"],
       }
-    },
-  ]
-];
+    ],
+    "destinations": [
+      {
+        "name": "Clark/Lake",
+        "stopId": "30074"
+      },
+    ],
+  },
+  "ashland-adams-northbound": {
+    "name": "Ashland/Adams Northbound",
+    "options": [
+      {
+        "transitType": "bus",
+        "stopId": "17177",
+        "routes": ["9"],
+      },
+      {
+        "transitType": "bus",
+        "stopId": "17076",
+        "routes": ["X9"],
+      },
+    ],
+    "destinations": [
+      {
+        "name": "Ashland/Lake",
+        "stopId": "14783"
+      },
+    ],
+  },
+};
+
+const targetTrip = "ashland-adams-northbound";
 
 // table setup
 const columns = [
@@ -136,7 +102,34 @@ const expandedRowRender = (record) => {
 };
 
 const ArrivalsPage = () => {
+  const [isLoading, setIsLoading] = React.useState(true);
+  const [isError, setIsError] = React.useState(false);
+  const [arrivalData, setArrivalData] = React.useState([]);
   const [expandedRowKeys, setExpandedRowKeys] = React.useState([]);
+
+  React.useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const trip = tripCatalog[targetTrip];
+        const data = [];
+        for (const option of trip.options) {
+          const { transitType, stopId, routes } = option;
+          const destinationStopId = trip.destinations[0].stopId;
+          const arrivalData = await fetchArrivalData(transitType, routes, stopId, destinationStopId);
+          data.push(arrivalData);
+        }
+        console.log(data);
+        setArrivalData(data);
+        setIsLoading(false);
+      } catch (error) {
+        setIsError(true);
+        setIsLoading(false);
+        // Optionally, you can set an error state here to display an error message to the user
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const handleRowClick = (record) => {
     setExpandedRowKeys((prevKeys) =>
@@ -149,6 +142,14 @@ const ArrivalsPage = () => {
   const handleExpand = (_, record) => {
     handleRowClick(record);
   };
+
+  if (isLoading) {
+    return <Layout>Loading...</Layout>;
+  }
+
+  if (isError) {
+    return <Layout>Something went wrong</Layout>;
+  }
 
   return (
     <Layout>
