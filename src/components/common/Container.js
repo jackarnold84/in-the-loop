@@ -5,8 +5,8 @@ const Container = styled.div.attrs(({
   size = 8, top, bottom, width, centered = false, flex = false,
 }) => ({
   size,
-  top: top || size,
-  bottom: bottom || size,
+  top: top !== undefined ? top : size,
+  bottom: bottom !== undefined ? bottom : size,
   width,
   centered,
   flex,

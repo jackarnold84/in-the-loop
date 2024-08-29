@@ -10,7 +10,7 @@ export async function fetchArrivalData(transitType, routes, arrival, departure) 
     if (!response.ok) {
       console.error(`HTTP error! status: ${response.status}`);
       const data = await response.json();
-      console.error(`Error response: ${data}`);
+      console.error(`Error response: ${JSON.stringify(data, null, 2)}`);
     }
     const data = await response.json();
     const arrivals = data.arrivals;

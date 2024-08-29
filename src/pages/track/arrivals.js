@@ -1,10 +1,13 @@
-import { Select, Table } from "antd";
+import { ArrowLeftOutlined } from "@ant-design/icons";
+import { Button, Select, Table } from "antd";
+import { Link, navigate } from "gatsby";
 import * as React from "react";
 import styled from "styled-components";
 import { fetchArrivalData } from "../../api/track";
 import Layout from "../../components/Layout";
 import TransitIcon from "../../components/TransitIcon";
 import Container from "../../components/common/Container";
+import { tripCatalog } from "../../config/catalog";
 import { displayTime, displayTimeUntil } from "../../utils/time";
 
 const { Option } = Select;
@@ -15,51 +18,18 @@ const StyledLabel = styled.label`
   margin-bottom: 4px;
 `;
 
-const tripCatalog = {
-  "clinton-to-loop": {
-    "name": "Clinton to Loop",
-    "options": [
-      {
-        "transitType": "train",
-        "stopId": "30221",
-        "routes": ["Pink", "Green"],
-      }
-    ],
-    "destinations": [
-      {
-        "name": "Clark/Lake",
-        "stopId": "30074"
-      },
-    ],
-  },
-  "ashland-adams-northbound": {
-    "name": "Ashland & Adams Northbound",
-    "options": [
-      {
-        "transitType": "bus",
-        "stopId": "17177",
-        "routes": ["9"],
-      },
-      {
-        "transitType": "bus",
-        "stopId": "17076",
-        "routes": ["X9"],
-      },
-    ],
-    "destinations": [
-      {
-        "name": "Ashland & Lake",
-        "stopId": "14783"
-      },
-      {
-        "name": "Ashland & Milwaukee",
-        "stopId": "6252"
-      },
-    ],
-  },
-};
+const StyledButton = styled(Button)`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 16px 8px 0px;
+`;
 
-const targetTrip = "ashland-adams-northbound";
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+`
 
 // table setup
 const columns = [
@@ -114,17 +84,32 @@ const expandedRowRender = (record) => {
   );
 };
 
-const ArrivalsPage = () => {
+const ArrivalsPage = ({ location }) => {
+  const urlParams = new Proxy(new URLSearchParams(location.search), {
+    get: (searchParams, prop) => searchParams.get(prop),
+  });
+  const key = urlParams.key;
+
+  const [isKeySet, setIsKeySet] = React.useState(false);
   const [isLoading, setIsLoading] = React.useState(true);
   const [isError, setIsError] = React.useState(false);
   const [arrivalData, setArrivalData] = React.useState([]);
   const [expandedRowKeys, setExpandedRowKeys] = React.useState([]);
-  const [selectedDestination, setSelectedDestination] = React.useState(tripCatalog[targetTrip].destinations[0].stopId);
+  const [selectedDestination, setSelectedDestination] = React.useState('');
+
+  React.useEffect(() => {
+    if (!key || !tripCatalog[key]) {
+      navigate("/track/");
+      return;
+    }
+    setSelectedDestination(tripCatalog[key].destinations[0].stopId);
+    setIsKeySet(true);
+  }, [key]);
 
   React.useEffect(() => {
     const fetchData = async () => {
       try {
-        const trip = tripCatalog[targetTrip];
+        const trip = tripCatalog[key];
         const data = [];
         for (const option of trip.options) {
           const { transitType, stopId, routes } = option;
@@ -140,8 +125,10 @@ const ArrivalsPage = () => {
       }
     };
 
-    fetchData();
-  }, [selectedDestination]);
+    if (isKeySet) {
+      fetchData();
+    }
+  }, [key, selectedDestination]);
 
   const handleRowClick = (record) => {
     setExpandedRowKeys((prevKeys) =>
@@ -169,19 +156,26 @@ const ArrivalsPage = () => {
 
   return (
     <Layout>
-      <Container size={16}>
+      <Container>
+        <Container top={0}>
+          <StyledLink to="/track/">
+            <StyledButton type="link" icon={<ArrowLeftOutlined />}>
+              Select New Trip
+            </StyledButton>
+          </StyledLink>
+        </Container>
         <Container bottom={16}>
-          <h2>{tripCatalog[targetTrip].name}</h2>
+          <h2>{tripCatalog[key].name}</h2>
         </Container>
         <Container bottom={16}>
           <StyledLabel>Destination Stop:</StyledLabel>
           <Select
             id="destination-select"
-            defaultValue={tripCatalog[targetTrip].destinations[0].stopId}
+            defaultValue={tripCatalog[key].destinations[0].stopId}
             style={{ width: '100%' }}
             onChange={handleDestinationChange}
           >
-            {tripCatalog[targetTrip].destinations.map((destination) => (
+            {tripCatalog[key].destinations.map((destination) => (
               <Option key={destination.stopId} value={destination.stopId}>
                 {destination.name}
               </Option>

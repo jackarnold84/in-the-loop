@@ -4,6 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Layout from '../../components/Layout';
 import TransitIcon from '../../components/TransitIcon';
+import { tripCatalog, tripIndex } from '../../config/catalog';
 
 const IconHolder = styled.div`
   min-width: 60px;
@@ -26,76 +27,6 @@ const StyledLink = styled(Link)`
     }
   }
 `;
-
-const tripIndex = {
-  "inbound": [
-    "clark-lake-to-clinton",
-    "sedgwick-to-north",
-  ],
-  "outbound": [
-    "clinton-to-loop",
-    "lasalle-to-ashland-20",
-  ]
-}
-
-const tripCatalog = {
-  "clinton-to-loop": {
-    "name": "Clinton to Loop",
-    "options": [
-      {
-        "transitType": "train",
-        "stopId": "0000",
-        "routes": ["Pink", "Green"],
-      }
-    ],
-    "destinations": [
-      {
-        "name": "Clark/Lake",
-        "stopId": "0000"
-      },
-      {
-        "name": "State/Lake",
-        "stopId": "0000"
-      }
-    ],
-  },
-  "clark-lake-to-clinton": {
-    "name": "Clark/Lake to Clinton",
-    "options": [
-      {
-        "transitType": "train",
-        "stopId": "0000",
-        "routes": ["Green"],
-      }
-    ],
-  },
-  "sedgwick-to-north": {
-    "name": "Sedgwick to North",
-    "options": [
-      {
-        "transitType": "train",
-        "stopId": "0000",
-        "routes": ["Brown", "Purple"],
-      }
-    ],
-  },
-  "lasalle-to-ashland-20": {
-    "name": "LaSalle to Ashland",
-    "options": [
-      {
-        "transitType": "bus",
-        "stopId": "0000",
-        "routes": ["20"],
-      }
-    ],
-    "destinations": [
-      {
-        "name": "Ashland",
-        "stopId": "0000"
-      }
-    ]
-  },
-}
 
 const renderTripItem = (key) => {
   const trip = tripCatalog[key];
