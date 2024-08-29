@@ -1,10 +1,19 @@
-import { Table } from "antd";
+import { Select, Table } from "antd";
 import * as React from "react";
+import styled from "styled-components";
 import { fetchArrivalData } from "../../api/track";
 import Layout from "../../components/Layout";
 import TransitIcon from "../../components/TransitIcon";
 import Container from "../../components/common/Container";
 import { displayTime, displayTimeUntil } from "../../utils/time";
+
+const { Option } = Select;
+
+const StyledLabel = styled.label`
+  font-size: 12px;
+  display: block;
+  margin-bottom: 4px;
+`;
 
 const tripCatalog = {
   "clinton-to-loop": {
@@ -24,7 +33,7 @@ const tripCatalog = {
     ],
   },
   "ashland-adams-northbound": {
-    "name": "Ashland/Adams Northbound",
+    "name": "Ashland & Adams Northbound",
     "options": [
       {
         "transitType": "bus",
@@ -39,8 +48,12 @@ const tripCatalog = {
     ],
     "destinations": [
       {
-        "name": "Ashland/Lake",
+        "name": "Ashland & Lake",
         "stopId": "14783"
+      },
+      {
+        "name": "Ashland & Milwaukee",
+        "stopId": "6252"
       },
     ],
   },
@@ -106,6 +119,7 @@ const ArrivalsPage = () => {
   const [isError, setIsError] = React.useState(false);
   const [arrivalData, setArrivalData] = React.useState([]);
   const [expandedRowKeys, setExpandedRowKeys] = React.useState([]);
+  const [selectedDestination, setSelectedDestination] = React.useState(tripCatalog[targetTrip].destinations[0].stopId);
 
   React.useEffect(() => {
     const fetchData = async () => {
@@ -114,8 +128,7 @@ const ArrivalsPage = () => {
         const data = [];
         for (const option of trip.options) {
           const { transitType, stopId, routes } = option;
-          const destinationStopId = trip.destinations[0].stopId;
-          const arrivalData = await fetchArrivalData(transitType, routes, stopId, destinationStopId);
+          const arrivalData = await fetchArrivalData(transitType, routes, stopId, selectedDestination);
           data.push(arrivalData);
         }
         console.log(data);
@@ -124,12 +137,11 @@ const ArrivalsPage = () => {
       } catch (error) {
         setIsError(true);
         setIsLoading(false);
-        // Optionally, you can set an error state here to display an error message to the user
       }
     };
 
     fetchData();
-  }, []);
+  }, [selectedDestination]);
 
   const handleRowClick = (record) => {
     setExpandedRowKeys((prevKeys) =>
@@ -143,6 +155,10 @@ const ArrivalsPage = () => {
     handleRowClick(record);
   };
 
+  const handleDestinationChange = (value) => {
+    setSelectedDestination(value);
+  };
+
   if (isLoading) {
     return <Layout>Loading...</Layout>;
   }
@@ -153,28 +169,48 @@ const ArrivalsPage = () => {
 
   return (
     <Layout>
-      <Container size={16} centered>
+      <Container size={16}>
+        <Container bottom={16}>
+          <h2>{tripCatalog[targetTrip].name}</h2>
+        </Container>
+        <Container bottom={16}>
+          <StyledLabel>Destination Stop:</StyledLabel>
+          <Select
+            id="destination-select"
+            defaultValue={tripCatalog[targetTrip].destinations[0].stopId}
+            style={{ width: '100%' }}
+            onChange={handleDestinationChange}
+          >
+            {tripCatalog[targetTrip].destinations.map((destination) => (
+              <Option key={destination.stopId} value={destination.stopId}>
+                {destination.name}
+              </Option>
+            ))}
+          </Select>
+        </Container>
         {arrivalData.map((dataArray, index) => (
-          <Container size={16} key={index}>
-            <h4 style={{ textAlign: "left" }}>{dataArray[0]?.arrival?.stopName}</h4>
-            <Table
-              columns={columns}
-              dataSource={dataArray}
-              showHeader={false}
-              pagination={false}
-              rowKey="run"
-              expandable={{
-                expandedRowRender: expandedRowRender,
-                rowExpandable: () => true,
-                expandedRowKeys: expandedRowKeys,
-                onExpand: handleExpand,
-              }}
-              onRow={(record) => ({
-                style: { cursor: 'pointer' },
-                onClick: () => handleRowClick(record),
-              })}
-            />
-          </Container>
+          dataArray.length > 0 && (
+            <Container size={16} key={index}>
+              <h4 style={{ textAlign: "left" }}>{dataArray[0]?.arrival?.stopName}</h4>
+              <Table
+                columns={columns}
+                dataSource={dataArray}
+                showHeader={false}
+                pagination={false}
+                rowKey="run"
+                expandable={{
+                  expandedRowRender: expandedRowRender,
+                  rowExpandable: () => true,
+                  expandedRowKeys: expandedRowKeys,
+                  onExpand: handleExpand,
+                }}
+                onRow={(record) => ({
+                  style: { cursor: 'pointer' },
+                  onClick: () => handleRowClick(record),
+                })}
+              />
+            </Container>
+          )
         ))}
       </Container>
     </Layout>
