@@ -17,5 +17,6 @@ export async function fetchArrivalData(transitType, routes, arrival, departure) 
     return arrivals;
   } catch (error) {
     console.error("Error fetching arrival data:", error);
+    throw error;
   }
 }

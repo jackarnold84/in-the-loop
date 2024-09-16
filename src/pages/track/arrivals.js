@@ -1,7 +1,8 @@
-import { ArrowLeftOutlined } from "@ant-design/icons";
-import { Button, Select, Table } from "antd";
+import { ArrowLeftOutlined, WarningFilled } from "@ant-design/icons";
+import { Button, Empty, Result, Select, Skeleton, Table } from "antd";
 import { Link, navigate } from "gatsby";
 import * as React from "react";
+import { GiParkBench } from "react-icons/gi";
 import styled from "styled-components";
 import { fetchArrivalData } from "../../api/track";
 import Layout from "../../components/Layout";
@@ -29,7 +30,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   display: block;
   width: fit-content;
-`
+`;
 
 // table setup
 const columns = [
@@ -128,7 +129,7 @@ const ArrivalsPage = ({ location }) => {
     if (isKeySet) {
       fetchData();
     }
-  }, [key, selectedDestination]);
+  }, [key, isKeySet, selectedDestination]);
 
   const handleRowClick = (record) => {
     setExpandedRowKeys((prevKeys) =>
@@ -145,14 +146,6 @@ const ArrivalsPage = ({ location }) => {
   const handleDestinationChange = (value) => {
     setSelectedDestination(value);
   };
-
-  if (isLoading) {
-    return <Layout>Loading...</Layout>;
-  }
-
-  if (isError) {
-    return <Layout>Something went wrong</Layout>;
-  }
 
   return (
     <Layout>
@@ -182,30 +175,53 @@ const ArrivalsPage = ({ location }) => {
             ))}
           </Select>
         </Container>
-        {arrivalData.map((dataArray, index) => (
-          dataArray.length > 0 && (
-            <Container size={16} key={index}>
-              <h4 style={{ textAlign: "left" }}>{dataArray[0]?.arrival?.stopName}</h4>
-              <Table
-                columns={columns}
-                dataSource={dataArray}
-                showHeader={false}
-                pagination={false}
-                rowKey="run"
-                expandable={{
-                  expandedRowRender: expandedRowRender,
-                  rowExpandable: () => true,
-                  expandedRowKeys: expandedRowKeys,
-                  onExpand: handleExpand,
-                }}
-                onRow={(record) => ({
-                  style: { cursor: 'pointer' },
-                  onClick: () => handleRowClick(record),
-                })}
-              />
-            </Container>
-          )
-        ))}
+        {isError ? (
+          <Container>
+            <Result
+              status="warning"
+              title={
+                <span style={{ fontSize: '24px' }}>Something went wrong</span>
+              }
+              subTitle="We were unable to retrieve live CTA tracking data"
+              icon={
+                <WarningFilled style={{ fontSize: '48px', color: '#faad14' }} />
+              }
+            />
+          </Container>
+        ) : isLoading ? (
+          <Container>
+            <Skeleton active />
+          </Container>
+        ) : arrivalData[0].length === 0 ? (
+          <Container>
+            <Empty description="No upcoming arrivals found" image={<GiParkBench size={84} />} />
+          </Container>
+        ) : (
+          arrivalData.map((dataArray, index) => (
+            dataArray.length > 0 && (
+              <Container size={16} key={index}>
+                <h4 style={{ textAlign: "left" }}>{dataArray[0]?.arrival?.stopName}</h4>
+                <Table
+                  columns={columns}
+                  dataSource={dataArray}
+                  showHeader={false}
+                  pagination={false}
+                  rowKey="run"
+                  expandable={{
+                    expandedRowRender: expandedRowRender,
+                    rowExpandable: () => true,
+                    expandedRowKeys: expandedRowKeys,
+                    onExpand: handleExpand,
+                  }}
+                  onRow={(record) => ({
+                    style: { cursor: 'pointer' },
+                    onClick: () => handleRowClick(record),
+                  })}
+                />
+              </Container>
+            )
+          ))
+        )}
       </Container>
     </Layout>
   );
