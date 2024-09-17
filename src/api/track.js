@@ -14,6 +14,7 @@ export async function fetchArrivalData(transitType, routes, arrival, departure) 
     }
     const data = await response.json();
     const arrivals = data.arrivals;
+    arrivals.sort((a, b) => new Date(a.arrival.time) - new Date(b.arrival.time));
     return arrivals;
   } catch (error) {
     console.error("Error fetching arrival data:", error);

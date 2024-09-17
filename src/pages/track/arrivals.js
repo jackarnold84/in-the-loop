@@ -7,6 +7,7 @@ import styled from "styled-components";
 import { fetchArrivalData } from "../../api/track";
 import Countdown from "../../components/Countdown";
 import Layout from "../../components/Layout";
+import Live from "../../components/Live";
 import TimeDisplay from "../../components/TimeDisplay";
 import TransitIcon from "../../components/TransitIcon";
 import Container from "../../components/common/Container";
@@ -31,6 +32,12 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   display: block;
   width: fit-content;
+`;
+
+const TitleContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 // table setup
@@ -102,7 +109,31 @@ const ArrivalsPage = ({ location }) => {
   const [arrivalData, setArrivalData] = React.useState([]);
   const [expandedRowKeys, setExpandedRowKeys] = React.useState([]);
   const [selectedDestination, setSelectedDestination] = React.useState('');
+  const [lastUpdated, setLastUpdated] = React.useState(null);
+  const [isLive, setIsLive] = React.useState(false);
+  const [counter, setCounter] = React.useState(0);
 
+  // fetch from api
+  const fetchData = React.useCallback(async () => {
+    try {
+      const trip = tripCatalog[key];
+      const data = [];
+      for (const option of trip.options) {
+        const { transitType, stopId, routes } = option;
+        const arrivalData = await fetchArrivalData(transitType, routes, stopId, selectedDestination);
+        data.push(arrivalData);
+      }
+      console.log(data);
+      setArrivalData(data);
+      setIsLoading(false);
+      setLastUpdated(new Date());
+    } catch (error) {
+      setIsError(true);
+      setIsLoading(false);
+    }
+  }, [key, selectedDestination]);
+
+  // initial setup based on key
   React.useEffect(() => {
     if (!key || !tripCatalog[key]) {
       navigate("/track/");
@@ -112,29 +143,37 @@ const ArrivalsPage = ({ location }) => {
     setIsKeySet(true);
   }, [key]);
 
+  // fetch every 20 seconds up to 10 times
   React.useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const trip = tripCatalog[key];
-        const data = [];
-        for (const option of trip.options) {
-          const { transitType, stopId, routes } = option;
-          const arrivalData = await fetchArrivalData(transitType, routes, stopId, selectedDestination);
-          data.push(arrivalData);
-        }
-        console.log(data);
-        setArrivalData(data);
-        setIsLoading(false);
-      } catch (error) {
-        setIsError(true);
-        setIsLoading(false);
-      }
-    };
-
     if (isKeySet) {
       fetchData();
+      const intervalId = setInterval(() => {
+        if (counter < 10) {
+          fetchData();
+          setCounter(prevCounter => prevCounter + 1);
+        } else {
+          clearInterval(intervalId);
+        }
+      }, 20000);
+
+      return () => clearInterval(intervalId);
     }
-  }, [key, isKeySet, selectedDestination]);
+  }, [key, isKeySet, selectedDestination, counter, fetchData]);
+
+  // check if data is live
+  React.useEffect(() => {
+    const intervalId = setInterval(() => {
+      setIsLive(lastUpdated && (new Date() - lastUpdated) < 30000);
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, [lastUpdated]);
+
+  // refresh data on live click
+  const handleLiveClick = () => {
+    setCounter(0);
+    fetchData();
+  };
 
   const handleRowClick = (record) => {
     setExpandedRowKeys((prevKeys) =>
@@ -152,6 +191,10 @@ const ArrivalsPage = ({ location }) => {
     setSelectedDestination(value);
   };
 
+  if (!isKeySet) {
+    return <Layout />;
+  }
+
   return (
     <Layout>
       <Container>
@@ -163,7 +206,10 @@ const ArrivalsPage = ({ location }) => {
           </StyledLink>
         </Container>
         <Container bottom={16}>
-          <h2>{tripCatalog[key].name}</h2>
+          <TitleContainer>
+            <h2>{tripCatalog[key].name}</h2>
+            <Live isLive={isLive} onClick={handleLiveClick} />
+          </TitleContainer>
         </Container>
         <Container bottom={16}>
           <StyledLabel>Destination Stop:</StyledLabel>
