@@ -1,6 +1,7 @@
 export const palette = {
   primary: '#2166b1',
   bus: '#0b67be',
+  alertRed: '#db0000',
 }
 
 export const getTrainColor = (route) => {

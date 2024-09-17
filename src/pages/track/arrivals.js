@@ -5,11 +5,12 @@ import * as React from "react";
 import { GiParkBench } from "react-icons/gi";
 import styled from "styled-components";
 import { fetchArrivalData } from "../../api/track";
+import Countdown from "../../components/Countdown";
 import Layout from "../../components/Layout";
+import TimeDisplay from "../../components/TimeDisplay";
 import TransitIcon from "../../components/TransitIcon";
 import Container from "../../components/common/Container";
 import { tripCatalog } from "../../config/catalog";
-import { displayTime, displayTimeUntil } from "../../utils/time";
 
 const { Option } = Select;
 
@@ -46,13 +47,15 @@ const columns = [
     dataIndex: ['arrival', 'time'],
     key: 'arrivalTime',
     width: 150,
-    render: (text) => displayTime(text),
+    render: (text) => <TimeDisplay dateStr={text} />,
   },
   {
     dataIndex: ['arrival', 'time'],
     key: 'timeUntilArrival',
     width: 150,
-    render: (text) => displayTimeUntil(text),
+    render: (text, record) => (
+      <Countdown dateStr={text} isApproaching={record.arrival.isApproaching} />
+    ),
   },
 ];
 
@@ -68,7 +71,9 @@ const expandedRowRender = (record) => {
       dataIndex: ['departure', 'time'],
       key: 'reachDestination',
       width: 225,
-      render: (text) => `Arrive at ${displayTime(text)}`,
+      render: (text) => <span>
+        Arrive at <TimeDisplay dateStr={text} />
+      </span>,
     },
   ];
 
@@ -208,7 +213,7 @@ const ArrivalsPage = ({ location }) => {
                   pagination={false}
                   rowKey="run"
                   expandable={{
-                    expandedRowRender: expandedRowRender,
+                    expandedRowRender: (record) => expandedRowRender(record),
                     rowExpandable: () => true,
                     expandedRowKeys: expandedRowKeys,
                     onExpand: handleExpand,
