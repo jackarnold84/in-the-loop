@@ -1,10 +1,11 @@
 export const tripIndex = {
   outbound: [
+    "ashland-adams-northbound",
     "ashland-to-loop",
     "clinton-to-loop",
-    "ashland-adams-northbound",
   ],
   inbound: [
+    "ashland-lake-southbound",
     "clark-lake-to-home",
   ],
 };
@@ -80,6 +81,20 @@ export const tripCatalog = {
     ],
     destinations: [
       { name: "Ashland", stopId: "30033" },
+    ]
+  },
+
+  "ashland-lake-southbound": {
+    name: "Ashland & Lake Southbound",
+    options: [
+      {
+        transitType: "bus",
+        stopId: "6035",
+        routes: ["9", "X9"]
+      },
+    ],
+    destinations: [
+      { name: "Ashland & Adams", stopId: "6040" },
     ]
   },
 

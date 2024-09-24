@@ -123,7 +123,6 @@ const ArrivalsPage = ({ location }) => {
         const arrivalData = await fetchArrivalData(transitType, routes, stopId, selectedDestination);
         data.push(arrivalData);
       }
-      console.log(data);
       setArrivalData(data);
       setIsLoading(false);
       setLastUpdated(new Date());

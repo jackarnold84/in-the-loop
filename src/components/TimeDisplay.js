@@ -9,6 +9,10 @@ const SmallCaps = styled.span`
 const TimeDisplay = ({ dateStr }) => {
   const toTime = (dateStr) => {
     const date = new Date(dateStr);
+    if (isNaN(date.getTime())) {
+      return { time: "--", period: "" };
+    }
+
     const timeString = date.toLocaleTimeString('en-US', {
       hour: 'numeric',
       minute: 'numeric',
