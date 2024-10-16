@@ -86,4 +86,4 @@ const TrackIndexPage = () => {
 
 export default TrackIndexPage
 
-export const Head = () => <title>Track</title>
+export const Head = () => <title>El Track</title>

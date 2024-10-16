@@ -279,4 +279,4 @@ const ArrivalsPage = ({ location }) => {
 
 export default ArrivalsPage;
 
-export const Head = () => <title>Arrivals</title>;
+export const Head = () => <title>El Track - Arrivals</title>;
