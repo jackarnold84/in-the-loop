@@ -73,7 +73,11 @@ func busStopArrivals(stopID string) ([]model.VehicleArrival, error) {
 		return nil, err
 	}
 	if len(response.Resp.Err) > 0 {
-		return nil, fmt.Errorf("bus API error: %s", response.Resp.Err[0].Msg)
+		msg := response.Resp.Err[0].Msg
+		if msg == "No service scheduled" {
+			return []model.VehicleArrival{}, nil
+		}
+		return nil, fmt.Errorf("bus API error: %s", msg)
 	}
 
 	busArrivals := response.Resp.Data
