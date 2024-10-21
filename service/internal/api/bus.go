@@ -83,12 +83,10 @@ func busStopArrivals(stopID string) ([]model.VehicleArrival, error) {
 	busArrivals := response.Resp.Data
 	var arrivals []model.VehicleArrival
 	for _, bus := range busArrivals {
-		if bus.Type == "A" {
-			arrivals = append(arrivals, model.VehicleArrival{
-				Vehicle: bus.toVehicle(),
-				Arrival: bus.toArrival(),
-			})
-		}
+		arrivals = append(arrivals, model.VehicleArrival{
+			Vehicle: bus.toVehicle(),
+			Arrival: bus.toArrival(),
+		})
 	}
 
 	return arrivals, nil
@@ -118,9 +116,7 @@ func busFollowArrivals(run string) (model.VehicleRoute, error) {
 	vehicle := busArrivals[0].toVehicle()
 	var arrivals []model.Arrival
 	for _, bus := range busArrivals {
-		if bus.Type == "A" {
-			arrivals = append(arrivals, bus.toArrival())
-		}
+		arrivals = append(arrivals, bus.toArrival())
 	}
 	return model.VehicleRoute{
 		Vehicle:  vehicle,
