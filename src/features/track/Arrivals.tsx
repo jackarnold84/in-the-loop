@@ -1,100 +1,16 @@
 import { ArrowLeftOutlined, WarningFilled } from "@ant-design/icons";
-import { Button, Empty, Result, Select, Skeleton, Table } from "antd";
+import { Button, Empty, Result, Select, Skeleton } from "antd";
 import { Link } from "gatsby";
 import * as React from "react";
 import { GiParkBench } from "react-icons/gi";
-import styled from "styled-components";
-import { Arrival, ArrivalData, fetchArrivalData } from "../../api/track";
+import { ArrivalData, fetchArrivalData } from "../../api/track";
 import Container from "../../components/Container";
-import Countdown from "../../components/Countdown";
 import Live from "../../components/Live";
-import TimeDisplay from "../../components/TimeDisplay";
-import TransitIcon from "../../components/TransitIcon";
 import { tripCatalog } from "../../config/catalog";
+import ArrivalsTable from "./ArrivalsTable";
+import * as styles from "./track.module.css";
 
 const { Option } = Select;
-
-const StyledLabel = styled.label`
-  font-size: 12px;
-  display: block;
-  margin-bottom: 4px;
-`;
-
-const StyledButton = styled(Button)`
-  display: inline;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 8px 16px 8px 0px;
-`;
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  display: block;
-  width: fit-content;
-`;
-
-const TitleContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
-
-// table setup
-const columns = [
-  {
-    dataIndex: 'route',
-    key: 'route',
-    width: 75,
-    render: (text: string, record: Arrival) => (
-      <TransitIcon type={record.transitType} route={text} />
-    )
-  },
-  {
-    dataIndex: ['arrival', 'time'],
-    key: 'arrivalTime',
-    width: 150,
-    render: (text: string) => <TimeDisplay dateStr={text} />,
-  },
-  {
-    dataIndex: ['arrival', 'time'],
-    key: 'timeUntilArrival',
-    width: 150,
-    render: (text: string, record: Arrival) => (
-      <Countdown dateStr={text} isApproaching={record.arrival.isApproaching} />
-    ),
-  },
-];
-
-const expandedRowRender = (record: Arrival) => {
-  const expandedColumns = [
-    {
-      dataIndex: 'run',
-      key: 'run',
-      width: 75,
-      render: (text: string) => `#${text}`,
-    },
-    {
-      dataIndex: ['departure', 'time'],
-      key: 'reachDestination',
-      width: 225,
-      render: (text: string) => <span>
-        Arrive at <TimeDisplay dateStr={text} />
-      </span>,
-    },
-  ];
-
-  const expandedData = [{ ...record }];
-  return (
-    <Table
-      columns={expandedColumns}
-      dataSource={expandedData}
-      pagination={false}
-      showHeader={false}
-      size="small"
-      rowKey="run"
-    />
-  );
-};
 
 type ArrivalsProps = {
   tripKey: string;
@@ -104,8 +20,7 @@ const Arrivals: React.FC<ArrivalsProps> = ({ tripKey }) => {
   const trip = tripCatalog[tripKey];
   const [isLoading, setIsLoading] = React.useState(true);
   const [isError, setIsError] = React.useState(false);
-  const [arrivalData, setArrivalData] = React.useState<ArrivalData[]>([]);
-  const [expandedRowKeys, setExpandedRowKeys] = React.useState<string[]>([]);
+  const [arrivalsResponse, setArrivalsResponse] = React.useState<ArrivalData[]>([]);
   const [selectedDestination, setSelectedDestination] = React.useState(trip.destinations[0].stopId);
   const [lastUpdated, setLastUpdated] = React.useState<Date | null>(null);
   const [isLive, setIsLive] = React.useState(false);
@@ -120,7 +35,7 @@ const Arrivals: React.FC<ArrivalsProps> = ({ tripKey }) => {
         const arrivalData = await fetchArrivalData(transitType, routes, stopId, selectedDestination);
         data.push(arrivalData);
       }
-      setArrivalData(data);
+      setArrivalsResponse(data);
       setIsLoading(false);
       setLastUpdated(new Date());
     } catch (error) {
@@ -159,18 +74,6 @@ const Arrivals: React.FC<ArrivalsProps> = ({ tripKey }) => {
     fetchData();
   };
 
-  const handleRowClick = (record: Arrival) => {
-    setExpandedRowKeys((prevKeys) =>
-      prevKeys.includes(record.run)
-        ? prevKeys.filter((key) => key !== record.run)
-        : [...prevKeys, record.run]
-    );
-  };
-
-  const handleExpand = (_: boolean, record: Arrival) => {
-    handleRowClick(record);
-  };
-
   const handleDestinationChange = (value: string) => {
     setSelectedDestination(value);
   };
@@ -178,24 +81,26 @@ const Arrivals: React.FC<ArrivalsProps> = ({ tripKey }) => {
   return (
     <Container>
       <Container top={0}>
-        <StyledLink to="/track/">
-          <StyledButton type="link" icon={<ArrowLeftOutlined />}>
+        <Link to="/track/" className={styles.backLink}>
+          <Button type="link" icon={<ArrowLeftOutlined />} className={styles.backButton}>
             Select New Trip
-          </StyledButton>
-        </StyledLink>
+          </Button>
+        </Link>
       </Container>
+
       <Container bottom={16}>
-        <TitleContainer>
+        <div className={styles.titleContainer}>
           <h2>{trip.name}</h2>
           <Live isLive={isLive} onClick={handleLiveClick} />
-        </TitleContainer>
+        </div>
       </Container>
+
       <Container bottom={16}>
-        <StyledLabel>Destination Stop:</StyledLabel>
+        <label className={styles.dropdownLabel}>Destination Stop:</label>
         <Select
           id="destination-select"
           defaultValue={trip.destinations[0].stopId}
-          style={{ width: '100%' }}
+          className={styles.fullWidth}
           onChange={handleDestinationChange}
         >
           {trip.destinations.map((destination) => (
@@ -205,49 +110,37 @@ const Arrivals: React.FC<ArrivalsProps> = ({ tripKey }) => {
           ))}
         </Select>
       </Container>
+
       {isError ? (
         <Container>
           <Result
             status="warning"
             title={
-              <span style={{ fontSize: '24px' }}>Something went wrong</span>
+              <span className={styles.errorTitle}>Something went wrong</span>
             }
             subTitle="We were unable to retrieve live CTA tracking data"
             icon={
-              <WarningFilled style={{ fontSize: '48px', color: '#faad14' }} />
+              <WarningFilled className={styles.warningIcon} />
             }
           />
         </Container>
+
       ) : isLoading ? (
         <Container>
           <Skeleton active />
         </Container>
-      ) : arrivalData[0].length === 0 ? (
+
+      ) : arrivalsResponse[0].length === 0 ? (
         <Container>
           <Empty description="No upcoming arrivals found" image={<GiParkBench size={84} />} />
         </Container>
+
       ) : (
-        arrivalData.map((dataArray, index) => (
-          dataArray.length > 0 && (
+        arrivalsResponse.map((arrivalData, index) => (
+          arrivalData.length > 0 && (
             <Container size={16} key={index}>
-              <h4 style={{ textAlign: "left" }}>{dataArray[0]?.arrival?.stopName}</h4>
-              <Table
-                columns={columns}
-                dataSource={dataArray}
-                showHeader={false}
-                pagination={false}
-                rowKey="run"
-                expandable={{
-                  expandedRowRender: (record) => expandedRowRender(record),
-                  rowExpandable: () => true,
-                  expandedRowKeys: expandedRowKeys,
-                  onExpand: handleExpand,
-                }}
-                onRow={(record) => ({
-                  style: { cursor: 'pointer' },
-                  onClick: () => handleRowClick(record),
-                })}
-              />
+              <h4 className={styles.alignLeft}>{arrivalData[0]?.arrival?.stopName}</h4>
+              <ArrivalsTable dataArray={arrivalData} />
             </Container>
           )
         ))
