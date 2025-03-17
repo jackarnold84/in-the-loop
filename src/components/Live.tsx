@@ -2,7 +2,7 @@ import { Button } from "antd";
 import * as React from "react";
 import { BsRecord2 } from "react-icons/bs";
 import styled, { css, keyframes } from "styled-components";
-import { palette } from "../utils/palette";
+import { palette } from "../styles/palette";
 
 const fadeOpacity = keyframes`
   0% {

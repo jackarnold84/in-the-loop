@@ -1,4 +1,31 @@
-export const tripIndex = {
+type TransitOption = {
+  transitType: 'train' | 'bus';
+  stopId: string;
+  routes: string[];
+};
+
+type Destination = {
+  name: string;
+  stopId: string;
+};
+
+type Trip = {
+  name: string;
+  options: TransitOption[];
+  destinations: Destination[];
+};
+
+type TripCatalog = {
+  [key: string]: Trip;
+};
+
+type TripIndex = {
+  outbound: string[];
+  inbound: string[];
+};
+
+// Apply types to the existing data
+export const tripIndex: TripIndex = {
   outbound: [
     "ashland-adams-northbound",
     "ashland-to-loop",
@@ -23,7 +50,7 @@ export const tripIndex = {
   ],
 };
 
-export const tripCatalog = {
+export const tripCatalog: TripCatalog = {
   // OUTBOUND
 
   "ashland-to-loop": {
@@ -113,108 +140,81 @@ export const tripCatalog = {
   },
 
   "division-to-ohare": {
-    "name": "Division to O'Hare",
-    "options": [
+    name: "Division to O'Hare",
+    options: [
       {
-        "transitType": "train",
-        "stopId": "30062",
-        "routes": ["Blue"]
+        transitType: "train",
+        stopId: "30062",
+        routes: ["Blue"]
       }
     ],
-    "destinations": [
-      {
-        "name": "O'Hare",
-        "stopId": "30171"
-      }
+    destinations: [
+      { name: "O'Hare", stopId: "30171" }
     ]
   },
 
   "ashland-to-midway": {
-    "name": "Ashland to Midway",
-    "options": [
+    name: "Ashland to Midway",
+    options: [
       {
-        "transitType": "train",
-        "stopId": "30206",
-        "routes": ["Orange"]
+        transitType: "train",
+        stopId: "30206",
+        routes: ["Orange"]
       }
     ],
-    "destinations": [
-      {
-        "name": "Midway",
-        "stopId": "30182"
-      }
+    destinations: [
+      { name: "Midway", stopId: "30182" }
     ]
   },
 
   "clark-lake-northbound": {
-    "name": "Clark/Lake Northbound",
-    "options": [
+    name: "Clark/Lake Northbound",
+    options: [
       {
-        "transitType": "train",
-        "stopId": "30075",
-        "routes": ["Brown", "Purple"]
+        transitType: "train",
+        stopId: "30075",
+        routes: ["Brown", "Purple"]
       },
     ],
-    "destinations": [
-      {
-        "name": "Sedgwick",
-        "stopId": "30155"
-      },
-      {
-        "name": "Armitage",
-        "stopId": "30127"
-      },
-      {
-        "name": "Belmont",
-        "stopId": "30257",
-      }
+    destinations: [
+      { name: "Sedgwick", stopId: "30155" },
+      { name: "Armitage", stopId: "30127" },
+      { name: "Belmont", stopId: "30257" }
     ]
   },
 
   "lake-northbound": {
-    "name": "Lake Northbound",
-    "options": [
+    name: "Lake Northbound",
+    options: [
       {
-        "transitType": "train",
-        "stopId": "30289",
-        "routes": ["Red"]
+        transitType: "train",
+        stopId: "30289",
+        routes: ["Red"]
       },
     ],
-    "destinations": [
-      {
-        "name": "Clark/Division",
-        "stopId": "30121"
-      },
-      {
-        "name": "Belmont",
-        "stopId": "30255"
-      },
-      {
-        "name": "Addison",
-        "stopId": "30273"
-      }
+    destinations: [
+      { name: "Clark/Division", stopId: "30121" },
+      { name: "Belmont", stopId: "30255" },
+      { name: "Addison", stopId: "30273" }
     ]
   },
 
   "jackson-ashland-eastbound": {
-    "name": "Jackson & Ashland Eastbound",
-    "options": [
+    name: "Jackson & Ashland Eastbound",
+    options: [
       {
-        "transitType": "bus",
-        "stopId": "55",
-        "routes": ["126"]
+        transitType: "bus",
+        stopId: "55",
+        routes: ["126"]
       },
       {
-        "transitType": "bus",
-        "stopId": "51",
-        "routes": ["126"]
+        transitType: "bus",
+        stopId: "51",
+        routes: ["126"]
       }
     ],
-    "destinations": [
-      {
-        "name": "Jackson & Clinton",
-        "stopId": "14484"
-      }
+    destinations: [
+      { name: "Jackson & Clinton", stopId: "14484" }
     ]
   },
 
@@ -355,5 +355,4 @@ export const tripCatalog = {
       { name: "Lake", stopId: "30290" },
     ]
   }
-
 };

@@ -1,8 +1,8 @@
-import { Button } from "antd"
-import * as React from "react"
-import styled from "styled-components"
-import Container from "../components/Container"
-import Layout from "../features/layout/Layout"
+import { Button } from "antd";
+import * as React from "react";
+import styled from "styled-components";
+import Container from "../components/Container";
+import Layout from '../features/layout/Layout';
 
 const PageHeading = styled.h2`
   text-align: center;
@@ -24,4 +24,4 @@ const NotFoundPage = () => {
 
 export default NotFoundPage
 
-export const Head = () => <title>Not Found</title>
+export const Head = () => <title>El Track - Not Found</title>

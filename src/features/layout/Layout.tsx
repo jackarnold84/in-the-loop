@@ -37,7 +37,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               </div>
               <h3 className={styles.title}>
                 <Link to="/" className={styles.link}>
-                  Gatsby
+                  EL Track
                 </Link>
               </h3>
             </div>
@@ -60,7 +60,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   size="small"
                   className={styles.githubButton}
                   icon={<GithubFilled />}
-                  href="https://github.com/jackarnold84/gatsby-template"
+                  href="https://github.com/jackarnold84/el-track"
                 >
                   Github
                 </Button>

@@ -1,17 +1,17 @@
 import { ArrowLeftOutlined, WarningFilled } from "@ant-design/icons";
 import { Button, Empty, Result, Select, Skeleton, Table } from "antd";
-import { Link, navigate } from "gatsby";
+import { Link, navigate, PageProps } from "gatsby";
 import * as React from "react";
 import { GiParkBench } from "react-icons/gi";
 import styled from "styled-components";
-import { fetchArrivalData } from "../../api/track";
+import { Arrival, ArrivalData, fetchArrivalData } from "../../api/track";
+import Container from "../../components/Container";
 import Countdown from "../../components/Countdown";
-import Layout from "../../components/Layout";
 import Live from "../../components/Live";
 import TimeDisplay from "../../components/TimeDisplay";
 import TransitIcon from "../../components/TransitIcon";
-import Container from "../../components/common/Container";
 import { tripCatalog } from "../../config/catalog";
+import Layout from '../../features/layout/Layout';
 
 const { Option } = Select;
 
@@ -22,7 +22,7 @@ const StyledLabel = styled.label`
 `;
 
 const StyledButton = styled(Button)`
-  display: flex;
+  display: inline;
   align-items: center;
   justify-content: flex-start;
   padding: 8px 16px 8px 0px;
@@ -46,7 +46,7 @@ const columns = [
     dataIndex: 'route',
     key: 'route',
     width: 75,
-    render: (text, record) => (
+    render: (text: string, record: Arrival) => (
       <TransitIcon type={record.transitType} route={text} />
     )
   },
@@ -54,31 +54,31 @@ const columns = [
     dataIndex: ['arrival', 'time'],
     key: 'arrivalTime',
     width: 150,
-    render: (text) => <TimeDisplay dateStr={text} />,
+    render: (text: string) => <TimeDisplay dateStr={text} />,
   },
   {
     dataIndex: ['arrival', 'time'],
     key: 'timeUntilArrival',
     width: 150,
-    render: (text, record) => (
+    render: (text: string, record: Arrival) => (
       <Countdown dateStr={text} isApproaching={record.arrival.isApproaching} />
     ),
   },
 ];
 
-const expandedRowRender = (record) => {
+const expandedRowRender = (record: Arrival) => {
   const expandedColumns = [
     {
       dataIndex: 'run',
       key: 'run',
       width: 75,
-      render: (text) => `#${text}`,
+      render: (text: string) => `#${text}`,
     },
     {
       dataIndex: ['departure', 'time'],
       key: 'reachDestination',
       width: 225,
-      render: (text) => <span>
+      render: (text: string) => <span>
         Arrive at <TimeDisplay dateStr={text} />
       </span>,
     },
@@ -97,19 +97,24 @@ const expandedRowRender = (record) => {
   );
 };
 
-const ArrivalsPage = ({ location }) => {
-  const urlParams = new Proxy(new URLSearchParams(location.search), {
-    get: (searchParams, prop) => searchParams.get(prop),
-  });
-  const key = urlParams.key;
+type ArrivalsPageParams = {
+  key?: string | null;
+};
+
+const ArrivalsPage: React.FC<PageProps> = ({ location }) => {
+  const searchParams = new URLSearchParams(location.search);
+  const urlParams: ArrivalsPageParams = {
+    key: searchParams.get('key'),
+  };
+  const key = urlParams.key || '';
 
   const [isKeySet, setIsKeySet] = React.useState(false);
   const [isLoading, setIsLoading] = React.useState(true);
   const [isError, setIsError] = React.useState(false);
-  const [arrivalData, setArrivalData] = React.useState([]);
-  const [expandedRowKeys, setExpandedRowKeys] = React.useState([]);
+  const [arrivalData, setArrivalData] = React.useState<ArrivalData[]>([]);
+  const [expandedRowKeys, setExpandedRowKeys] = React.useState<string[]>([]);
   const [selectedDestination, setSelectedDestination] = React.useState('');
-  const [lastUpdated, setLastUpdated] = React.useState(null);
+  const [lastUpdated, setLastUpdated] = React.useState<Date | null>(null);
   const [isLive, setIsLive] = React.useState(false);
   const [counter, setCounter] = React.useState(0);
 
@@ -117,7 +122,7 @@ const ArrivalsPage = ({ location }) => {
   const fetchData = React.useCallback(async () => {
     try {
       const trip = tripCatalog[key];
-      const data = [];
+      const data: ArrivalData[] = [];
       for (const option of trip.options) {
         const { transitType, stopId, routes } = option;
         const arrivalData = await fetchArrivalData(transitType, routes, stopId, selectedDestination);
@@ -162,7 +167,7 @@ const ArrivalsPage = ({ location }) => {
   // check if data is live
   React.useEffect(() => {
     const intervalId = setInterval(() => {
-      setIsLive(lastUpdated && (new Date() - lastUpdated) < 30000);
+      setIsLive(!!lastUpdated && (new Date().getTime() - lastUpdated.getTime()) < 30000);
     }, 1000);
 
     return () => clearInterval(intervalId);
@@ -174,7 +179,7 @@ const ArrivalsPage = ({ location }) => {
     fetchData();
   };
 
-  const handleRowClick = (record) => {
+  const handleRowClick = (record: Arrival) => {
     setExpandedRowKeys((prevKeys) =>
       prevKeys.includes(record.run)
         ? prevKeys.filter((key) => key !== record.run)
@@ -182,16 +187,16 @@ const ArrivalsPage = ({ location }) => {
     );
   };
 
-  const handleExpand = (_, record) => {
+  const handleExpand = (_: boolean, record: Arrival) => {
     handleRowClick(record);
   };
 
-  const handleDestinationChange = (value) => {
+  const handleDestinationChange = (value: string) => {
     setSelectedDestination(value);
   };
 
   if (!isKeySet) {
-    return <Layout />;
+    return <Layout> </Layout>;
   }
 
   return (

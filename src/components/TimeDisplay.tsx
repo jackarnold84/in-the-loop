@@ -6,8 +6,12 @@ const SmallCaps = styled.span`
   margin-left: 2px;
 `;
 
-const TimeDisplay = ({ dateStr }) => {
-  const toTime = (dateStr) => {
+interface TimeDisplayProps {
+  dateStr: string;
+}
+
+const TimeDisplay: React.FC<TimeDisplayProps> = ({ dateStr }) => {
+  const toTime = (dateStr: string): { time: string; period: string } => {
     const date = new Date(dateStr);
     if (isNaN(date.getTime())) {
       return { time: "--", period: "" };

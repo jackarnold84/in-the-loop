@@ -2,9 +2,9 @@ import { List, Tabs } from 'antd';
 import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
-import Layout from '../../components/Layout';
 import TransitIcon from '../../components/TransitIcon';
 import { tripCatalog, tripIndex } from '../../config/catalog';
+import Layout from '../../features/layout/Layout';
 
 const IconHolder = styled.div`
   min-width: 60px;
@@ -28,7 +28,7 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const renderTripItem = (key) => {
+const renderTripItem = (key: string) => {
   const trip = tripCatalog[key];
   return (
     <StyledLink

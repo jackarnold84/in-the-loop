@@ -1,7 +1,8 @@
 import { Button, List } from "antd"
 import { Link } from "gatsby"
 import * as React from "react"
-import { FaBolt, FaChartLine, FaHome } from "react-icons/fa"
+import { FaHome } from "react-icons/fa"
+import { FaTrainSubway } from "react-icons/fa6"
 import styled from "styled-components"
 import * as styles from "./layout.module.css"
 
@@ -21,9 +22,8 @@ interface NavigationProps {
 
 const Navigation: React.FC<NavigationProps> = ({ closeMenu }) => {
   const links = [
-    { to: "/", icon: <FaHome />, text: "Home" },
-    { to: "/plot", icon: <FaChartLine />, text: "Plot Demo" },
-    { to: "/dynamic?league=mlb", icon: <FaBolt />, text: "Dynamic Demo" },
+    { to: "/", icon: <FaHome style={{ verticalAlign: 'middle' }} />, text: "Home" },
+    { to: "/track", icon: <FaTrainSubway style={{ verticalAlign: 'middle' }} />, text: "Track" },
   ]
 
   return (

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { FaTrainSubway } from "react-icons/fa6";
 import styled from 'styled-components';
-import { getTrainColor, palette } from '../utils/palette';
+import { getTrainColor, palette } from '../styles/palette';
 
 const BusIcon = styled.span`
   display: inline-block;
@@ -19,7 +19,12 @@ const TrainIcon = styled(FaTrainSubway)`
   font-size: 20px;
 `
 
-const TransitIcon = ({ type, route }) => {
+interface TransitIconProps {
+  type: 'train' | 'bus';
+  route: string;
+}
+
+const TransitIcon: React.FC<TransitIconProps> = ({ type, route }) => {
   if (type === 'bus') {
     return (
       <BusIcon>{route}</BusIcon>
