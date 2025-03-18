@@ -1,15 +1,16 @@
 import { Table } from "antd";
+import { ColumnType } from "antd/lib/table";
 import * as React from "react";
-import { Arrival } from "../../api/track";
 import Countdown from "../../components/Countdown";
 import TimeDisplay from "../../components/TimeDisplay";
 import TransitIcon from "../../components/TransitIcon";
+import { Arrival, NextArrivals } from "./trackApi";
 
 type ArrivalsTableProps = {
-  dataArray: Arrival[];
+  nextArrivals: NextArrivals;
 };
 
-const columns = [
+const columns: ColumnType<Arrival>[] = [
   {
     dataIndex: 'route',
     key: 'route',
@@ -34,8 +35,8 @@ const columns = [
   },
 ];
 
-const expandedRowRender = (record: Arrival) => {
-  const expandedColumns = [
+const expandedRowRender = (record: Arrival): React.ReactNode => {
+  const expandedColumns: ColumnType<Arrival>[] = [
     {
       dataIndex: 'run',
       key: 'run',
@@ -65,10 +66,10 @@ const expandedRowRender = (record: Arrival) => {
   );
 };
 
-const ArrivalsTable: React.FC<ArrivalsTableProps> = ({ dataArray }) => {
+const ArrivalsTable: React.FC<ArrivalsTableProps> = ({ nextArrivals }) => {
   const [expandedRowKeys, setExpandedRowKeys] = React.useState<string[]>([]);
 
-  const handleRowClick = (record: Arrival) => {
+  const handleRowClick = (record: Arrival): void => {
     setExpandedRowKeys((prevKeys) =>
       prevKeys.includes(record.run)
         ? prevKeys.filter((key) => key !== record.run)
@@ -76,14 +77,14 @@ const ArrivalsTable: React.FC<ArrivalsTableProps> = ({ dataArray }) => {
     );
   };
 
-  const handleExpand = (_: boolean, record: Arrival) => {
+  const handleExpand = (_: boolean, record: Arrival): void => {
     handleRowClick(record);
   };
 
   return (
     <Table
       columns={columns}
-      dataSource={dataArray}
+      dataSource={nextArrivals}
       showHeader={false}
       pagination={false}
       rowKey="run"
