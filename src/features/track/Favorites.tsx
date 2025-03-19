@@ -4,6 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 import TransitIcon from '../../components/TransitIcon';
 import { tripCatalog, tripIndex } from '../../config/catalog';
+import { useAppContext } from '../layout/AppContext';
 
 const IconHolder = styled.div`
   min-width: 60px;
@@ -51,6 +52,8 @@ const renderTripItem = (key: string) => {
 };
 
 const Favorites = () => {
+  const { favoritesTab: { activeTab, setActiveTab } } = useAppContext();
+
   const tabItems = [
     {
       key: '1',
@@ -77,7 +80,7 @@ const Favorites = () => {
   ];
 
   return (
-    <Tabs defaultActiveKey="1" items={tabItems} />
+    <Tabs activeKey={activeTab} onChange={setActiveTab} items={tabItems} />
   );
 };
 
