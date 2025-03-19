@@ -4,8 +4,8 @@ export const palette = {
   alertRed: '#db0000',
 }
 
-export const getTrainColor = (route) => {
-  const trainColorsMap = {
+export const getTrainColor = (route: string): string => {
+  const trainColorsMap: { [key: string]: string } = {
     "Red": "#c60c30",
     "Blue": "#00a1de",
     "Brown": "#62361b",

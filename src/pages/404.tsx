@@ -1,8 +1,8 @@
-import { Button } from "antd"
-import * as React from "react"
-import styled from "styled-components"
-import Layout from "../components/Layout"
-import Container from "../components/common/Container"
+import { Button } from "antd";
+import * as React from "react";
+import styled from "styled-components";
+import Container from "../components/Container";
+import Layout from '../features/layout/Layout';
 
 const PageHeading = styled.h2`
   text-align: center;

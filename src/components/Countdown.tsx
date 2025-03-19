@@ -1,16 +1,25 @@
 import * as React from "react";
 import styled from "styled-components";
-import { palette } from "../utils/palette";
+import { palette } from "../styles/palette";
 
 const TimeSpan = styled.span`
   font-weight: 800;
   margin-right: 2px;
 `;
 
-const Countdown = ({ dateStr, isApproaching = false }) => {
-  const getTimeComponents = ({ dateStr, currentTime }) => {
+const ColorContainer = styled.div<{ attention: boolean }>`
+  color: ${({ attention }) => (attention ? palette.alertRed : "inherit")};
+`;
+
+interface CountdownProps {
+  dateStr: string;
+  isApproaching?: boolean;
+}
+
+const Countdown: React.FC<CountdownProps> = ({ dateStr, isApproaching = false }) => {
+  const getTimeComponents = ({ dateStr, currentTime }: { dateStr: string; currentTime: Date }): [string, string] => {
     const targetTime = new Date(dateStr);
-    const diff = targetTime - currentTime;
+    const diff = targetTime.getTime() - currentTime.getTime();
 
     if (diff <= 0) {
       return ["0:00", ""];
@@ -29,7 +38,7 @@ const Countdown = ({ dateStr, isApproaching = false }) => {
     return [`${minutes}:${seconds.toString().padStart(2, '0')}`, ""];
   };
 
-  const [currentTime, setCurrentTime] = React.useState(new Date());
+  const [currentTime, setCurrentTime] = React.useState<Date>(new Date());
   const [time, unit] = getTimeComponents({ dateStr, currentTime });
 
   React.useEffect(() => {
@@ -41,10 +50,10 @@ const Countdown = ({ dateStr, isApproaching = false }) => {
   }, []);
 
   return (
-    <div style={isApproaching ? { color: palette.alertRed } : {}}>
+    <ColorContainer attention={isApproaching}>
       <TimeSpan>{time}</TimeSpan>
       <span>{unit}</span>
-    </div>
+    </ColorContainer>
   );
 };
 

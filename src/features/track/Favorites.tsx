@@ -2,9 +2,9 @@ import { List, Tabs } from 'antd';
 import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
-import Layout from '../../components/Layout';
 import TransitIcon from '../../components/TransitIcon';
 import { tripCatalog, tripIndex } from '../../config/catalog';
+import { useAppContext } from '../layout/AppContext';
 
 const IconHolder = styled.div`
   min-width: 60px;
@@ -28,7 +28,7 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const renderTripItem = (key) => {
+const renderTripItem = (key: string) => {
   const trip = tripCatalog[key];
   return (
     <StyledLink
@@ -51,7 +51,9 @@ const renderTripItem = (key) => {
   );
 };
 
-const TrackIndexPage = () => {
+const Favorites = () => {
+  const { favoritesTab: { activeTab, setActiveTab } } = useAppContext();
+
   const tabItems = [
     {
       key: '1',
@@ -78,12 +80,8 @@ const TrackIndexPage = () => {
   ];
 
   return (
-    <Layout>
-      <Tabs defaultActiveKey="1" items={tabItems} />
-    </Layout>
+    <Tabs activeKey={activeTab} onChange={setActiveTab} items={tabItems} />
   );
 };
 
-export default TrackIndexPage
-
-export const Head = () => <title>El Track</title>
+export default Favorites
