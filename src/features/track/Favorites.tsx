@@ -28,11 +28,11 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const renderTripItem = (key: string) => {
-  const trip = tripCatalog[key];
+const renderTripItem = (tripKey: string) => {
+  const trip = tripCatalog[tripKey];
   return (
     <StyledLink
-      to={`/track/arrivals?key=${key}`}
+      to={`/track/arrivals?trip=${tripKey}`}
     >
       <List.Item className="list-item">
         <List.Item.Meta

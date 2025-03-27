@@ -6,7 +6,7 @@ import { GiParkBench } from "react-icons/gi";
 import useSWR from "swr";
 import Container from "../../components/Container";
 import Live from "../../components/Live";
-import { tripCatalog } from "../../config/catalog";
+import { Destination, TransitOption } from "../../config/catalog";
 import ArrivalsTable from "./ArrivalsTable";
 import * as styles from "./track.module.css";
 import { trackArrivalsFetcher } from "./trackApi";
@@ -18,21 +18,29 @@ const isRecentUpdate = (lastUpdated: Date | undefined) => {
   return !!lastUpdated && (new Date().getTime() - lastUpdated.getTime()) < LIVE_THRESHOLD;
 }
 
+type Route = {
+  id: string;
+  name: string;
+}
+
 type ArrivalsProps = {
-  tripKey: string;
+  tracks: TransitOption[];
+  title: string;
+  destinations?: Destination[];
+  routeFilter?: Route[];
 };
 
-const Arrivals: React.FC<ArrivalsProps> = ({ tripKey }) => {
-  const trip = tripCatalog[tripKey];
-  const [selectedDestination, setSelectedDestination] = React.useState(trip.destinations[0].stopId);
+const Arrivals: React.FC<ArrivalsProps> = ({ tracks, title, destinations, routeFilter }) => {
+  const [selectedDestination, setSelectedDestination] = React.useState(destinations?.[0]?.stopId || '');
+  // TODO: add route filter
   const [isLive, setIsLive] = React.useState(false);
   const [isFirstLoad, setIsFirstLoad] = React.useState(true);
 
-  const trackReqs = trip.options.map(option => ({
-    transitType: option.transitType,
-    routes: option.routes,
-    arrival: option.stopId,
-    departure: selectedDestination,
+  const trackReqs = tracks.map(track => ({
+    transitType: track.transitType,
+    routes: track.routes,
+    arrival: track.stopId,
+    departure: selectedDestination || track.stopId, // TODO: make optional
   }));
 
   const { data, error, isValidating, mutate } = useSWR(trackReqs, trackArrivalsFetcher, {
@@ -79,26 +87,28 @@ const Arrivals: React.FC<ArrivalsProps> = ({ tripKey }) => {
 
       <Container bottom={16}>
         <div className={styles.titleContainer}>
-          <h2>{trip.name}</h2>
+          <h2>{title}</h2>
           <Live isLive={isLive} onClick={handleLiveClick} />
         </div>
       </Container>
 
-      <Container bottom={16}>
-        <label className={styles.dropdownLabel}>Destination Stop:</label>
-        <Select
-          id="destination-select"
-          defaultValue={trip.destinations[0].stopId}
-          className={styles.fullWidth}
-          onChange={handleDestinationChange}
-        >
-          {trip.destinations.map((destination) => (
-            <Select.Option key={destination.stopId} value={destination.stopId}>
-              {destination.name}
-            </Select.Option>
-          ))}
-        </Select>
-      </Container>
+      {destinations && destinations.length && (
+        <Container bottom={16}>
+          <label className={styles.dropdownLabel}>Destination Stop:</label>
+          <Select
+            id="destination-select"
+            className={styles.fullWidth}
+            value={selectedDestination}
+            onChange={handleDestinationChange}
+          >
+            {destinations.map((destination) => (
+              <Select.Option key={destination.stopId} value={destination.stopId}>
+                {destination.name}
+              </Select.Option>
+            ))}
+          </Select>
+        </Container>
+      )}
 
       {error ? (
         <Container>
