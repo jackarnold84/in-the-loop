@@ -78,7 +78,7 @@ const Arrivals: React.FC<ArrivalsProps> = ({ tracks, title, destinations, routeF
   return (
     <Container>
       <Container top={0}>
-        <Link to="/track/" className={styles.backLink}>
+        <Link to="/favorites" className={styles.backLink}>
           <Button type="link" icon={<ArrowLeftOutlined />} className={styles.backButton}>
             Select New Trip
           </Button>

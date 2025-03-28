@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
-import { FaTrainSubway } from "react-icons/fa6"
+import { FaHeart } from "react-icons/fa6"
 import styled from "styled-components"
 import Container from "../../components/Container"
 import { MenuButton } from "../layout/Navigation"
@@ -19,7 +19,7 @@ const BetaText = styled.div`
 
 const Home = () => {
   const links = [
-    { to: "/track", icon: <FaTrainSubway />, text: "Track" },
+    { to: "/favorites", icon: <FaHeart />, text: "Favorites" },
   ]
 
   return (

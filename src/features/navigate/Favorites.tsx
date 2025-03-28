@@ -32,7 +32,7 @@ const renderTripItem = (tripKey: string) => {
   const trip = tripCatalog[tripKey];
   return (
     <StyledLink
-      to={`/track/arrivals?trip=${tripKey}`}
+      to={`/favorites/${tripKey}`}
     >
       <List.Item className="list-item">
         <List.Item.Meta
