@@ -12,28 +12,29 @@ type PathParams = {
 const StationStopTrackPage = ({ params }: { params: PathParams }) => {
   const stationId = params.station;
   const station = stationIndex[stationId];
-  if (!station) {
-    navigate("/404");
-    return null;
-  }
   const stopId = params.stop;
-  const trackIdList = station.stops[stopId];
-  if (!trackIdList || !trackIdList.every(trackId => trackIndex[trackId])) {
-    navigate("/station/" + stationId);
-    return null;
-  }
+  const trackIdList = station?.stops[stopId] || [];
   const tracks = trackIdList.map(trackId => trackIndex[trackId]);
+  const isValid = station && trackIdList.length > 0 && tracks.every(track => track);
 
   const trackInput = {
-    transitType: tracks[0].type as 'train' | 'bus',
+    transitType: tracks[0]?.type as 'train' | 'bus',
     routes: tracks.map(track => track.route),
-    stopId: tracks[0].stop,
+    stopId: tracks[0]?.stop,
   }
   const routeFilter = tracks.map(track => ({ id: track.route, name: track.routeName }));
 
+  React.useEffect(() => {
+    if (!isValid) {
+      navigate("/404");
+    }
+  }, [isValid]);
+
   return (
     <Layout>
-      <Arrivals tracks={[trackInput]} title={tracks[0].stopName} routeFilter={routeFilter} />
+      {isValid &&
+        <Arrivals tracks={[trackInput]} title={tracks[0].stopName} routeFilter={routeFilter} />
+      }
     </Layout>
   );
 };

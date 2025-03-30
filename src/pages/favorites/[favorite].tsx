@@ -11,14 +11,18 @@ type PathParams = {
 const FavoriteTrackPage = ({ params }: { params: PathParams }) => {
   const tripKey = params.favorite;
   const trip = tripCatalog[tripKey];
-  if (!trip) {
-    navigate("/favorites");
-    return null;
-  }
+
+  React.useEffect(() => {
+    if (!trip) {
+      navigate("/404");
+    }
+  }, [trip]);
 
   return (
     <Layout>
-      <Arrivals tracks={trip.options} title={trip.name} destinations={trip.destinations} />
+      {trip &&
+        <Arrivals tracks={trip.options} title={trip.name} destinations={trip.destinations} />
+      }
     </Layout>
   );
 };
