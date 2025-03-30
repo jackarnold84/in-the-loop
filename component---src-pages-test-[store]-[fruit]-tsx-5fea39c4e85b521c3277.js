@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkel_track=self.webpackChunkel_track||[]).push([[472],{804:function(e,t,l){l.r(t),l.d(t,{Head:function(){return a}});var r=l(6540),n=l(2853);t.default=e=>{let{params:t}=e;return r.createElement(n.A,null,r.createElement("h1",null,"Hello world ",t.store," - ",t.fruit))};const a=()=>r.createElement("title",null,"El Track")}}]);
-//# sourceMappingURL=component---src-pages-test-[store]-[fruit]-tsx-5fea39c4e85b521c3277.js.map

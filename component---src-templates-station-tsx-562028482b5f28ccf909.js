@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkel_track=self.webpackChunkel_track||[]).push([[980],{6022:function(e,t,n){n.r(t),n.d(t,{Head:function(){return c}});var l=n(6540),a=n(2853);t.default=e=>{let{pageContext:t}=e;const n=t.stationId;return l.createElement(a.A,null,l.createElement("h1",null,"Station ID: ",n))};const c=()=>l.createElement("title",null,"El Track")}}]);
+//# sourceMappingURL=component---src-templates-station-tsx-562028482b5f28ccf909.js.map
