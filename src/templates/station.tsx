@@ -1,5 +1,6 @@
 import * as React from "react";
 import Layout from "../features/layout/Layout";
+import Station from "../features/navigate/Station";
 
 type PageContext = {
   stationId: string;
@@ -8,10 +9,9 @@ type PageContext = {
 const StationPage = ({ pageContext }: { pageContext: PageContext }) => {
   const stationId = pageContext.stationId;
 
-  // TODO: implement station stop selection
   return (
     <Layout>
-      <h1>Station ID: {stationId}</h1>
+      <Station stationId={stationId} />
     </Layout>
   );
 };

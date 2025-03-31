@@ -23,7 +23,7 @@ const PulsingIcon = styled(BsRecord2)`
 const LiveButton = styled(Button)`
   border: none;
   background: transparent;
-  padding: 0;
+  padding: 2px;
   box-shadow: none;
   display: flex;
   align-items: center;

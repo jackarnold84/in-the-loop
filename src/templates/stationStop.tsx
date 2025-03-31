@@ -1,5 +1,5 @@
 import * as React from "react";
-import { stationIndex, trackIndex } from "../config/index";
+import { stationIndex, Track, trackIndex } from "../config/index";
 import Layout from "../features/layout/Layout";
 import Arrivals from "../features/track/Arrivals";
 
@@ -7,6 +7,18 @@ type PageContext = {
   stationId: string;
   stopId: string;
 };
+
+const getDirectionText = (tracks: Track[]) => {
+  if (tracks[0].type === "bus") {
+    const uniqueDirections = Array.from(new Set(tracks.map(track => track.direction)));
+    return `${uniqueDirections.join(", ")}bound`;
+  } else {
+    const uniqueHeadsigns = Array.from(
+      new Set(tracks.flatMap(track => track.headsign))
+    ).sort((a, b) => a.length - b.length);
+    return `${uniqueHeadsigns.slice(0, 3).join(", ")}${uniqueHeadsigns.length > 3 ? ", ..." : ""}`;
+  }
+}
 
 const StationStopTrackPage = ({ pageContext }: { pageContext: PageContext }) => {
   const stationId = pageContext.stationId;
@@ -24,7 +36,12 @@ const StationStopTrackPage = ({ pageContext }: { pageContext: PageContext }) => 
 
   return (
     <Layout>
-      <Arrivals tracks={[trackInput]} title={station.name} routeFilter={routeFilter} />
+      <Arrivals
+        tracks={[trackInput]}
+        title={station.name}
+        subtitle={getDirectionText(tracks)}
+        routeFilter={routeFilter}
+      />
     </Layout>
   );
 };

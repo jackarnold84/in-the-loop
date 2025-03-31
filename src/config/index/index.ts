@@ -1,7 +1,7 @@
 import stationData from "./stations.json";
 import trackData from "./tracks.json";
 
-type Track = {
+export type Track = {
   type: string;
   route: string;
   routeName: string;
@@ -11,12 +11,12 @@ type Track = {
   headsign: string[];
 }
 
-type Station = {
+export type Station = {
   name: string;
   stops: StopTracks;
 }
 
-type StopTracks = {
+export type StopTracks = {
   [stopId: string]: string[];
 }
 

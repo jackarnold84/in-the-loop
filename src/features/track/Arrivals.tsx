@@ -6,6 +6,7 @@ import { GiParkBench } from "react-icons/gi";
 import useSWR from "swr";
 import Container from "../../components/Container";
 import Live from "../../components/Live";
+import Span from "../../components/Span";
 import { Destination, TransitOption } from "../../config/catalog";
 import ArrivalsTable from "./ArrivalsTable";
 import * as styles from "./track.module.css";
@@ -26,11 +27,12 @@ type Route = {
 type ArrivalsProps = {
   tracks: TransitOption[];
   title: string;
+  subtitle?: string;
   destinations?: Destination[];
   routeFilter?: Route[];
 };
 
-const Arrivals: React.FC<ArrivalsProps> = ({ tracks, title, destinations, routeFilter }) => {
+const Arrivals: React.FC<ArrivalsProps> = ({ tracks, title, subtitle, destinations, routeFilter }) => {
   const [selectedDestination, setSelectedDestination] = React.useState(destinations?.[0]?.stopId || '');
   // TODO: add route filter
   const [isLive, setIsLive] = React.useState(false);
@@ -87,8 +89,13 @@ const Arrivals: React.FC<ArrivalsProps> = ({ tracks, title, destinations, routeF
 
       <Container bottom={16}>
         <div className={styles.titleContainer}>
-          <h2>{title}</h2>
-          <Live isLive={isLive} onClick={handleLiveClick} />
+          <Span size={0}>
+            <h2 className={styles.titleText}>{title}</h2>
+            {subtitle && <div>{subtitle}</div>}
+          </Span>
+          <Span left={10} right={0}>
+            <Live isLive={isLive} onClick={handleLiveClick} />
+          </Span>
         </div>
       </Container>
 
