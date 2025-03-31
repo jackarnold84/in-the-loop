@@ -1,12 +1,12 @@
 import * as React from "react";
-import Layout from "../../../features/layout/Layout";
+import Layout from "../features/layout/Layout";
 
-type PathParams = {
-  station: string;
+type PageContext = {
+  stationId: string;
 };
 
-const StationPage = ({ params }: { params: PathParams }) => {
-  const stationId = params.station;
+const StationPage = ({ pageContext }: { pageContext: PageContext }) => {
+  const stationId = pageContext.stationId;
 
   // TODO: implement station stop selection
   return (
