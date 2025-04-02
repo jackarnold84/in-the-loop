@@ -1,5 +1,3 @@
-import { ArrowLeftOutlined } from '@ant-design/icons';
-import { Button } from 'antd';
 import { Link } from 'gatsby';
 import React from 'react';
 import Container from '../../components/Container';
@@ -17,15 +15,6 @@ const Station: React.FC<StationProps> = ({ stationId }) => {
 
   return (
     <Container>
-      {/* TODO: create back button component */}
-      <Container top={0}>
-        <Link to="/favorites" style={{ textDecoration: "none", display: "block", width: "fit-content" }}>
-          <Button type="link" icon={<ArrowLeftOutlined />} style={{ display: "inline", alignItems: "center", justifyContent: "flex-start", padding: "8px 16px 8px 0px" }}>
-            Select New Trip
-          </Button>
-        </Link>
-      </Container>
-
       <Container>
         <h2>{station.name}</h2>
       </Container>

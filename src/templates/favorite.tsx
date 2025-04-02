@@ -1,4 +1,5 @@
 import * as React from "react";
+import BackButton from "../components/BackButton";
 import { tripCatalog } from "../config/catalog";
 import Layout from "../features/layout/Layout";
 import Arrivals from "../features/track/Arrivals";
@@ -13,6 +14,7 @@ const FavoriteTrackPage = ({ pageContext }: { pageContext: PageContext }) => {
 
   return (
     <Layout>
+      <BackButton to="/favorites" text="Select New Trip" />
       <Arrivals tracks={trip.options} title={trip.name} destinations={trip.destinations} />
     </Layout>
   );

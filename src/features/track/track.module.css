@@ -4,19 +4,6 @@
   margin-bottom: 4px;
 }
 
-.backButton {
-  display: inline;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 8px 16px 8px 0px;
-}
-
-.backLink {
-  text-decoration: none;
-  display: block;
-  width: fit-content;
-}
-
 .titleContainer {
   display: flex;
   align-items: center;

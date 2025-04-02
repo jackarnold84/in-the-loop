@@ -1,4 +1,5 @@
 import * as React from "react";
+import BackButton from "../components/BackButton";
 import { stationIndex, Track, trackIndex } from "../config/index";
 import Layout from "../features/layout/Layout";
 import Arrivals from "../features/track/Arrivals";
@@ -36,6 +37,7 @@ const StationStopTrackPage = ({ pageContext }: { pageContext: PageContext }) => 
 
   return (
     <Layout>
+      <BackButton to={`/station/${stationId}`} text="Select Stop" />
       <Arrivals
         tracks={[trackInput]}
         title={station.name}

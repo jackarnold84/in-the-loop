@@ -1,6 +1,5 @@
-import { ArrowLeftOutlined, WarningFilled } from "@ant-design/icons";
-import { Button, Empty, Result, Select, Skeleton } from "antd";
-import { Link } from "gatsby";
+import { WarningFilled } from "@ant-design/icons";
+import { Empty, Result, Select, Skeleton } from "antd";
 import * as React from "react";
 import { GiParkBench } from "react-icons/gi";
 import useSWR from "swr";
@@ -79,14 +78,6 @@ const Arrivals: React.FC<ArrivalsProps> = ({ tracks, title, subtitle, destinatio
 
   return (
     <Container>
-      <Container top={0}>
-        <Link to="/favorites" className={styles.backLink}>
-          <Button type="link" icon={<ArrowLeftOutlined />} className={styles.backButton}>
-            Select New Trip
-          </Button>
-        </Link>
-      </Container>
-
       <Container bottom={16}>
         <div className={styles.titleContainer}>
           <Span size={0}>
