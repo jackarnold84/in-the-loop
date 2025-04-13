@@ -4,7 +4,6 @@
     display: block;
     padding: 16px 0;
     border-bottom: 1px solid rgba(5, 5, 5, 0.10);
-    transition: background-color 0.3s;
 }
 
 .rowLink:hover {
@@ -14,6 +13,10 @@
 
 .rowLink:first-of-type {
     border-top: 1px solid rgba(5, 5, 5, 0.10);
+}
+
+.slimRow {
+    padding: 10px 0;
 }
 
 .iconTextWrapper {
@@ -28,6 +31,13 @@
 
 .iconHolder {
     width: 50px;
+}
+
+.iconFlexHolder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 4px;
 }
 
 .semiBold {

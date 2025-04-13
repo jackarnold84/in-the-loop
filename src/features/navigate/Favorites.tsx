@@ -18,7 +18,6 @@ const StyledLink = styled(Link)`
   cursor: pointer;
 
   .list-item {
-    transition: background-color 0.3s;
     padding: 10px;
     border-bottom: 1px solid rgba(5, 5, 5, 0.06) !important;
 
