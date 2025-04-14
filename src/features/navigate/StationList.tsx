@@ -1,16 +1,14 @@
-import { Link } from 'gatsby';
 import React from 'react';
+import Link from '../../components/Link';
 import TransitIcon from '../../components/TransitIcon';
 import { stationIndex, trackIndex } from '../../config/index';
 import * as styles from "./navigate.module.css";
 
 type StationListProps = {
   stationIds: string[];
-  source?: string | null;
 };
 
-const StationList: React.FC<StationListProps> = ({ stationIds, source }) => {
-  const sourceParam = source ? `?source=${source}` : "";
+const StationList: React.FC<StationListProps> = ({ stationIds }) => {
   return (
     <>
       {stationIds.map((stationId) => {
@@ -23,7 +21,7 @@ const StationList: React.FC<StationListProps> = ({ stationIds, source }) => {
 
         return (
           <Link
-            to={`/station/${stationId}${sourceParam}`}
+            to={`/station/${stationId}`}
             key={stationId}
             className={`${styles.rowLink} ${styles.slimRow}`}
           >

@@ -1,6 +1,6 @@
-import { Link } from 'gatsby';
 import React from 'react';
 import Container from '../../components/Container';
+import Link from '../../components/Link';
 import Span from '../../components/Span';
 import TransitIcon from '../../components/TransitIcon';
 import { stationIndex, trackIndex } from '../../config/index';

@@ -1,7 +1,7 @@
 import { List, Tabs } from 'antd';
-import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
+import Link from '../../components/Link';
 import TransitIcon from '../../components/TransitIcon';
 import { tripCatalog, tripIndex } from '../../config/catalog';
 import { useAppContext } from '../layout/AppContext';

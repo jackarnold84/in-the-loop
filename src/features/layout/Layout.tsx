@@ -1,7 +1,7 @@
 import { GithubFilled, MenuOutlined } from "@ant-design/icons"
 import { Button, ConfigProvider, Drawer } from "antd"
-import { Link } from "gatsby"
 import * as React from "react"
+import Link from "../../components/Link"
 import '../../styles/global.css'
 import * as styles from "./layout.module.css"
 import Navigation from "./Navigation"

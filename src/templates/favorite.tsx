@@ -14,7 +14,7 @@ const FavoriteTrackPage = ({ pageContext }: { pageContext: PageContext }) => {
 
   return (
     <Layout>
-      <BackButton to="/favorites" text="Select New Trip" />
+      <BackButton paths={[{ to: "/favorites", text: "Select New Trip" }]} />
       <Arrivals tracks={trip.options} title={trip.name} destinations={trip.destinations} />
     </Layout>
   );

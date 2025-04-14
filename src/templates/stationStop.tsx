@@ -37,7 +37,7 @@ const StationStopTrackPage = ({ pageContext }: { pageContext: PageContext }) => 
 
   return (
     <Layout>
-      <BackButton to={`/station/${stationId}`} text="Select Stop" />
+      <BackButton paths={[{ to: `/station/${stationId}`, text: "Select Stop" }]} />
       <Arrivals
         tracks={[trackInput]}
         title={station.name}

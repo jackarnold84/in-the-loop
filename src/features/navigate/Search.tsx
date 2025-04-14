@@ -57,7 +57,7 @@ const Search = () => {
             image={<LuSearchX color={lightGrey} size={84} />}
           />
         ) : (
-          <StationList stationIds={searchResults} source="search" />
+          <StationList stationIds={searchResults} />
         )}
       </Container>
     </Container>

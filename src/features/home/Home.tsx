@@ -1,10 +1,10 @@
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
 import { FaSearch } from "react-icons/fa"
 import { FaHeart } from "react-icons/fa6"
 import styled from "styled-components"
 import Container from "../../components/Container"
+import Link from "../../components/Link"
 import { MenuButton } from "../layout/Navigation"
 
 const NavLink = styled(Link)`
