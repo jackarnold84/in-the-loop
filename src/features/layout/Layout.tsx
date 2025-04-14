@@ -69,7 +69,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </footer>
         </div>
 
-        <Drawer title="Gatsby Template" onClose={closeMenu} open={openMenu} placement="top">
+        <Drawer title="EL Track" onClose={closeMenu} open={openMenu} placement="top">
           <Navigation closeMenu={closeMenu} />
         </Drawer>
       </ConfigProvider>

@@ -6,9 +6,11 @@ import * as styles from "./navigate.module.css";
 
 type StationListProps = {
   stationIds: string[];
+  source?: string | null;
 };
 
-const StationList: React.FC<StationListProps> = ({ stationIds }) => {
+const StationList: React.FC<StationListProps> = ({ stationIds, source }) => {
+  const sourceParam = source ? `?source=${source}` : "";
   return (
     <>
       {stationIds.map((stationId) => {
@@ -21,7 +23,7 @@ const StationList: React.FC<StationListProps> = ({ stationIds }) => {
 
         return (
           <Link
-            to={`/station/${stationId}`}
+            to={`/station/${stationId}${sourceParam}`}
             key={stationId}
             className={`${styles.rowLink} ${styles.slimRow}`}
           >

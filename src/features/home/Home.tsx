@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
+import { FaSearch } from "react-icons/fa"
 import { FaHeart } from "react-icons/fa6"
 import styled from "styled-components"
 import Container from "../../components/Container"
@@ -20,6 +21,7 @@ const BetaText = styled.div`
 const Home = () => {
   const links = [
     { to: "/favorites", icon: <FaHeart />, text: "Favorites" },
+    { to: "/search", icon: <FaSearch />, text: "Search" },
   ]
 
   return (

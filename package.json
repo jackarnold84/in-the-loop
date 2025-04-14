@@ -20,6 +20,7 @@
     "@ant-design/icons": "^4.8.3",
     "antd": "^4.24.16",
     "babel-plugin-styled-components": "^2.1.4",
+    "fuse.js": "^7.1.0",
     "gatsby": "^5.14.1",
     "gatsby-plugin-antd": "^2.2.0",
     "gatsby-plugin-image": "^3.14.0",
