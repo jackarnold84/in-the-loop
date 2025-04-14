@@ -4,6 +4,7 @@ import { Button } from 'antd';
 import { navigate } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
+import config from '../../gatsby-config';
 import Container from './Container';
 
 type Path = {
@@ -19,8 +20,10 @@ type LocationState = {
   source?: string;
 };
 
-const normalizePath = (path: string) =>
-  path?.endsWith('/') ? path.slice(0, -1) : path;
+const normalizePath = (path: string) => {
+  const prefix = config.pathPrefix || '';
+  return path.replace(prefix, '').replace(/^\/+/, '').replace(/\/+$/, '');
+};
 
 const PaddedButton = styled(Button)`
   padding: 8px 16px 8px 0px;

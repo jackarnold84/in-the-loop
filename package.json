@@ -13,7 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve -H 0.0.0.0",
     "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build --prefix-paths && node deploy.js",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
