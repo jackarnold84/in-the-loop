@@ -8,13 +8,14 @@ import { useAppContext } from '../layout/AppContext';
 import { MenuButton } from '../layout/Navigation';
 import Placeholder from './Placeholder';
 import StationList from './StationList';
+import { pruneNearbyStations } from './nearbyLib';
 
 export type Coord = {
   latitude: number;
   longitude: number;
 };
 
-type StationCoord = Coord & {
+export type StationCoord = Coord & {
   id: string;
 };
 
@@ -69,8 +70,8 @@ const Nearby = () => {
   React.useEffect(() => {
     if (location) {
       const sortedStations = orderByDistance(location, stationCoords) as StationCoord[];
-      const stationIds = sortedStations.slice(0, 20).map(station => station.id);
-      setResults(stationIds);
+      const res = pruneNearbyStations(sortedStations, 20);
+      setResults(res);
     }
   }, [location]);
 
