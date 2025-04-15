@@ -14,6 +14,8 @@ export type Track = {
 export type Station = {
   name: string;
   stops: StopTracks;
+  latitude: number;
+  longitude: number;
 }
 
 export type StopTracks = {

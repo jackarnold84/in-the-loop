@@ -1,13 +1,12 @@
-import { Empty, Input } from 'antd';
+import { Input } from 'antd';
 import Fuse from "fuse.js";
 import React from 'react';
 import { LuSearch, LuSearchX } from 'react-icons/lu';
 import Container from '../../components/Container';
 import { stationIndex } from '../../config/index';
 import { useAppContext } from '../layout/AppContext';
+import Placeholder from './Placeholder';
 import StationList from './StationList';
-
-const lightGrey = "#d9d9d9";
 
 const Search = () => {
   const {
@@ -47,15 +46,9 @@ const Search = () => {
 
       <Container size={16}>
         {searchValue === "" ? (
-          <Empty
-            description="Search for stops by name"
-            image={<LuSearch color={lightGrey} size={84} />}
-          />
+          <Placeholder description="Search for stops by name" icon={<LuSearch />} />
         ) : searchResults.length === 0 ? (
-          <Empty
-            description={`No stops found for "${searchValue}"`}
-            image={<LuSearchX color={lightGrey} size={84} />}
-          />
+          <Placeholder description={`No stops found for "${searchValue}"`} icon={<LuSearchX />} />
         ) : (
           <StationList stationIds={searchResults} />
         )}

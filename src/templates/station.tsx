@@ -12,7 +12,12 @@ const StationPage = ({ pageContext }: { pageContext: PageContext }) => {
 
   return (
     <Layout>
-      <BackButton paths={[{ to: "/search", text: "Back to Search" }]} />
+      <BackButton
+        paths={[
+          { to: "/search", text: "Back to Search" },
+          { to: "/nearby", text: "Back to Nearby Stops" },
+        ]}
+      />
       <Station stationId={stationId} />
     </Layout>
   );
