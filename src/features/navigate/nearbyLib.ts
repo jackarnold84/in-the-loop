@@ -1,7 +1,32 @@
 import { stationIndex, trackIndex } from "../../config/index";
-import { StationCoord } from "./Nearby";
+import { Coord, StationCoord } from "./Nearby";
 
-export const pruneNearbyStations = (stations: StationCoord[], total = 20, uniq = 3): string[] => {
+const openStreetURL = "https://nominatim.openstreetmap.org/reverse"
+
+type ReverseGeocodeResponse = {
+  address: ReverseGeocodeAddress;
+  display_name: string;
+}
+
+type ReverseGeocodeAddress = {
+  road?: string;
+  neighbourhood?: string;
+  quarter?: string;
+  suburb?: string;
+  hamlet?: string;
+  borough?: string;
+  city?: string;
+  town?: string;
+  village?: string;
+  state?: string;
+};
+
+type LocationDisplay = {
+  locality: string;
+  region: string;
+}
+
+export const pruneNearbyStations = (stations: StationCoord[], total = 25, uniq = 3): string[] => {
   const routeCount: Record<string, number> = {};
   const result: string[] = [];
 
@@ -24,4 +49,34 @@ export const pruneNearbyStations = (stations: StationCoord[], total = 20, uniq =
   }
 
   return result;
+}
+
+export const reverseGeocode = async (coord: Coord): Promise<ReverseGeocodeAddress> => {
+  const url = `${openStreetURL}?format=jsonv2&lat=${coord.latitude}&lon=${coord.longitude}`;
+
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data: ReverseGeocodeResponse = await response.json();
+    return data.address;
+  } catch (error) {
+    console.error("Error using reverse geocode API:", error);
+    throw error;
+  }
+}
+
+export const displayGeocode = (address: ReverseGeocodeAddress): LocationDisplay => {
+  const road = address.road || '';
+  const hood = address.neighbourhood || address.quarter || '';
+  const burb = address.suburb || address.hamlet || address.borough || '';
+  const city = address.city || address.town || address.village || '';
+  const state = address.state || '';
+
+  const locality = [road, hood].filter(Boolean).join(' - ');
+  const cityState = [city, state].filter(Boolean).join(', ');
+  const region = [burb, cityState].filter(Boolean).join(' - ');
+
+  return { locality, region };
 }

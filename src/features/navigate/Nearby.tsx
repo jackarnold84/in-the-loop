@@ -2,13 +2,14 @@ import { orderByDistance } from 'geolib';
 import React from 'react';
 import { FaLocationArrow } from "react-icons/fa6";
 import { MdOutlineWrongLocation } from "react-icons/md";
+import useSWR from 'swr';
 import Container from '../../components/Container';
 import { stationIndex } from '../../config/index';
 import { useAppContext } from '../layout/AppContext';
 import { MenuButton } from '../layout/Navigation';
 import Placeholder from './Placeholder';
 import StationList from './StationList';
-import { pruneNearbyStations } from './nearbyLib';
+import { displayGeocode, pruneNearbyStations, reverseGeocode } from './nearbyLib';
 
 export type Coord = {
   latitude: number;
@@ -34,6 +35,12 @@ const Nearby = () => {
     latitude: value.latitude,
     longitude: value.longitude,
   })) as StationCoord[];
+
+  const { data: geocodeAddress, isLoading: geocodeLoading } = useSWR(
+    location ? ['reverseGeocode', location] : null,
+    () => reverseGeocode(location!)
+  );
+  const locationDisplay = geocodeAddress ? displayGeocode(geocodeAddress) : null;
 
   const fetchLocation = () => {
     setError(null);
@@ -70,7 +77,8 @@ const Nearby = () => {
   React.useEffect(() => {
     if (location) {
       const sortedStations = orderByDistance(location, stationCoords) as StationCoord[];
-      const res = pruneNearbyStations(sortedStations, 20);
+      const res = pruneNearbyStations(sortedStations, 25);
+
       setResults(res);
     }
   }, [location]);
@@ -82,25 +90,27 @@ const Nearby = () => {
           icon={<FaLocationArrow />}
           size="large"
           onClick={fetchLocation}
-          loading={loading}
+          loading={loading || geocodeLoading}
         >
-          Search Nearby Stops
+          Nearby Stops
         </MenuButton>
       </Container>
 
-      {/* <Container centered style={{ fontSize: '14px' }}>
-        <div>South Ashland Avenue - Near West Side</div>
-        <div>Chicago, IL</div>
-      </Container> */}
+      {locationDisplay && (
+        <Container centered style={{ fontSize: '14px' }}>
+          <div>{locationDisplay.locality}</div>
+          <div>{locationDisplay.region}</div>
+        </Container>
+      )}
 
       <Container>
-        {error ? (
+        {error && (
           <Placeholder description={error} icon={<MdOutlineWrongLocation />} />
-        ) : (
+        )}
+        {!error && !geocodeLoading && (
           <StationList stationIds={results} />
         )}
       </Container>
-
     </Container>
   );
 };
