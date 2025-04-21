@@ -33,7 +33,7 @@ type ArrivalsProps = {
 
 const Arrivals: React.FC<ArrivalsProps> = ({ tracks, title, subtitle, destinations, routeFilter }) => {
   const [selectedDestination, setSelectedDestination] = React.useState(destinations?.[0]?.stopId || '');
-  // TODO: add route filter
+  const [selectedRoutes, setSelectedRoutes] = React.useState(routeFilter?.map(route => route.id) || []);
   const [isLive, setIsLive] = React.useState(false);
   const [isFirstLoad, setIsFirstLoad] = React.useState(true);
 
@@ -48,7 +48,13 @@ const Arrivals: React.FC<ArrivalsProps> = ({ tracks, title, subtitle, destinatio
     refreshInterval: REFRESH_INTERVAL,
     keepPreviousData: true,
   });
-  const nextArrivalsList = data?.response;
+
+  const nextArrivalsList = data?.response?.map(arrivalData =>
+    arrivalData.filter(arrival =>
+      !routeFilter || selectedRoutes.includes(arrival.route)
+    )
+  );
+
   const lastUpdated = data?.lastUpdated;
   const hasArrivals = nextArrivalsList && nextArrivalsList.length > 0 && nextArrivalsList[0].length > 0;
 
@@ -74,6 +80,10 @@ const Arrivals: React.FC<ArrivalsProps> = ({ tracks, title, subtitle, destinatio
 
   const handleDestinationChange = (value: string) => {
     setSelectedDestination(value);
+  };
+
+  const handleRouteFilterChange = (selectedRoutes: string[]) => {
+    setSelectedRoutes(selectedRoutes);
   };
 
   return (
@@ -102,6 +112,27 @@ const Arrivals: React.FC<ArrivalsProps> = ({ tracks, title, subtitle, destinatio
             {destinations.map((destination) => (
               <Select.Option key={destination.stopId} value={destination.stopId}>
                 {destination.name}
+              </Select.Option>
+            ))}
+          </Select>
+        </Container>
+      )}
+
+      {routeFilter && routeFilter.length > 1 && (
+        <Container bottom={16}>
+          <label className={styles.dropdownLabel}>Routes:</label>
+          <Select
+            mode="multiple"
+            id="route-filter-select"
+            className={styles.fullWidth}
+            value={selectedRoutes}
+            onChange={handleRouteFilterChange}
+            optionLabelProp="value"
+            allowClear showArrow showSearch={false}
+          >
+            {routeFilter.map(route => (
+              <Select.Option key={route.id} value={route.id}>
+                {route.name}
               </Select.Option>
             ))}
           </Select>

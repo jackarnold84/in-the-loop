@@ -10,6 +10,7 @@ export interface Arrival {
     time: string;
   };
   run: string;
+  route: string;
   transitType: 'train' | 'bus';
 }
 
