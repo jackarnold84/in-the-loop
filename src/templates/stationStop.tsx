@@ -33,10 +33,13 @@ const StationStopTrackPage = ({ pageContext }: { pageContext: PageContext }) => 
     routes: tracks.map(track => track.route),
     stopId: tracks[0].stop,
   }
-  const routeFilter = tracks.map(track => ({
+  const routes = tracks.map(track => ({
     id: track.route,
     name: track.type == "bus" ? `${track.route} - ${track.routeName}` : track.routeName,
   }));
+  const uniqueRoutes = Array.from(
+    new Map(routes.map(item => [item.id, item])).values()
+  );
 
   return (
     <Layout>
@@ -45,7 +48,7 @@ const StationStopTrackPage = ({ pageContext }: { pageContext: PageContext }) => 
         tracks={[trackInput]}
         title={station.name}
         subtitle={getDirectionText(tracks)}
-        routeFilter={routeFilter}
+        routeFilter={uniqueRoutes}
       />
     </Layout>
   );

@@ -36,10 +36,11 @@ const Nearby = () => {
     longitude: value.longitude,
   })) as StationCoord[];
 
-  const { data: geocodeAddress, isLoading: geocodeLoading } = useSWR(
+  const { data: geocodeAddress, isLoading } = useSWR(
     location ? ['reverseGeocode', location] : null,
     () => reverseGeocode(location!)
   );
+  const geocodeLoading = !geocodeAddress && isLoading;
   const locationDisplay = geocodeAddress ? displayGeocode(geocodeAddress) : null;
 
   const fetchLocation = () => {
