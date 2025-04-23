@@ -2,7 +2,6 @@ package track
 
 import (
 	"fmt"
-	"multi-lambda/internal/model"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -17,7 +16,7 @@ func TestGetTrips(t *testing.T) {
 
 		for _, trip := range trips {
 			assert.Equal(t, "Clinton", trip.Arrival.StopName)
-			if trip.Departure != (model.Arrival{}) {
+			if trip.Departure != nil {
 				assert.Equal(t, "Clark/Lake", trip.Departure.StopName)
 				assert.True(t, trip.Departure.Time > trip.Arrival.Time)
 			}
@@ -34,7 +33,7 @@ func TestGetTrips(t *testing.T) {
 
 		for _, trip := range trips {
 			assert.Equal(t, "Ashland & Adams", trip.Arrival.StopName)
-			if trip.Departure != (model.Arrival{}) {
+			if trip.Departure != nil {
 				assert.Equal(t, "Ashland & Lake (Green Line)", trip.Departure.StopName)
 				assert.True(t, trip.Departure.Time > trip.Arrival.Time)
 			}
