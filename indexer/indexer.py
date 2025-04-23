@@ -128,6 +128,7 @@ for x in track_data:
         }
     elif pd.notna(x['stop_headsign']) and x['stop_headsign'] not in track_index[track_id]['headsign']:
         track_index[track_id]['headsign'].append(x['stop_headsign'])
+    track_index[track_id]['headsign'].sort(key=lambda h: (len(h), h))
 
     if station_id in station_index and haversine_distance(
         station_index[station_id]['latitude'],
