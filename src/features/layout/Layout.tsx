@@ -1,7 +1,7 @@
 import { GithubFilled, MenuOutlined } from "@ant-design/icons"
 import { Button, ConfigProvider, Drawer } from "antd"
-import { Link } from "gatsby"
 import * as React from "react"
+import Link from "../../components/Link"
 import '../../styles/global.css'
 import * as styles from "./layout.module.css"
 import Navigation from "./Navigation"
@@ -69,7 +69,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </footer>
         </div>
 
-        <Drawer title="Gatsby Template" onClose={closeMenu} open={openMenu} placement="top">
+        <Drawer title="EL Track" onClose={closeMenu} open={openMenu} placement="top">
           <Navigation closeMenu={closeMenu} />
         </Drawer>
       </ConfigProvider>

@@ -4,6 +4,7 @@ public
 package-lock.json
 .aws-sam/
 .out/
+.gtfs_data/
 dev/
 
 # contains credentials
@@ -22,6 +23,7 @@ __pycache__/
 .DS_Store
 *.egg-info/
 .mypy_cache/
+*.pyc
 
 # go
 bin/

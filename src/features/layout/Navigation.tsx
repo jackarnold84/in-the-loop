@@ -1,9 +1,8 @@
 import { Button, List } from "antd"
-import { Link } from "gatsby"
 import * as React from "react"
-import { FaHome } from "react-icons/fa"
-import { FaTrainSubway } from "react-icons/fa6"
+import { FaHeart, FaHome, FaLocationArrow, FaSearch } from "react-icons/fa"
 import styled from "styled-components"
+import Link from "../../components/Link"
 import * as styles from "./layout.module.css"
 
 export const MenuButton = styled(Button)`
@@ -23,7 +22,9 @@ interface NavigationProps {
 const Navigation: React.FC<NavigationProps> = ({ closeMenu }) => {
   const links = [
     { to: "/", icon: <FaHome style={{ verticalAlign: 'middle' }} />, text: "Home" },
-    { to: "/track", icon: <FaTrainSubway style={{ verticalAlign: 'middle' }} />, text: "Track" },
+    { to: "/favorites", icon: <FaHeart style={{ verticalAlign: 'middle' }} />, text: "Favorites" },
+    { to: "/search", icon: <FaSearch style={{ verticalAlign: 'middle' }} />, text: "Search" },
+    { to: "/nearby", icon: <FaLocationArrow style={{ verticalAlign: 'middle' }} />, text: "Nearby" },
   ]
 
   return (

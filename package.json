@@ -13,13 +13,14 @@
     "build": "gatsby build",
     "serve": "gatsby serve -H 0.0.0.0",
     "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build --prefix-paths && node deploy.js",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@ant-design/icons": "^4.8.3",
     "antd": "^4.24.16",
     "babel-plugin-styled-components": "^2.1.4",
+    "fuse.js": "^7.1.0",
     "gatsby": "^5.14.1",
     "gatsby-plugin-antd": "^2.2.0",
     "gatsby-plugin-image": "^3.14.0",
@@ -28,6 +29,7 @@
     "gatsby-plugin-sharp": "^5.14.0",
     "gatsby-plugin-styled-components": "^6.14.0",
     "gatsby-source-filesystem": "^5.14.0",
+    "geolib": "^3.3.4",
     "gh-pages": "^6.3.0",
     "less": "^4.2.2",
     "mini-css-extract-plugin": "^2.9.2",

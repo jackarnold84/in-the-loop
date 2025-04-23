@@ -1,9 +1,9 @@
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
-import { FaTrainSubway } from "react-icons/fa6"
+import { FaHeart, FaLocationArrow, FaSearch } from "react-icons/fa"
 import styled from "styled-components"
 import Container from "../../components/Container"
+import Link from "../../components/Link"
 import { MenuButton } from "../layout/Navigation"
 
 const NavLink = styled(Link)`
@@ -19,7 +19,9 @@ const BetaText = styled.div`
 
 const Home = () => {
   const links = [
-    { to: "/track", icon: <FaTrainSubway />, text: "Track" },
+    { to: "/favorites", icon: <FaHeart />, text: "Favorites" },
+    { to: "/search", icon: <FaSearch />, text: "Search" },
+    { to: "/nearby", icon: <FaLocationArrow />, text: "Nearby" },
   ]
 
   return (

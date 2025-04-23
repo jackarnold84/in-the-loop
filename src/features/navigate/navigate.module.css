@@ -1,0 +1,45 @@
+.rowLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(5, 5, 5, 0.10);
+}
+
+.rowLink:hover {
+    color: inherit;
+    background-color: #fafafa;
+}
+
+.rowLink:first-of-type {
+    border-top: 1px solid rgba(5, 5, 5, 0.10);
+}
+
+.slimRow {
+    padding: 10px 0;
+}
+
+.iconTextWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.iconTextWrapper:last-child {
+    margin-bottom: 0;
+}
+
+.iconHolder {
+    width: 50px;
+}
+
+.iconFlexHolder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 4px;
+}
+
+.semiBold {
+    font-weight: 600;
+}

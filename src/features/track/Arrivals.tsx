@@ -1,12 +1,12 @@
-import { ArrowLeftOutlined, WarningFilled } from "@ant-design/icons";
-import { Button, Empty, Result, Select, Skeleton } from "antd";
-import { Link } from "gatsby";
+import { WarningFilled } from "@ant-design/icons";
+import { Empty, Result, Select, Skeleton } from "antd";
 import * as React from "react";
 import { GiParkBench } from "react-icons/gi";
 import useSWR from "swr";
 import Container from "../../components/Container";
 import Live from "../../components/Live";
-import { tripCatalog } from "../../config/catalog";
+import Span from "../../components/Span";
+import { Destination, TransitOption } from "../../config/catalog";
 import ArrivalsTable from "./ArrivalsTable";
 import * as styles from "./track.module.css";
 import { trackArrivalsFetcher } from "./trackApi";
@@ -18,28 +18,43 @@ const isRecentUpdate = (lastUpdated: Date | undefined) => {
   return !!lastUpdated && (new Date().getTime() - lastUpdated.getTime()) < LIVE_THRESHOLD;
 }
 
+type Route = {
+  id: string;
+  name: string;
+}
+
 type ArrivalsProps = {
-  tripKey: string;
+  tracks: TransitOption[];
+  title: string;
+  subtitle?: string;
+  destinations?: Destination[];
+  routeFilter?: Route[];
 };
 
-const Arrivals: React.FC<ArrivalsProps> = ({ tripKey }) => {
-  const trip = tripCatalog[tripKey];
-  const [selectedDestination, setSelectedDestination] = React.useState(trip.destinations[0].stopId);
+const Arrivals: React.FC<ArrivalsProps> = ({ tracks, title, subtitle, destinations, routeFilter }) => {
+  const [selectedDestination, setSelectedDestination] = React.useState(destinations?.[0]?.stopId || '');
+  const [selectedRoutes, setSelectedRoutes] = React.useState(routeFilter?.map(route => route.id) || []);
   const [isLive, setIsLive] = React.useState(false);
   const [isFirstLoad, setIsFirstLoad] = React.useState(true);
 
-  const trackReqs = trip.options.map(option => ({
-    transitType: option.transitType,
-    routes: option.routes,
-    arrival: option.stopId,
-    departure: selectedDestination,
+  const trackReqs = tracks.map(track => ({
+    transitType: track.transitType,
+    routes: track.routes,
+    arrival: track.stopId,
+    departure: selectedDestination || track.stopId, // TODO: make optional
   }));
 
   const { data, error, isValidating, mutate } = useSWR(trackReqs, trackArrivalsFetcher, {
     refreshInterval: REFRESH_INTERVAL,
     keepPreviousData: true,
   });
-  const nextArrivalsList = data?.response;
+
+  const nextArrivalsList = data?.response?.map(arrivalData =>
+    arrivalData.filter(arrival =>
+      !routeFilter || selectedRoutes.includes(arrival.route)
+    )
+  );
+
   const lastUpdated = data?.lastUpdated;
   const hasArrivals = nextArrivalsList && nextArrivalsList.length > 0 && nextArrivalsList[0].length > 0;
 
@@ -67,38 +82,62 @@ const Arrivals: React.FC<ArrivalsProps> = ({ tripKey }) => {
     setSelectedDestination(value);
   };
 
+  const handleRouteFilterChange = (selectedRoutes: string[]) => {
+    setSelectedRoutes(selectedRoutes);
+  };
+
   return (
     <Container>
-      <Container top={0}>
-        <Link to="/track/" className={styles.backLink}>
-          <Button type="link" icon={<ArrowLeftOutlined />} className={styles.backButton}>
-            Select New Trip
-          </Button>
-        </Link>
-      </Container>
-
       <Container bottom={16}>
         <div className={styles.titleContainer}>
-          <h2>{trip.name}</h2>
-          <Live isLive={isLive} onClick={handleLiveClick} />
+          <Span size={0}>
+            <h2 className={styles.titleText}>{title}</h2>
+            {subtitle && <div>{subtitle}</div>}
+          </Span>
+          <Span left={10} right={0}>
+            <Live isLive={isLive} onClick={handleLiveClick} />
+          </Span>
         </div>
       </Container>
 
-      <Container bottom={16}>
-        <label className={styles.dropdownLabel}>Destination Stop:</label>
-        <Select
-          id="destination-select"
-          defaultValue={trip.destinations[0].stopId}
-          className={styles.fullWidth}
-          onChange={handleDestinationChange}
-        >
-          {trip.destinations.map((destination) => (
-            <Select.Option key={destination.stopId} value={destination.stopId}>
-              {destination.name}
-            </Select.Option>
-          ))}
-        </Select>
-      </Container>
+      {destinations && destinations.length && (
+        <Container bottom={16}>
+          <label className={styles.dropdownLabel}>Destination Stop:</label>
+          <Select
+            id="destination-select"
+            className={styles.fullWidth}
+            value={selectedDestination}
+            onChange={handleDestinationChange}
+          >
+            {destinations.map((destination) => (
+              <Select.Option key={destination.stopId} value={destination.stopId}>
+                {destination.name}
+              </Select.Option>
+            ))}
+          </Select>
+        </Container>
+      )}
+
+      {routeFilter && routeFilter.length > 1 && (
+        <Container bottom={16}>
+          <label className={styles.dropdownLabel}>Routes:</label>
+          <Select
+            mode="multiple"
+            id="route-filter-select"
+            className={styles.fullWidth}
+            value={selectedRoutes}
+            onChange={handleRouteFilterChange}
+            optionLabelProp="value"
+            allowClear showArrow showSearch={false}
+          >
+            {routeFilter.map(route => (
+              <Select.Option key={route.id} value={route.id}>
+                {route.name}
+              </Select.Option>
+            ))}
+          </Select>
+        </Container>
+      )}
 
       {error ? (
         <Container>

@@ -1,7 +1,7 @@
 import { List, Tabs } from 'antd';
-import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
+import Link from '../../components/Link';
 import TransitIcon from '../../components/TransitIcon';
 import { tripCatalog, tripIndex } from '../../config/catalog';
 import { useAppContext } from '../layout/AppContext';
@@ -18,7 +18,6 @@ const StyledLink = styled(Link)`
   cursor: pointer;
 
   .list-item {
-    transition: background-color 0.3s;
     padding: 10px;
     border-bottom: 1px solid rgba(5, 5, 5, 0.06) !important;
 
@@ -28,11 +27,11 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const renderTripItem = (key: string) => {
-  const trip = tripCatalog[key];
+const renderTripItem = (tripKey: string) => {
+  const trip = tripCatalog[tripKey];
   return (
     <StyledLink
-      to={`/track/arrivals?key=${key}`}
+      to={`/favorites/${tripKey}`}
     >
       <List.Item className="list-item">
         <List.Item.Meta

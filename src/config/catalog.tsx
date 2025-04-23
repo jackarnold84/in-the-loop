@@ -1,25 +1,25 @@
-type TransitOption = {
+export type TransitOption = {
   transitType: 'train' | 'bus';
   stopId: string;
   routes: string[];
 };
 
-type Destination = {
+export type Destination = {
   name: string;
   stopId: string;
 };
 
-type Trip = {
+export type Trip = {
   name: string;
   options: TransitOption[];
   destinations: Destination[];
 };
 
-type TripCatalog = {
+export type TripCatalog = {
   [key: string]: Trip;
 };
 
-type TripIndex = {
+export type TripIndex = {
   outbound: string[];
   inbound: string[];
 };

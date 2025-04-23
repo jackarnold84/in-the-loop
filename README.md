@@ -26,6 +26,11 @@ https://jackarnold84.github.io/el-track/
 #### Customize Routes
 - update tripCatalog and tripIndex in [catalog.js](src/config/catalog.js)
 
+#### Reindex
+- script to download and reindex all CTA routes and stops (used for searching all stops)
+- run `python -m indexer.indexer download`
+- results are saved to [index/](/src/config/index/)
+
 ### Tracker API
 Located in [service/](service/) directory
 - requirements
