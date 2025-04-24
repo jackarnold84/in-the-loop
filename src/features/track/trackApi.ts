@@ -45,7 +45,6 @@ export async function trackArrivalsFetcher(
       const data = await response.json();
       const arrivals: NextArrivals = data.arrivals;
       arrivals.sort((a, b) => new Date(a.arrival.time).getTime() - new Date(b.arrival.time).getTime());
-      console.log(arrivals)
       return arrivals;
     } catch (error) {
       console.error("Error fetching arrival data:", error);
