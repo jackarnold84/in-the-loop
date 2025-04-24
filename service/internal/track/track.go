@@ -11,10 +11,6 @@ func TrackArrivals(transitType string, routes []string, arrStopID string, depSto
 	if err != nil {
 		return nil, err
 	}
-	destVehicles, err := api.GetStopArrivals(transitType, depStopID)
-	if err != nil {
-		return nil, err
-	}
 
 	tripMap := map[string]model.VehicleTrip{}
 
@@ -27,10 +23,17 @@ func TrackArrivals(transitType string, routes []string, arrStopID string, depSto
 		}
 	}
 
-	for _, dv := range destVehicles {
-		if trip, ok := tripMap[dv.Run]; ok && slices.Contains(routes, dv.Route) {
-			trip.Departure = dv.Arrival
-			tripMap[dv.Run] = trip
+	if depStopID != "" {
+		destVehicles, err := api.GetStopArrivals(transitType, depStopID)
+		if err != nil {
+			return nil, err
+		}
+
+		for _, dv := range destVehicles {
+			if trip, ok := tripMap[dv.Run]; ok && slices.Contains(routes, dv.Route) {
+				trip.Departure = &dv.Arrival
+				tripMap[dv.Run] = trip
+			}
 		}
 	}
 

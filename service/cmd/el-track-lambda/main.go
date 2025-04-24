@@ -16,7 +16,7 @@ type trackArrivalsQuery struct {
 	Transit   string `json:"transit" validate:"oneof=bus train"`
 	Routes    string `json:"routes" validate:"required"`
 	Arrival   string `json:"arrival" validate:"numeric"`
-	Departure string `json:"departure" validate:"numeric"`
+	Departure string `json:"departure" validate:"omitempty,numeric"`
 }
 
 type followVehicleQuery struct {

@@ -29,6 +29,6 @@ type VehicleRoute struct {
 
 type VehicleTrip struct {
 	Vehicle
-	Arrival   Arrival `json:"arrival"`
-	Departure Arrival `json:"departure,omitempty"`
+	Arrival   Arrival  `json:"arrival"`
+	Departure *Arrival `json:"departure,omitempty"`
 }
