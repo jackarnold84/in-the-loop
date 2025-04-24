@@ -20,7 +20,7 @@ interface TrackArrivalsRequest {
   transitType: string;
   routes: string[];
   arrival: string;
-  departure: string;
+  departure?: string;
 }
 
 export async function trackArrivalsFetcher(
@@ -28,7 +28,11 @@ export async function trackArrivalsFetcher(
 ): Promise<{ response: NextArrivals[], lastUpdated: Date }> {
   const fetchPromises = trackReqs.map(async ({ transitType, routes, arrival, departure }) => {
     const routesParam = routes.join(',');
-    const url = `${endpointUrl}/track-arrivals?transit=${transitType}&routes=${routesParam}&arrival=${arrival}&departure=${departure}`;
+    const url = new URL(`${endpointUrl}/track-arrivals`);
+    url.searchParams.set('transit', transitType);
+    url.searchParams.set('routes', routesParam);
+    url.searchParams.set('arrival', arrival);
+    departure && url.searchParams.set('departure', departure);
 
     try {
       console.log(`fetch track-arrivals: ${transitType} ${routesParam} ${arrival} to ${departure}`);
@@ -41,6 +45,7 @@ export async function trackArrivalsFetcher(
       const data = await response.json();
       const arrivals: NextArrivals = data.arrivals;
       arrivals.sort((a, b) => new Date(a.arrival.time).getTime() - new Date(b.arrival.time).getTime());
+      console.log(arrivals)
       return arrivals;
     } catch (error) {
       console.error("Error fetching arrival data:", error);

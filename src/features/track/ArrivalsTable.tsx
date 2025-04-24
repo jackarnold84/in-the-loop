@@ -47,9 +47,12 @@ const expandedRowRender = (record: Arrival): React.ReactNode => {
       dataIndex: ['departure', 'time'],
       key: 'reachDestination',
       width: 225,
-      render: (text: string) => <span>
-        Arrive at <TimeDisplay dateStr={text} />
-      </span>,
+      render: (text: string) =>
+        record.departure ? (
+          <span>
+            Arrive at <TimeDisplay dateStr={text} />
+          </span>
+        ) : null,
     },
   ];
 

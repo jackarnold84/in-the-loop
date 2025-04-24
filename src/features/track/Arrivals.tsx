@@ -41,7 +41,7 @@ const Arrivals: React.FC<ArrivalsProps> = ({ tracks, title, subtitle, destinatio
     transitType: track.transitType,
     routes: track.routes,
     arrival: track.stopId,
-    departure: selectedDestination || track.stopId, // TODO: make optional
+    departure: selectedDestination || undefined,
   }));
 
   const { data, error, isValidating, mutate } = useSWR(trackReqs, trackArrivalsFetcher, {
