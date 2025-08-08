@@ -25,4 +25,4 @@ const StationPage = ({ pageContext }: { pageContext: PageContext }) => {
 
 export default StationPage;
 
-export const Head = () => <title>El Track</title>
+export const Head = () => <title>In The Loop</title>

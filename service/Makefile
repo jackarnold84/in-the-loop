@@ -3,10 +3,10 @@ ENVIRON=events/environment.json
 
 default: build
 
-build: build-el-track-lambda
+build: build-in-the-loop-lambda
 
-build-el-track-lambda:
-	go build -o .out/el-track-lambda cmd/el-track-lambda/main.go
+build-in-the-loop-lambda:
+	go build -o .out/in-the-loop-lambda cmd/in-the-loop-lambda/main.go
 
 test:
 	go test ./... -cover
@@ -24,7 +24,7 @@ sam: build
 	sam build
 
 invoke: sam
-	sam local invoke ElTrackLambda --event $(EVENT) --env-vars $(ENVIRON)
+	sam local invoke InTheLoopLambda --event $(EVENT) --env-vars $(ENVIRON)
 
 serve-local: sam
 	ENV=local sam local start-lambda --env-vars $(ENVIRON)

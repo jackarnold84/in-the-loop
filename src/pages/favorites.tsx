@@ -12,4 +12,4 @@ const FavoritesPage = () => {
 
 export default FavoritesPage
 
-export const Head = () => <title>El Track - Favorites</title>
+export const Head = () => <title>In The Loop - Favorites</title>

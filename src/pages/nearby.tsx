@@ -12,4 +12,4 @@ const NearbyPage = () => {
 
 export default NearbyPage
 
-export const Head = () => <title>El Track - Nearby</title>
+export const Head = () => <title>In The Loop - Nearby</title>

@@ -24,4 +24,4 @@ const NotFoundPage = () => {
 
 export default NotFoundPage
 
-export const Head = () => <title>El Track - Not Found</title>
+export const Head = () => <title>In The Loop - Not Found</title>

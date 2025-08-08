@@ -37,7 +37,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               </div>
               <h3 className={styles.title}>
                 <Link to="/" className={styles.link}>
-                  EL Track
+                  In The Loop
                 </Link>
               </h3>
             </div>
@@ -60,7 +60,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   size="small"
                   className={styles.githubButton}
                   icon={<GithubFilled />}
-                  href="https://github.com/jackarnold84/el-track"
+                  href="https://github.com/jackarnold84/in-the-loop"
                 >
                   Github
                 </Button>
@@ -69,7 +69,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </footer>
         </div>
 
-        <Drawer title="EL Track" onClose={closeMenu} open={openMenu} placement="top">
+        <Drawer title="In The Loop" onClose={closeMenu} open={openMenu} placement="top">
           <Navigation closeMenu={closeMenu} />
         </Drawer>
       </ConfigProvider>

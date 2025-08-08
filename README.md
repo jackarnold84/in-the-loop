@@ -1,11 +1,11 @@
-# El Track
+# In The Loop
 
 CTA Train and Bus Tracker
 
 Real-time arrival data for selected CTA train and bus routes. Gives second-level
 precision with a fast, lightweight UI.
 
-https://jackarnold84.github.io/el-track/
+https://jackarnold84.github.io/in-the-loop/
 
 ## Develop
 

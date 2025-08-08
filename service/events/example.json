@@ -1,5 +1,5 @@
 {
-    "path": "/el-track/track-arrivals",
+    "path": "/in-the-loop/track-arrivals",
     "httpMethod": "GET",
     "queryStringParameters": {
         "transit": "train",

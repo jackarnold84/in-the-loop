@@ -2,10 +2,9 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `El Track`,
-    siteUrl: `https://jackarnold84.github.io/el-track/`
+    title: `In The Loop`,
+    siteUrl: `https://intheloop.jarno.site`
   },
-  pathPrefix: "/el-track",
   plugins: [
     {
       resolve: 'gatsby-plugin-antd',
@@ -41,8 +40,8 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "El Track",
-        short_name: "El Track",
+        name: "In The Loop",
+        short_name: "In The Loop",
         start_url: "/",
         background_color: "#2166b1",
         theme_color: "#2166b1",
