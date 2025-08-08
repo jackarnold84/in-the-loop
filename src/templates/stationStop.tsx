@@ -56,4 +56,4 @@ const StationStopTrackPage = ({ pageContext }: { pageContext: PageContext }) => 
 
 export default StationStopTrackPage;
 
-export const Head = () => <title>El Track</title>
+export const Head = () => <title>In The Loop</title>

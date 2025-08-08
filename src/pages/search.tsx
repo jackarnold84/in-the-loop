@@ -12,4 +12,4 @@ const SearchPage = () => {
 
 export default SearchPage
 
-export const Head = () => <title>El Track - Search</title>
+export const Head = () => <title>In The Loop - Search</title>

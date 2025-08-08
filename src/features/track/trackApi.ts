@@ -1,4 +1,4 @@
-const endpointUrl = "https://w2blpi2104.execute-api.us-east-2.amazonaws.com/Prod/el-track";
+const endpointUrl = "https://w2blpi2104.execute-api.us-east-2.amazonaws.com/Prod/in-the-loop";
 
 export interface Arrival {
   arrival: {
