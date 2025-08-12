@@ -1,4 +1,4 @@
-const endpointUrl = "https://w2blpi2104.execute-api.us-east-2.amazonaws.com/Prod/in-the-loop";
+const endpointUrl = "https://9fqgf0uli3.execute-api.us-east-2.amazonaws.com/Prod/in-the-loop";
 
 export interface Arrival {
   arrival: {
