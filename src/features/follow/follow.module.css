@@ -1,0 +1,47 @@
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titleText {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.runNumber {
+  margin-left: 10px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.alignLeft {
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.errorTitle {
+  font-size: 1.25rem;
+  color: inherit;
+}
+
+.warningIcon {
+  font-size: 3rem;
+  color: #faad14;
+}
+
+.errorIcon {
+  font-size: 3rem;
+  color: #ff4d4f;
+}

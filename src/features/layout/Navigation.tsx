@@ -1,6 +1,6 @@
 import { Button, List } from "antd"
 import * as React from "react"
-import { FaHeart, FaHome, FaLocationArrow, FaSearch } from "react-icons/fa"
+import { FaHeart, FaHome, FaLocationArrow, FaRoute, FaSearch } from "react-icons/fa"
 import styled from "styled-components"
 import Link from "../../components/Link"
 import * as styles from "./layout.module.css"
@@ -25,6 +25,7 @@ const Navigation: React.FC<NavigationProps> = ({ closeMenu }) => {
     { to: "/favorites", icon: <FaHeart style={{ verticalAlign: 'middle' }} />, text: "Favorites" },
     { to: "/search", icon: <FaSearch style={{ verticalAlign: 'middle' }} />, text: "Search" },
     { to: "/nearby", icon: <FaLocationArrow style={{ verticalAlign: 'middle' }} />, text: "Nearby" },
+    { to: "/follow", icon: <FaRoute style={{ verticalAlign: 'middle' }} />, text: "Follow" },
   ]
 
   return (

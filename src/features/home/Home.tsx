@@ -1,6 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
-import { FaHeart, FaLocationArrow, FaSearch } from "react-icons/fa"
+import { FaHeart, FaLocationArrow, FaRoute, FaSearch } from "react-icons/fa"
 import styled from "styled-components"
 import Container from "../../components/Container"
 import Link from "../../components/Link"
@@ -22,6 +22,7 @@ const Home = () => {
     { to: "/favorites", icon: <FaHeart />, text: "Favorites" },
     { to: "/search", icon: <FaSearch />, text: "Search" },
     { to: "/nearby", icon: <FaLocationArrow />, text: "Nearby" },
+    { to: "/follow", icon: <FaRoute />, text: "Follow" },
   ]
 
   return (
