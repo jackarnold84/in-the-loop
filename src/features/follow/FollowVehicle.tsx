@@ -7,7 +7,11 @@ import Container from '../../components/Container';
 import Placeholder from '../navigate/Placeholder';
 import FollowResults from './FollowResults';
 
-const FollowVehicle = () => {
+type FollowVehicleProps = {
+  showSearch?: boolean;
+};
+
+const FollowVehicle: React.FC<FollowVehicleProps> = ({ showSearch = true }) => {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const runNumberFromUrl = params.get('run') || '';
@@ -67,15 +71,17 @@ const FollowVehicle = () => {
 
   return (
     <Container width={600}>
-      <Container>
-        <Input.Search
-          placeholder="Enter run number"
-          value={searchValue}
-          size="large"
-          allowClear autoFocus
-          onSearch={onSearch} onChange={onChange}
-        />
-      </Container>
+      {showSearch && (
+        <Container>
+          <Input.Search
+            placeholder="Enter run number"
+            value={searchValue}
+            size="large"
+            allowClear autoFocus
+            onSearch={onSearch} onChange={onChange}
+          />
+        </Container>
+      )}
 
       <Container size={16}>
         {runNumber === "" ? (
