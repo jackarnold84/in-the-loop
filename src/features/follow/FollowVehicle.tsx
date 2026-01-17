@@ -79,6 +79,7 @@ const FollowVehicle: React.FC<FollowVehicleProps> = ({ showSearch = true }) => {
             size="large"
             allowClear autoFocus
             onSearch={onSearch} onChange={onChange}
+            inputMode="numeric"
           />
         </Container>
       )}
