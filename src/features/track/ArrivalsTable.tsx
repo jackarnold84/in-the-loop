@@ -1,7 +1,8 @@
-import { Table } from "antd";
+import { Button, Table } from "antd";
 import { ColumnType } from "antd/lib/table";
 import * as React from "react";
 import Countdown from "../../components/Countdown";
+import Link from "../../components/Link";
 import TimeDisplay from "../../components/TimeDisplay";
 import TransitIcon from "../../components/TransitIcon";
 import { Arrival, NextArrivals } from "./trackApi";
@@ -35,42 +36,53 @@ const columns: ColumnType<Arrival>[] = [
   },
 ];
 
-const expandedRowRender = (record: Arrival): React.ReactNode => {
-  const expandedColumns: ColumnType<Arrival>[] = [
-    {
-      dataIndex: 'run',
-      key: 'run',
-      width: 75,
-      render: (text: string) => `#${text}`,
-    },
-    {
-      dataIndex: ['departure', 'time'],
-      key: 'reachDestination',
-      width: 225,
-      render: (text: string) =>
-        record.departure ? (
-          <span>
-            Arrive at <TimeDisplay dateStr={text} />
-          </span>
-        ) : null,
-    },
-  ];
-
-  const expandedData = [{ ...record }];
-  return (
-    <Table
-      columns={expandedColumns}
-      dataSource={expandedData}
-      pagination={false}
-      showHeader={false}
-      size="small"
-      rowKey="run"
-    />
-  );
-};
-
 const ArrivalsTable: React.FC<ArrivalsTableProps> = ({ nextArrivals }) => {
   const [expandedRowKeys, setExpandedRowKeys] = React.useState<string[]>([]);
+
+  const expandedRowRender = (record: Arrival): React.ReactNode => {
+    const expandedColumns: ColumnType<Arrival>[] = [
+      {
+        dataIndex: 'run',
+        key: 'run',
+        width: 75,
+        render: (text: string) => `#${text}`,
+      },
+      {
+        dataIndex: ['departure', 'time'],
+        key: 'reachDestination',
+        width: 150,
+        render: (text: string) =>
+          record.departure ? (
+            <span>
+              Arrive <TimeDisplay dateStr={text} />
+            </span>
+          ) : null,
+      },
+      {
+        key: 'follow',
+        width: 150,
+        render: () => (
+          <Link to={`/follow?run=${record.run}`} state={{ fromArrivals: true }}>
+            <Button type="link">
+              Follow
+            </Button>
+          </Link>
+        ),
+      },
+    ];
+
+    const expandedData = [{ ...record }];
+    return (
+      <Table
+        columns={expandedColumns}
+        dataSource={expandedData}
+        pagination={false}
+        showHeader={false}
+        size="small"
+        rowKey="run"
+      />
+    );
+  };
 
   const handleRowClick = (record: Arrival): void => {
     setExpandedRowKeys((prevKeys) =>

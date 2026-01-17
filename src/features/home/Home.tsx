@@ -1,6 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
-import { FaHeart, FaLocationArrow, FaSearch } from "react-icons/fa"
+import { FaHeart, FaLocationArrow, FaRoute, FaSearch } from "react-icons/fa"
 import styled from "styled-components"
 import Container from "../../components/Container"
 import Link from "../../components/Link"
@@ -12,9 +12,9 @@ const NavLink = styled(Link)`
   margin: 8px 0;
 `;
 
-const BetaText = styled.div`
-  font-size: 12px;
-  font-weight: 800;
+const Title = styled.h2`
+  font-weight: 700;
+  margin-bottom: 0px;
 `;
 
 const Home = () => {
@@ -22,6 +22,7 @@ const Home = () => {
     { to: "/favorites", icon: <FaHeart />, text: "Favorites" },
     { to: "/search", icon: <FaSearch />, text: "Search" },
     { to: "/nearby", icon: <FaLocationArrow />, text: "Nearby" },
+    { to: "/follow", icon: <FaRoute />, text: "Follow" },
   ]
 
   return (
@@ -34,9 +35,9 @@ const Home = () => {
           layout="fullWidth"
         />
 
-        <Container size={24}>
-          <div>Track arrivals of elevated trains and busses in Chicago</div>
-          <BetaText>BETA</BetaText>
+        <Container top={16}>
+          <Title>IN THE LOOP</Title>
+          <div>Chicago train and bus tracker</div>
         </Container>
       </Container>
 
