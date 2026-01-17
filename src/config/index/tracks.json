@@ -834,17 +834,6 @@
             "Kimball"
         ]
     },
-    "Brown-30051-0": {
-        "type": "train",
-        "route": "Brown",
-        "routeName": "Brown Line",
-        "stop": "30051",
-        "stopName": "State/Lake",
-        "direction": "South",
-        "headsign": [
-            "Kimball"
-        ]
-    },
     "Brown-30070-0": {
         "type": "train",
         "route": "Brown",
@@ -1396,29 +1385,6 @@
         "routeName": "Green Line",
         "stop": "30033",
         "stopName": "Ashland-Lake",
-        "direction": "North",
-        "headsign": [
-            "Harlem/Lake"
-        ]
-    },
-    "Green-30050-0": {
-        "type": "train",
-        "route": "Green",
-        "routeName": "Green Line",
-        "stop": "30050",
-        "stopName": "State/Lake",
-        "direction": "South",
-        "headsign": [
-            "Ashland/63rd",
-            "Cottage Grove"
-        ]
-    },
-    "Green-30051-1": {
-        "type": "train",
-        "route": "Green",
-        "routeName": "Green Line",
-        "stop": "30051",
-        "stopName": "State/Lake",
         "direction": "North",
         "headsign": [
             "Harlem/Lake"
@@ -2047,17 +2013,6 @@
             "Midway"
         ]
     },
-    "Orange-30050-1": {
-        "type": "train",
-        "route": "Orange",
-        "routeName": "Orange Line",
-        "stop": "30050",
-        "stopName": "State/Lake",
-        "direction": "South",
-        "headsign": [
-            "Midway"
-        ]
-    },
     "Orange-30060-1": {
         "type": "train",
         "route": "Orange",
@@ -2350,17 +2305,6 @@
         "routeName": "Pink Line",
         "stop": "30041",
         "stopName": "Damen-Cermak",
-        "direction": "South",
-        "headsign": [
-            "54th/Cermak"
-        ]
-    },
-    "Pink-30050-1": {
-        "type": "train",
-        "route": "Pink",
-        "routeName": "Pink Line",
-        "stop": "30050",
-        "stopName": "State/Lake",
         "direction": "South",
         "headsign": [
             "54th/Cermak"
@@ -2703,17 +2647,6 @@
         "routeName": "Purple Line",
         "stop": "30031",
         "stopName": "LaSalle/Van Buren",
-        "direction": "South",
-        "headsign": [
-            "Linden"
-        ]
-    },
-    "Purple-30050-1": {
-        "type": "train",
-        "route": "Purple",
-        "routeName": "Purple Line",
-        "stop": "30050",
-        "stopName": "State/Lake",
         "direction": "South",
         "headsign": [
             "Linden"
@@ -3954,17 +3887,6 @@
         "routeName": "Bronzeville/Union Station",
         "stop": "1108",
         "stopName": "Adams & S. Wacker",
-        "direction": "North",
-        "headsign": [
-            "Union Station"
-        ]
-    },
-    "1-12713-1": {
-        "type": "bus",
-        "route": "1",
-        "routeName": "Bronzeville/Union Station",
-        "stop": "12713",
-        "stopName": "Adams & Canal",
         "direction": "North",
         "headsign": [
             "Union Station"
@@ -17287,7 +17209,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -17300,7 +17221,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -17324,7 +17244,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -17348,7 +17267,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -17477,7 +17395,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -17643,7 +17560,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -17667,7 +17583,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -17702,7 +17617,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -17783,7 +17697,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -17819,7 +17732,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -17843,7 +17755,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -17878,7 +17789,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -17950,7 +17860,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -17974,7 +17883,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -17999,7 +17907,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -18012,7 +17919,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -18037,7 +17943,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -18096,7 +18001,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -18157,7 +18061,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -18170,7 +18073,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -18183,7 +18085,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -18196,7 +18097,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -18245,7 +18145,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -18258,7 +18157,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -18271,7 +18169,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -18284,7 +18181,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -18297,7 +18193,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -18310,7 +18205,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -18323,7 +18217,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -18378,18 +18271,6 @@
         "routeName": "Halsted",
         "stop": "5500",
         "stopName": "Milwaukee & Erie",
-        "direction": "South",
-        "headsign": [
-            "79th",
-            "Root"
-        ]
-    },
-    "8-5502-0": {
-        "type": "bus",
-        "route": "8",
-        "routeName": "Halsted",
-        "stop": "5502",
-        "stopName": "Milwaukee & Grand/Halsted (Blue Line)",
         "direction": "South",
         "headsign": [
             "79th",
@@ -19111,7 +18992,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19124,7 +19004,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19137,7 +19016,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19150,7 +19028,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19163,7 +19040,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19176,7 +19052,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19189,7 +19064,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19202,7 +19076,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19215,7 +19088,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19228,7 +19100,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19241,7 +19112,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19254,7 +19124,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19267,7 +19136,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19280,7 +19148,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19293,7 +19160,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19306,7 +19172,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19319,7 +19184,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19332,7 +19196,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19345,7 +19208,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19358,7 +19220,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19371,7 +19232,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19384,7 +19244,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19397,7 +19256,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19410,7 +19268,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19423,7 +19280,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19436,7 +19292,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19449,7 +19304,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19462,7 +19316,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19475,7 +19328,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19488,7 +19340,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19501,7 +19352,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19514,7 +19364,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19527,7 +19376,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19540,7 +19388,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19565,7 +19412,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19578,7 +19424,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19591,7 +19436,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19604,7 +19448,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19617,7 +19460,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19630,7 +19472,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -19643,7 +19484,6 @@
         "direction": "North",
         "headsign": [
             "Chicago",
-            "Madison",
             "Waveland/Broadway"
         ]
     },
@@ -25871,7 +25711,6 @@
         "stopName": "Indiana & 16th Street",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -25928,7 +25767,6 @@
         "stopName": "Taylor & Damen",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -25941,7 +25779,6 @@
         "stopName": "Ogden & Taylor",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -25954,7 +25791,6 @@
         "stopName": "Ogden & Roosevelt",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -25978,7 +25814,6 @@
         "stopName": "Michigan & 16th Street",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26038,7 +25873,6 @@
         "stopName": "Roosevelt & California",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26062,7 +25896,6 @@
         "stopName": "Indiana & 15th Place",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26097,7 +25930,6 @@
         "stopName": "Roosevelt & Clark",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26121,7 +25953,6 @@
         "stopName": "V.A. Medical Center",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26134,7 +25965,6 @@
         "stopName": "Michigan & 13th Street",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26203,7 +26033,6 @@
         "stopName": "Roosevelt & Loomis",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26216,7 +26045,6 @@
         "stopName": "Roosevelt & State",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26229,7 +26057,6 @@
         "stopName": "Roosevelt Orange/Red/Green Line Station",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26266,7 +26093,6 @@
         "stopName": "Roosevelt & Michigan",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26325,7 +26151,6 @@
         "stopName": "Roosevelt & Halsted",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26399,7 +26224,6 @@
         "stopName": "Roosevelt & Delano",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26436,7 +26260,6 @@
         "stopName": "Roosevelt & Jefferson",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26449,7 +26272,6 @@
         "stopName": "Michigan & 14th Street",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26462,7 +26284,6 @@
         "stopName": "Roosevelt & Ashland",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26876,7 +26697,6 @@
         "stopName": "327 W Roosevelt",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26889,7 +26709,6 @@
         "stopName": "Roosevelt & Canal",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26902,7 +26721,6 @@
         "stopName": "900 W Roosevelt",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26915,7 +26733,6 @@
         "stopName": "Roosevelt & Morgan",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26928,7 +26745,6 @@
         "stopName": "Roosevelt & Blue Island",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26941,7 +26757,6 @@
         "stopName": "Roosevelt & May",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26954,7 +26769,6 @@
         "stopName": "Roosevelt & Racine",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26967,7 +26781,6 @@
         "stopName": "Roosevelt & Throop",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26980,7 +26793,6 @@
         "stopName": "Roosevelt & Paulina",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -26993,7 +26805,6 @@
         "stopName": "Roosevelt & Wood",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -27006,7 +26817,6 @@
         "stopName": "Roosevelt & Wolcott",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -27019,7 +26829,6 @@
         "stopName": "Roosevelt & Damen",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -27032,7 +26841,6 @@
         "stopName": "Roosevelt & Western",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -27045,7 +26853,6 @@
         "stopName": "Roosevelt & Campbell",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -27058,7 +26865,6 @@
         "stopName": "Roosevelt & Talman",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -27071,7 +26877,6 @@
         "stopName": "Roosevelt & Washtenaw",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -27084,7 +26889,6 @@
         "stopName": "Roosevelt & Francisco",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -27097,7 +26901,6 @@
         "stopName": "Roosevelt & Sacramento",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -27110,7 +26913,6 @@
         "stopName": "Roosevelt & Albany",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -27123,7 +26925,6 @@
         "stopName": "Roosevelt & Kedzie",
         "direction": "West",
         "headsign": [
-            "Kedzie",
             "Pulaski",
             "Central/Harrison"
         ]
@@ -32893,7 +32694,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -33146,7 +32946,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -33172,7 +32971,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -33509,7 +33307,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -33846,7 +33643,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -33859,7 +33655,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -33872,7 +33667,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -33885,7 +33679,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -33898,7 +33691,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -33911,7 +33703,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -33924,7 +33715,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -33937,7 +33727,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -33950,7 +33739,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -33963,7 +33751,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -34312,7 +34099,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -34325,7 +34111,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -34338,7 +34123,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -34351,7 +34135,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -34364,7 +34147,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -34377,7 +34159,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -34390,7 +34171,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -34403,7 +34183,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -34416,7 +34195,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -34429,7 +34207,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -34442,7 +34219,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -34455,7 +34231,6 @@
         "direction": "East",
         "headsign": [
             "Kedzie",
-            "Pulaski",
             "Mercy Hospital"
         ]
     },
@@ -35686,17 +35461,6 @@
         "headsign": [
             "Foster",
             "Howard"
-        ]
-    },
-    "22-18769-0": {
-        "type": "bus",
-        "route": "22",
-        "routeName": "Clark",
-        "stop": "18769",
-        "stopName": "Clark & Kinzie",
-        "direction": "South",
-        "headsign": [
-            "Harrison"
         ]
     },
     "22-1877-1": {
@@ -41647,17 +41411,6 @@
             "Navy Pier"
         ]
     },
-    "29-14768-0": {
-        "type": "bus",
-        "route": "29",
-        "routeName": "State",
-        "stop": "14768",
-        "stopName": "State & Pershing",
-        "direction": "South",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
     "29-14775-1": {
         "type": "bus",
         "route": "29",
@@ -43110,17 +42863,6 @@
             "95th Red Line"
         ]
     },
-    "29-2418-0": {
-        "type": "bus",
-        "route": "29",
-        "routeName": "State",
-        "stop": "2418",
-        "stopName": "State & 53rd Street",
-        "direction": "South",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
     "29-2419-0": {
         "type": "bus",
         "route": "29",
@@ -43668,7 +43410,6 @@
         "stopName": "69th Street & State",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -43828,7 +43569,6 @@
         "stopName": "69th Red Line Station",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -43954,7 +43694,6 @@
         "stopName": "South Chicago & Ingleside",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44001,7 +43740,6 @@
         "stopName": "69th Red Line Station",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44013,7 +43751,6 @@
         "stopName": "South Chicago & 73rd Street/Ellis",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44025,7 +43762,6 @@
         "stopName": "South Chicago & 69th Street",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44059,7 +43795,6 @@
         "stopName": "69th Street & Wabash",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44071,7 +43806,6 @@
         "stopName": "69th Street & Michigan",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44083,7 +43817,6 @@
         "stopName": "69th Street & Indiana",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44095,7 +43828,6 @@
         "stopName": "69th Street & Prairie",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44107,7 +43839,6 @@
         "stopName": "69th Street & Calumet",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44119,7 +43850,6 @@
         "stopName": "69th Street & King Drive",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44131,7 +43861,6 @@
         "stopName": "69th Street & Anthony",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44143,7 +43872,6 @@
         "stopName": "Keefe & South Chicago",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44155,7 +43883,6 @@
         "stopName": "South Chicago & 69th Place",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44167,7 +43894,6 @@
         "stopName": "South Chicago & 71st Street/Cottage Grove",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44179,7 +43905,6 @@
         "stopName": "South Chicago & 71st Street/Cottage Grove",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44191,7 +43916,6 @@
         "stopName": "South Chicago & 74th Street/Greenwood",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44203,7 +43927,6 @@
         "stopName": "South Chicago & 75th Street/Woodlawn",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44215,7 +43938,6 @@
         "stopName": "South Chicago & 76th Street",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44227,7 +43949,6 @@
         "stopName": "South Chicago & Dorchester",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44239,7 +43960,6 @@
         "stopName": "South Chicago & Dante",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44251,7 +43971,6 @@
         "stopName": "South Chicago & Harper",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -44263,7 +43982,6 @@
         "stopName": "South Chicago & 79th Street/Stony Island",
         "direction": "South",
         "headsign": [
-            "79th",
             "Hegewisch"
         ]
     },
@@ -52379,17 +52097,6 @@
             "Lake Park"
         ]
     },
-    "39-7734-1": {
-        "type": "bus",
-        "route": "39",
-        "routeName": "Pershing",
-        "stop": "7734",
-        "stopName": "Pershing & King Drive",
-        "direction": "East",
-        "headsign": [
-            "Lake Park"
-        ]
-    },
     "39-7736-1": {
         "type": "bus",
         "route": "39",
@@ -52616,17 +52323,6 @@
         "routeName": "Pershing",
         "stop": "7763",
         "stopName": "Pershing & Wallace",
-        "direction": "West",
-        "headsign": [
-            "St Louis"
-        ]
-    },
-    "39-7767-0": {
-        "type": "bus",
-        "route": "39",
-        "routeName": "Pershing",
-        "stop": "7767",
-        "stopName": "Pershing & Morgan",
         "direction": "West",
         "headsign": [
             "St Louis"
@@ -55322,30 +55018,6 @@
             "Midway Orange Line"
         ]
     },
-    "47-15246-0": {
-        "type": "bus",
-        "route": "47",
-        "routeName": "47th",
-        "stop": "15246",
-        "stopName": "47th Street & Damen",
-        "direction": "West",
-        "headsign": [
-            "Kedzie Orange Line",
-            "Midway Orange Line"
-        ]
-    },
-    "47-15324-1": {
-        "type": "bus",
-        "route": "47",
-        "routeName": "47th",
-        "stop": "15324",
-        "stopName": "47th Street & Wood",
-        "direction": "East",
-        "headsign": [
-            "Ashland",
-            "Lake Park"
-        ]
-    },
     "47-15457-0": {
         "type": "bus",
         "route": "47",
@@ -55673,18 +55345,6 @@
             "Lake Park"
         ]
     },
-    "47-18257-0": {
-        "type": "bus",
-        "route": "47",
-        "routeName": "47th",
-        "stop": "18257",
-        "stopName": "47th Street & Ashland",
-        "direction": "West",
-        "headsign": [
-            "Kedzie Orange Line",
-            "Midway Orange Line"
-        ]
-    },
     "47-18258-1": {
         "type": "bus",
         "route": "47",
@@ -55695,18 +55355,6 @@
         "headsign": [
             "Ashland",
             "Lake Park"
-        ]
-    },
-    "47-18400-0": {
-        "type": "bus",
-        "route": "47",
-        "routeName": "47th",
-        "stop": "18400",
-        "stopName": "47th Street & Hoyne",
-        "direction": "West",
-        "headsign": [
-            "Kedzie Orange Line",
-            "Midway Orange Line"
         ]
     },
     "47-18417-1": {
@@ -56276,54 +55924,6 @@
         "routeName": "47th",
         "stop": "8081",
         "stopName": "47th Street & Laflin",
-        "direction": "West",
-        "headsign": [
-            "Kedzie Orange Line",
-            "Midway Orange Line"
-        ]
-    },
-    "47-8084-0": {
-        "type": "bus",
-        "route": "47",
-        "routeName": "47th",
-        "stop": "8084",
-        "stopName": "47th Street & Wood",
-        "direction": "West",
-        "headsign": [
-            "Kedzie Orange Line",
-            "Midway Orange Line"
-        ]
-    },
-    "47-8085-0": {
-        "type": "bus",
-        "route": "47",
-        "routeName": "47th",
-        "stop": "8085",
-        "stopName": "47th Street & Wolcott",
-        "direction": "West",
-        "headsign": [
-            "Kedzie Orange Line",
-            "Midway Orange Line"
-        ]
-    },
-    "47-8089-0": {
-        "type": "bus",
-        "route": "47",
-        "routeName": "47th",
-        "stop": "8089",
-        "stopName": "47th Street & Oakley",
-        "direction": "West",
-        "headsign": [
-            "Kedzie Orange Line",
-            "Midway Orange Line"
-        ]
-    },
-    "47-8090-0": {
-        "type": "bus",
-        "route": "47",
-        "routeName": "47th",
-        "stop": "8090",
-        "stopName": "47th Street & Western Boulevard",
         "direction": "West",
         "headsign": [
             "Kedzie Orange Line",
@@ -56913,66 +56513,6 @@
             "Lake Park"
         ]
     },
-    "47-8156-1": {
-        "type": "bus",
-        "route": "47",
-        "routeName": "47th",
-        "stop": "8156",
-        "stopName": "47th Street & Western Boulevard",
-        "direction": "East",
-        "headsign": [
-            "Ashland",
-            "Lake Park"
-        ]
-    },
-    "47-8157-1": {
-        "type": "bus",
-        "route": "47",
-        "routeName": "47th",
-        "stop": "8157",
-        "stopName": "47th Street & Oakley",
-        "direction": "East",
-        "headsign": [
-            "Ashland",
-            "Lake Park"
-        ]
-    },
-    "47-8158-1": {
-        "type": "bus",
-        "route": "47",
-        "routeName": "47th",
-        "stop": "8158",
-        "stopName": "47th Street & Hoyne",
-        "direction": "East",
-        "headsign": [
-            "Ashland",
-            "Lake Park"
-        ]
-    },
-    "47-8160-1": {
-        "type": "bus",
-        "route": "47",
-        "routeName": "47th",
-        "stop": "8160",
-        "stopName": "47th Street & Damen",
-        "direction": "East",
-        "headsign": [
-            "Ashland",
-            "Lake Park"
-        ]
-    },
-    "47-8161-1": {
-        "type": "bus",
-        "route": "47",
-        "routeName": "47th",
-        "stop": "8161",
-        "stopName": "47th Street & Wolcott",
-        "direction": "East",
-        "headsign": [
-            "Ashland",
-            "Lake Park"
-        ]
-    },
     "47-8166-1": {
         "type": "bus",
         "route": "47",
@@ -57353,17 +56893,6 @@
             "47th/Western Orange Line"
         ]
     },
-    "48-15246-1": {
-        "type": "bus",
-        "route": "48",
-        "routeName": "South Damen",
-        "stop": "15246",
-        "stopName": "47th Street & Damen",
-        "direction": "North",
-        "headsign": [
-            "47th/Western Orange Line"
-        ]
-    },
     "48-15839-0": {
         "type": "bus",
         "route": "48",
@@ -57398,17 +56927,6 @@
         "headsign": [
             "74th",
             "87th"
-        ]
-    },
-    "48-18400-1": {
-        "type": "bus",
-        "route": "48",
-        "routeName": "South Damen",
-        "stop": "18400",
-        "stopName": "47th Street & Hoyne",
-        "direction": "North",
-        "headsign": [
-            "47th/Western Orange Line"
         ]
     },
     "48-18581-0": {
@@ -57539,18 +57057,6 @@
             "47th/Western Orange Line"
         ]
     },
-    "48-18781-0": {
-        "type": "bus",
-        "route": "48",
-        "routeName": "South Damen",
-        "stop": "18781",
-        "stopName": "Damen & 48th Street",
-        "direction": "South",
-        "headsign": [
-            "74th",
-            "87th"
-        ]
-    },
     "48-18805-1": {
         "type": "bus",
         "route": "48",
@@ -57572,77 +57078,6 @@
         "direction": "North",
         "headsign": [
             "47th/Western Orange Line"
-        ]
-    },
-    "48-8089-1": {
-        "type": "bus",
-        "route": "48",
-        "routeName": "South Damen",
-        "stop": "8089",
-        "stopName": "47th Street & Oakley",
-        "direction": "North",
-        "headsign": [
-            "47th/Western Orange Line"
-        ]
-    },
-    "48-8156-0": {
-        "type": "bus",
-        "route": "48",
-        "routeName": "South Damen",
-        "stop": "8156",
-        "stopName": "47th Street & Western Boulevard",
-        "direction": "South",
-        "headsign": [
-            "74th",
-            "87th"
-        ]
-    },
-    "48-8157-0": {
-        "type": "bus",
-        "route": "48",
-        "routeName": "South Damen",
-        "stop": "8157",
-        "stopName": "47th Street & Oakley",
-        "direction": "South",
-        "headsign": [
-            "74th",
-            "87th"
-        ]
-    },
-    "48-8158-0": {
-        "type": "bus",
-        "route": "48",
-        "routeName": "South Damen",
-        "stop": "8158",
-        "stopName": "47th Street & Hoyne",
-        "direction": "South",
-        "headsign": [
-            "74th",
-            "87th"
-        ]
-    },
-    "48-8160-0": {
-        "type": "bus",
-        "route": "48",
-        "routeName": "South Damen",
-        "stop": "8160",
-        "stopName": "47th Street & Damen",
-        "direction": "South",
-        "headsign": [
-            "74th",
-            "87th"
-        ]
-    },
-    "48-8339-0": {
-        "type": "bus",
-        "route": "48",
-        "routeName": "South Damen",
-        "stop": "8339",
-        "stopName": "Western & 47th Street",
-        "direction": "South",
-        "headsign": [
-            "74th",
-            "87th"
         ]
     },
     "48-8703-0": {
@@ -57746,18 +57181,6 @@
         "routeName": "South Damen",
         "stop": "8710",
         "stopName": "Damen & 80th Street",
-        "direction": "North",
-        "headsign": [
-            "74th",
-            "47th/Western Orange Line"
-        ]
-    },
-    "48-8711-1": {
-        "type": "bus",
-        "route": "48",
-        "routeName": "South Damen",
-        "stop": "8711",
-        "stopName": "Damen & 79th Street",
         "direction": "North",
         "headsign": [
             "74th",
@@ -57985,74 +57408,6 @@
         "direction": "North",
         "headsign": [
             "47th/Western Orange Line"
-        ]
-    },
-    "48-8739-1": {
-        "type": "bus",
-        "route": "48",
-        "routeName": "South Damen",
-        "stop": "8739",
-        "stopName": "Damen & 51st Street",
-        "direction": "North",
-        "headsign": [
-            "47th/Western Orange Line"
-        ]
-    },
-    "48-8740-1": {
-        "type": "bus",
-        "route": "48",
-        "routeName": "South Damen",
-        "stop": "8740",
-        "stopName": "Damen & 50th Street",
-        "direction": "North",
-        "headsign": [
-            "47th/Western Orange Line"
-        ]
-    },
-    "48-8741-1": {
-        "type": "bus",
-        "route": "48",
-        "routeName": "South Damen",
-        "stop": "8741",
-        "stopName": "Damen & 49th Street",
-        "direction": "North",
-        "headsign": [
-            "47th/Western Orange Line"
-        ]
-    },
-    "48-8742-1": {
-        "type": "bus",
-        "route": "48",
-        "routeName": "South Damen",
-        "stop": "8742",
-        "stopName": "Damen & 48th Street",
-        "direction": "North",
-        "headsign": [
-            "47th/Western Orange Line"
-        ]
-    },
-    "48-8767-0": {
-        "type": "bus",
-        "route": "48",
-        "routeName": "South Damen",
-        "stop": "8767",
-        "stopName": "Damen & 49th Street",
-        "direction": "South",
-        "headsign": [
-            "74th",
-            "87th"
-        ]
-    },
-    "48-8768-0": {
-        "type": "bus",
-        "route": "48",
-        "routeName": "South Damen",
-        "stop": "8768",
-        "stopName": "Damen & 50th Street",
-        "direction": "South",
-        "headsign": [
-            "74th",
-            "87th"
         ]
     },
     "48-8770-0": {
@@ -68445,7 +67800,6 @@
         "stopName": "Irving Park & Keystone Terminal",
         "direction": "South",
         "headsign": [
-            "Erie",
             "Ford City",
             "Pulaski Orange Line"
         ]
@@ -83226,18 +82580,6 @@
             "Randolph/Harbor Dr"
         ]
     },
-    "60-18663-1": {
-        "type": "bus",
-        "route": "60",
-        "routeName": "Blue Island/26th",
-        "stop": "18663",
-        "stopName": "Monroe & Clinton",
-        "direction": "East",
-        "headsign": [
-            "Washington/State",
-            "Randolph/Harbor Dr"
-        ]
-    },
     "60-200-1": {
         "type": "bus",
         "route": "60",
@@ -83380,18 +82722,6 @@
         "headsign": [
             "54th/Cermak",
             "Cicero/24th Pl"
-        ]
-    },
-    "60-5027-1": {
-        "type": "bus",
-        "route": "60",
-        "routeName": "Blue Island/26th",
-        "stop": "5027",
-        "stopName": "Canal & Madison",
-        "direction": "East",
-        "headsign": [
-            "Washington/State",
-            "Randolph/Harbor Dr"
         ]
     },
     "60-5516-1": {
@@ -86557,20 +85887,6 @@
         "routeName": "Archer",
         "stop": "4493",
         "stopName": "Archer & Brighton",
-        "direction": "South",
-        "headsign": [
-            "Cicero",
-            "Harlem",
-            "Midway",
-            "Pulaski Orange Line"
-        ]
-    },
-    "62-4494-0": {
-        "type": "bus",
-        "route": "62",
-        "routeName": "Archer",
-        "stop": "4494",
-        "stopName": "Archer & California",
         "direction": "South",
         "headsign": [
             "Cicero",
@@ -90610,8 +89926,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-14162-1": {
@@ -90646,8 +89961,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-14775-1": {
@@ -90705,8 +90019,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-15175-1": {
@@ -90800,8 +90113,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-15340-0": {
@@ -90814,8 +90126,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-15450-0": {
@@ -90861,8 +90172,7 @@
         "direction": "West",
         "headsign": [
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-15559-1": {
@@ -90898,8 +90208,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-16028-0": {
@@ -90912,8 +90221,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-16083-1": {
@@ -91038,8 +90346,7 @@
         "direction": "West",
         "headsign": [
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-18377-0": {
@@ -91051,8 +90358,7 @@
         "direction": "West",
         "headsign": [
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-18495-1": {
@@ -91120,8 +90426,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-18691-1": {
@@ -91179,8 +90484,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-590-0": {
@@ -91193,8 +90497,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-668-0": {
@@ -91790,8 +91093,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-760-0": {
@@ -91804,8 +91106,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-761-0": {
@@ -91818,8 +91119,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-764-0": {
@@ -91832,8 +91132,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-765-0": {
@@ -91846,8 +91145,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-766-0": {
@@ -91860,8 +91158,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-769-0": {
@@ -91874,8 +91171,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-771-0": {
@@ -91888,8 +91184,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-772-0": {
@@ -91902,8 +91197,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-776-0": {
@@ -91916,8 +91210,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-778-0": {
@@ -91930,8 +91223,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-780-0": {
@@ -91944,8 +91236,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-781-0": {
@@ -91958,8 +91249,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-782-0": {
@@ -91972,8 +91262,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-783-0": {
@@ -91986,8 +91275,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-784-0": {
@@ -92000,8 +91288,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-785-0": {
@@ -92014,8 +91301,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-786-0": {
@@ -92028,8 +91314,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-787-0": {
@@ -92042,8 +91327,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-789-0": {
@@ -92056,8 +91340,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-790-0": {
@@ -92070,8 +91353,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-791-0": {
@@ -92084,8 +91366,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-794-0": {
@@ -92098,8 +91379,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-796-0": {
@@ -92112,8 +91392,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-797-0": {
@@ -92126,8 +91405,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-798-0": {
@@ -92140,8 +91418,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-800-0": {
@@ -92154,8 +91431,7 @@
         "headsign": [
             "Chicago",
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-802-0": {
@@ -92167,8 +91443,7 @@
         "direction": "West",
         "headsign": [
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-805-0": {
@@ -92180,8 +91455,7 @@
         "direction": "West",
         "headsign": [
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-808-0": {
@@ -92193,8 +91467,7 @@
         "direction": "West",
         "headsign": [
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-809-0": {
@@ -92206,8 +91479,7 @@
         "direction": "West",
         "headsign": [
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-811-0": {
@@ -92219,8 +91491,7 @@
         "direction": "West",
         "headsign": [
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-812-0": {
@@ -92232,8 +91503,7 @@
         "direction": "West",
         "headsign": [
             "Laramie",
-            "Nordica",
-            "Pulaski"
+            "Nordica"
         ]
     },
     "65-813-0": {
@@ -94577,7 +93847,6 @@
         "direction": "West",
         "headsign": [
             "Ford City",
-            "69th/Ashland",
             "69th/Western"
         ]
     },
@@ -94590,7 +93859,6 @@
         "direction": "West",
         "headsign": [
             "Ford City",
-            "69th/Ashland",
             "69th/Western"
         ]
     },
@@ -94603,7 +93871,6 @@
         "direction": "West",
         "headsign": [
             "Ford City",
-            "69th/Ashland",
             "69th/Western"
         ]
     },
@@ -94616,7 +93883,6 @@
         "direction": "West",
         "headsign": [
             "Ford City",
-            "69th/Ashland",
             "69th/Western"
         ]
     },
@@ -94630,7 +93896,6 @@
         "headsign": [
             "FORD CITY",
             "Ford City",
-            "69th/Ashland",
             "69th/Western"
         ]
     },
@@ -94644,7 +93909,6 @@
         "headsign": [
             "FORD CITY",
             "Ford City",
-            "69th/Ashland",
             "69th/Western"
         ]
     },
@@ -94658,7 +93922,6 @@
         "headsign": [
             "FORD CITY",
             "Ford City",
-            "69th/Ashland",
             "69th/Western"
         ]
     },
@@ -94672,7 +93935,6 @@
         "headsign": [
             "FORD CITY",
             "Ford City",
-            "69th/Ashland",
             "69th/Western"
         ]
     },
@@ -94686,7 +93948,6 @@
         "headsign": [
             "FORD CITY",
             "Ford City",
-            "69th/Ashland",
             "69th/Western"
         ]
     },
@@ -94700,7 +93961,6 @@
         "headsign": [
             "FORD CITY",
             "Ford City",
-            "69th/Ashland",
             "69th/Western"
         ]
     },
@@ -94714,7 +93974,6 @@
         "headsign": [
             "FORD CITY",
             "Ford City",
-            "69th/Ashland",
             "69th/Western"
         ]
     },
@@ -94728,7 +93987,6 @@
         "headsign": [
             "FORD CITY",
             "Ford City",
-            "69th/Ashland",
             "69th/Western"
         ]
     },
@@ -94742,7 +94000,6 @@
         "headsign": [
             "FORD CITY",
             "Ford City",
-            "69th/Ashland",
             "69th/Western"
         ]
     },
@@ -94756,7 +94013,6 @@
         "headsign": [
             "FORD CITY",
             "Ford City",
-            "69th/Ashland",
             "69th/Western"
         ]
     },
@@ -94770,7 +94026,6 @@
         "headsign": [
             "FORD CITY",
             "Ford City",
-            "69th/Ashland",
             "69th/Western"
         ]
     },
@@ -94784,7 +94039,6 @@
         "headsign": [
             "FORD CITY",
             "Ford City",
-            "69th/Ashland",
             "69th/Western"
         ]
     },
@@ -94798,7 +94052,6 @@
         "headsign": [
             "FORD CITY",
             "Ford City",
-            "69th/Ashland",
             "69th/Western"
         ]
     },
@@ -95837,7 +95090,6 @@
         "direction": "West",
         "headsign": [
             "Ford City",
-            "69th/Ashland",
             "69th/Western"
         ]
     },
@@ -95913,7 +95165,6 @@
         "direction": "West",
         "headsign": [
             "Ford City",
-            "69th/Ashland",
             "69th/Western"
         ]
     },
@@ -102710,17 +101961,6 @@
             "Laramie"
         ]
     },
-    "73-4092-0": {
-        "type": "bus",
-        "route": "73",
-        "routeName": "Armitage",
-        "stop": "4092",
-        "stopName": "Racine & Clybourn/Cortland",
-        "direction": "West",
-        "headsign": [
-            "Laramie"
-        ]
-    },
     "73-4096-0": {
         "type": "bus",
         "route": "73",
@@ -104610,7 +103850,6 @@
         "stopName": "75th Street & Lake Front Terminal",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104633,7 +103872,6 @@
         "stopName": "75th Street & Kingston",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104645,7 +103883,6 @@
         "stopName": "75th Street & Phillips",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104657,7 +103894,6 @@
         "stopName": "75th Street & Yates",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104669,7 +103905,6 @@
         "stopName": "75th Street & Crandon",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104681,7 +103916,6 @@
         "stopName": "75th Street & Paxton",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104693,7 +103927,6 @@
         "stopName": "75th Street & Clyde",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104705,7 +103938,6 @@
         "stopName": "75th Street & Jeffery",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104717,7 +103949,6 @@
         "stopName": "75th Street & Euclid",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104729,7 +103960,6 @@
         "stopName": "75th Street & Constance",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104741,7 +103971,6 @@
         "stopName": "75th Street & Cregier",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104753,7 +103982,6 @@
         "stopName": "75th Street & East End",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104765,7 +103993,6 @@
         "stopName": "75th Street & Stony Island",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104777,7 +104004,6 @@
         "stopName": "75th Street & Stony Island",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104789,7 +104015,6 @@
         "stopName": "75th Street & Blackstone",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104801,7 +104026,6 @@
         "stopName": "75th Street & Kimbark",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104813,7 +104037,6 @@
         "stopName": "75th Street & Greenwood",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104825,7 +104048,6 @@
         "stopName": "75th Street & Ellis",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104837,7 +104059,6 @@
         "stopName": "75th Street & Drexel",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104849,7 +104070,6 @@
         "stopName": "75th Street & Cottage Grove",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104861,7 +104081,6 @@
         "stopName": "75th Street & Langley",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104873,7 +104092,6 @@
         "stopName": "75th Street & St. Lawrence",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104885,7 +104103,6 @@
         "stopName": "75th Street & Eberhart",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104897,7 +104114,6 @@
         "stopName": "75th Street & Michigan",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104909,7 +104125,6 @@
         "stopName": "75th Street & State",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104921,7 +104136,6 @@
         "stopName": "75th Street & Lafayette",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104933,7 +104147,6 @@
         "stopName": "75th Street & Perry",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104945,7 +104158,6 @@
         "stopName": "75th Street & Wentworth",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104957,7 +104169,6 @@
         "stopName": "75th Street & Stewart",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104969,7 +104180,6 @@
         "stopName": "75th Street & Eggleston",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104981,7 +104191,6 @@
         "stopName": "Eggleston & 74th Street",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -104993,7 +104202,6 @@
         "stopName": "74th Street & Parnell",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105005,7 +104213,6 @@
         "stopName": "74th Street & Lowe",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105017,7 +104224,6 @@
         "stopName": "74th Street & Union",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105029,7 +104235,6 @@
         "stopName": "74th Street & Halsted",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105041,7 +104246,6 @@
         "stopName": "74th Street & Peoria",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105053,7 +104257,6 @@
         "stopName": "74th Street & Morgan",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105065,7 +104268,6 @@
         "stopName": "74th Street & Aberdeen",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105077,7 +104279,6 @@
         "stopName": "1330 W 76th Street",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105089,7 +104290,6 @@
         "stopName": "74th Street & Loomis",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105101,7 +104301,6 @@
         "stopName": "74th Street & Bishop",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105113,7 +104312,6 @@
         "stopName": "74th Street & Ashland",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105125,7 +104323,6 @@
         "stopName": "74th Street & Paulina",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105137,7 +104334,6 @@
         "stopName": "74th Street & Wood",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105149,41 +104345,7 @@
         "stopName": "74th Street & Wolcott",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
-        ]
-    },
-    "75-10906-0": {
-        "type": "bus",
-        "route": "75",
-        "routeName": "74th/75th",
-        "stop": "10906",
-        "stopName": "74th Street & Damen",
-        "direction": "West",
-        "headsign": [
-            "Damen"
-        ]
-    },
-    "75-10907-0": {
-        "type": "bus",
-        "route": "75",
-        "routeName": "74th/75th",
-        "stop": "10907",
-        "stopName": "74th Street & Damen Terminal",
-        "direction": "West",
-        "headsign": [
-            "Damen"
-        ]
-    },
-    "75-10907-1": {
-        "type": "bus",
-        "route": "75",
-        "routeName": "74th/75th",
-        "stop": "10907",
-        "stopName": "74th Street & Damen Terminal",
-        "direction": "East",
-        "headsign": [
-            "Lakefront"
         ]
     },
     "75-10908-1": {
@@ -105733,7 +104895,6 @@
         "stopName": "Lafayette & 75th Street",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105756,7 +104917,6 @@
         "stopName": "75th Street & Coles",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105768,7 +104928,6 @@
         "stopName": "75th Street & South Shore",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105791,7 +104950,6 @@
         "stopName": "75th Street & Indiana",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105814,7 +104972,6 @@
         "stopName": "75th Street & South Chicago",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105826,7 +104983,6 @@
         "stopName": "State & 77th Street",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105849,7 +105005,6 @@
         "stopName": "75th Street & Normal",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105861,7 +105016,6 @@
         "stopName": "State & 79th Street",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105884,7 +105038,6 @@
         "stopName": "75th Street & Vincennes",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105907,7 +105060,6 @@
         "stopName": "75th Street & King Drive",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105919,7 +105071,6 @@
         "stopName": "75th Street & Dorchester",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105942,7 +105093,6 @@
         "stopName": "75th Street & Colfax",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105954,7 +105104,6 @@
         "stopName": "75th Street & Prairie",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -105999,7 +105148,6 @@
         "stopName": "State & 78th Street",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -106022,7 +105170,6 @@
         "stopName": "State & 76th Street",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -106056,7 +105203,6 @@
         "stopName": "Lafayette & 76th Street",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -106079,7 +105225,6 @@
         "stopName": "Lafayette & 77th Street",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -106102,7 +105247,6 @@
         "stopName": "Lafayette & 78th Street",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -106202,7 +105346,6 @@
         "stopName": "79th Red Line Station",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -106247,7 +105390,6 @@
         "stopName": "Racine & 74th Street",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -106259,7 +105401,6 @@
         "stopName": "Racine & 75th Street",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -106271,7 +105412,6 @@
         "stopName": "Racine & 76th Street",
         "direction": "West",
         "headsign": [
-            "Damen",
             "79th/Western"
         ]
     },
@@ -107366,9 +106506,7 @@
         "direction": "West",
         "headsign": [
             "Harlem",
-            "Central",
-            "Logan Square",
-            "Narragansett"
+            "Logan Square"
         ]
     },
     "76-11069-0": {
@@ -110680,17 +109818,6 @@
             "Wilson/Marine"
         ]
     },
-    "78-11340-1": {
-        "type": "bus",
-        "route": "78",
-        "routeName": "Montrose",
-        "stop": "11340",
-        "stopName": "Montrose & Kedzie",
-        "direction": "East",
-        "headsign": [
-            "Wilson/Marine"
-        ]
-    },
     "78-11341-1": {
         "type": "bus",
         "route": "78",
@@ -110915,18 +110042,6 @@
         "routeName": "Montrose",
         "stop": "11380",
         "stopName": "Montrose & Campbell",
-        "direction": "West",
-        "headsign": [
-            "Harlem",
-            "Central"
-        ]
-    },
-    "78-11383-0": {
-        "type": "bus",
-        "route": "78",
-        "routeName": "Montrose",
-        "stop": "11383",
-        "stopName": "Montrose & California",
         "direction": "West",
         "headsign": [
             "Harlem",
@@ -112957,20 +112072,6 @@
             "Solo Cup Factory"
         ]
     },
-    "79-2665-0": {
-        "type": "bus",
-        "route": "79",
-        "routeName": "79th",
-        "stop": "2665",
-        "stopName": "79th Street & Damen",
-        "direction": "West",
-        "headsign": [
-            "Western",
-            "Ford City",
-            "Pulaski/81st",
-            "Solo Cup Factory"
-        ]
-    },
     "79-2666-0": {
         "type": "bus",
         "route": "79",
@@ -113008,19 +112109,6 @@
         "direction": "West",
         "headsign": [
             "Western",
-            "Ford City",
-            "Pulaski/81st",
-            "Solo Cup Factory"
-        ]
-    },
-    "79-2669-0": {
-        "type": "bus",
-        "route": "79",
-        "routeName": "79th",
-        "stop": "2669",
-        "stopName": "79th Street & Western Terminal",
-        "direction": "West",
-        "headsign": [
             "Ford City",
             "Pulaski/81st",
             "Solo Cup Factory"
@@ -117369,138 +116457,6 @@
         "routeName": "West Lawrence",
         "stop": "3725",
         "stopName": "Milwaukee & Higgins",
-        "direction": "West",
-        "headsign": [
-            "Cumberland Blue Line"
-        ]
-    },
-    "81W-8560-1": {
-        "type": "bus",
-        "route": "81W",
-        "routeName": "West Lawrence",
-        "stop": "8560",
-        "stopName": "Cumberland & Catalpa",
-        "direction": "East",
-        "headsign": [
-            "Jefferson Park Blue Line"
-        ]
-    },
-    "81W-8561-0": {
-        "type": "bus",
-        "route": "81W",
-        "routeName": "West Lawrence",
-        "stop": "8561",
-        "stopName": "Cumberland & Bryn Mawr",
-        "direction": "West",
-        "headsign": [
-            "Cumberland Blue Line"
-        ]
-    },
-    "81W-8562-1": {
-        "type": "bus",
-        "route": "81W",
-        "routeName": "West Lawrence",
-        "stop": "8562",
-        "stopName": "Cumberland & Catherine",
-        "direction": "East",
-        "headsign": [
-            "Jefferson Park Blue Line"
-        ]
-    },
-    "81W-8563-0": {
-        "type": "bus",
-        "route": "81W",
-        "routeName": "West Lawrence",
-        "stop": "8563",
-        "stopName": "Cumberland & Catherine",
-        "direction": "West",
-        "headsign": [
-            "Cumberland Blue Line"
-        ]
-    },
-    "81W-8564-1": {
-        "type": "bus",
-        "route": "81W",
-        "routeName": "West Lawrence",
-        "stop": "8564",
-        "stopName": "Cumberland & Berwyn",
-        "direction": "East",
-        "headsign": [
-            "Jefferson Park Blue Line"
-        ]
-    },
-    "81W-8565-0": {
-        "type": "bus",
-        "route": "81W",
-        "routeName": "West Lawrence",
-        "stop": "8565",
-        "stopName": "Cumberland & Berwyn",
-        "direction": "West",
-        "headsign": [
-            "Cumberland Blue Line"
-        ]
-    },
-    "81W-8566-1": {
-        "type": "bus",
-        "route": "81W",
-        "routeName": "West Lawrence",
-        "stop": "8566",
-        "stopName": "Cumberland & Foster",
-        "direction": "East",
-        "headsign": [
-            "Jefferson Park Blue Line"
-        ]
-    },
-    "81W-8567-0": {
-        "type": "bus",
-        "route": "81W",
-        "routeName": "West Lawrence",
-        "stop": "8567",
-        "stopName": "Cumberland & Foster",
-        "direction": "West",
-        "headsign": [
-            "Cumberland Blue Line"
-        ]
-    },
-    "81W-8568-1": {
-        "type": "bus",
-        "route": "81W",
-        "routeName": "West Lawrence",
-        "stop": "8568",
-        "stopName": "Cumberland & Argyle",
-        "direction": "East",
-        "headsign": [
-            "Jefferson Park Blue Line"
-        ]
-    },
-    "81W-8569-0": {
-        "type": "bus",
-        "route": "81W",
-        "routeName": "West Lawrence",
-        "stop": "8569",
-        "stopName": "Cumberland & Argyle",
-        "direction": "West",
-        "headsign": [
-            "Cumberland Blue Line"
-        ]
-    },
-    "81W-8570-1": {
-        "type": "bus",
-        "route": "81W",
-        "routeName": "West Lawrence",
-        "stop": "8570",
-        "stopName": "Cumberland & Ainslie",
-        "direction": "East",
-        "headsign": [
-            "Jefferson Park Blue Line"
-        ]
-    },
-    "81W-8571-0": {
-        "type": "bus",
-        "route": "81W",
-        "routeName": "West Lawrence",
-        "stop": "8571",
-        "stopName": "Cumberland & Ainslie",
         "direction": "West",
         "headsign": [
             "Cumberland Blue Line"
@@ -125721,8 +124677,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-14540-0": {
@@ -125772,8 +124727,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-15111-1": {
@@ -125798,8 +124752,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-15113-0": {
@@ -125822,7 +124775,6 @@
         "direction": "East",
         "headsign": [
             "Vincennes",
-            "87th Red Line",
             "91st/Commercial"
         ]
     },
@@ -125899,8 +124851,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-15910-0": {
@@ -125936,8 +124887,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-17070-0": {
@@ -125961,8 +124911,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-17099-1": {
@@ -126495,7 +125444,6 @@
         "direction": "East",
         "headsign": [
             "Anthony",
-            "87th Red Line",
             "91st/Commercial"
         ]
     },
@@ -126508,7 +125456,6 @@
         "direction": "East",
         "headsign": [
             "Anthony",
-            "87th Red Line",
             "91st/Commercial"
         ]
     },
@@ -126521,7 +125468,6 @@
         "direction": "East",
         "headsign": [
             "Anthony",
-            "87th Red Line",
             "91st/Commercial"
         ]
     },
@@ -126534,7 +125480,6 @@
         "direction": "East",
         "headsign": [
             "Anthony",
-            "87th Red Line",
             "91st/Commercial"
         ]
     },
@@ -126547,7 +125492,6 @@
         "direction": "East",
         "headsign": [
             "Anthony",
-            "87th Red Line",
             "91st/Commercial"
         ]
     },
@@ -126560,7 +125504,6 @@
         "direction": "East",
         "headsign": [
             "Anthony",
-            "87th Red Line",
             "91st/Commercial"
         ]
     },
@@ -126573,7 +125516,6 @@
         "direction": "East",
         "headsign": [
             "Anthony",
-            "87th Red Line",
             "91st/Commercial"
         ]
     },
@@ -126586,7 +125528,6 @@
         "direction": "East",
         "headsign": [
             "Anthony",
-            "87th Red Line",
             "91st/Commercial"
         ]
     },
@@ -126599,7 +125540,6 @@
         "direction": "East",
         "headsign": [
             "Anthony",
-            "87th Red Line",
             "91st/Commercial"
         ]
     },
@@ -126612,7 +125552,6 @@
         "direction": "East",
         "headsign": [
             "Anthony",
-            "87th Red Line",
             "91st/Commercial"
         ]
     },
@@ -126625,7 +125564,6 @@
         "direction": "East",
         "headsign": [
             "Anthony",
-            "87th Red Line",
             "91st/Commercial"
         ]
     },
@@ -126973,8 +125911,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9452-1": {
@@ -126998,8 +125935,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9456-0": {
@@ -127012,8 +125948,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9457-0": {
@@ -127026,8 +125961,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9458-0": {
@@ -127040,8 +125974,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9459-0": {
@@ -127054,8 +125987,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9460-0": {
@@ -127068,8 +126000,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9461-0": {
@@ -127082,8 +126013,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9462-0": {
@@ -127096,8 +126026,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9463-0": {
@@ -127110,8 +126039,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9464-0": {
@@ -127124,8 +126052,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9465-0": {
@@ -127138,8 +126065,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9466-0": {
@@ -127152,8 +126078,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9467-0": {
@@ -127166,8 +126091,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9468-0": {
@@ -127180,8 +126104,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9469-0": {
@@ -127194,8 +126117,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9470-0": {
@@ -127208,8 +126130,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9471-0": {
@@ -127222,8 +126143,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9472-0": {
@@ -127236,8 +126156,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9475-0": {
@@ -127250,8 +126169,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9476-0": {
@@ -127264,8 +126182,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9480-0": {
@@ -127278,8 +126195,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9481-0": {
@@ -127292,8 +126208,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9482-0": {
@@ -127306,8 +126221,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9483-0": {
@@ -127320,8 +126234,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9484-0": {
@@ -127334,8 +126247,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9485-0": {
@@ -127348,8 +126260,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9486-0": {
@@ -127362,8 +126273,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9487-0": {
@@ -127376,8 +126286,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9489-0": {
@@ -127390,8 +126299,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9491-0": {
@@ -127404,8 +126312,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9492-0": {
@@ -127418,8 +126325,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9493-0": {
@@ -127432,8 +126338,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9494-0": {
@@ -127446,8 +126351,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9495-0": {
@@ -127460,8 +126364,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9496-0": {
@@ -127474,8 +126377,7 @@
         "headsign": [
             "Cicero",
             "Halsted",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9498-0": {
@@ -127487,8 +126389,7 @@
         "direction": "West",
         "headsign": [
             "Cicero",
-            "Western",
-            "Vincennes"
+            "Western"
         ]
     },
     "87-9500-0": {
@@ -132517,50 +131418,6 @@
             "Davis Purple Line"
         ]
     },
-    "93-11123-0": {
-        "type": "bus",
-        "route": "93",
-        "routeName": "California/Dodge",
-        "stop": "11123",
-        "stopName": "Kimball & Foster",
-        "direction": "South",
-        "headsign": [
-            "Kimball Brown Line"
-        ]
-    },
-    "93-11124-0": {
-        "type": "bus",
-        "route": "93",
-        "routeName": "California/Dodge",
-        "stop": "11124",
-        "stopName": "Kimball & Carmen",
-        "direction": "South",
-        "headsign": [
-            "Kimball Brown Line"
-        ]
-    },
-    "93-11125-0": {
-        "type": "bus",
-        "route": "93",
-        "routeName": "California/Dodge",
-        "stop": "11125",
-        "stopName": "Kimball & Carmen",
-        "direction": "South",
-        "headsign": [
-            "Kimball Brown Line"
-        ]
-    },
-    "93-11126-0": {
-        "type": "bus",
-        "route": "93",
-        "routeName": "California/Dodge",
-        "stop": "11126",
-        "stopName": "Kimball & Ainslie",
-        "direction": "South",
-        "headsign": [
-            "Kimball Brown Line"
-        ]
-    },
     "93-11341-0": {
         "type": "bus",
         "route": "93",
@@ -132639,7 +131496,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132652,7 +131508,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132665,7 +131520,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132678,7 +131532,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132691,7 +131544,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132704,7 +131556,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132717,7 +131568,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132730,7 +131580,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132743,7 +131592,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132756,7 +131604,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132769,7 +131616,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132782,7 +131628,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132795,7 +131640,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132808,7 +131652,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132821,7 +131664,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132834,7 +131676,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132847,7 +131688,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132860,7 +131700,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132873,7 +131712,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132886,7 +131724,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132899,7 +131736,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132912,7 +131748,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132925,7 +131760,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -132938,31 +131772,7 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
-        ]
-    },
-    "93-11891-0": {
-        "type": "bus",
-        "route": "93",
-        "routeName": "California/Dodge",
-        "stop": "11891",
-        "stopName": "Lawrence & Christiana",
-        "direction": "South",
-        "headsign": [
-            "Kimball Brown Line"
-        ]
-    },
-    "93-11891-1": {
-        "type": "bus",
-        "route": "93",
-        "routeName": "California/Dodge",
-        "stop": "11891",
-        "stopName": "Lawrence & Christiana",
-        "direction": "North",
-        "headsign": [
-            "Foster/Kedzie",
-            "Davis Purple Line"
         ]
     },
     "93-11892-1": {
@@ -133338,7 +132148,6 @@
         "stopName": "Emerson & Maple",
         "direction": "South",
         "headsign": [
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133350,7 +132159,6 @@
         "stopName": "Emerson & Ridge",
         "direction": "South",
         "headsign": [
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133362,7 +132170,6 @@
         "stopName": "Maple & Church",
         "direction": "South",
         "headsign": [
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133374,7 +132181,6 @@
         "stopName": "Davis & Maple",
         "direction": "South",
         "headsign": [
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133386,7 +132192,6 @@
         "stopName": "Davis & Oak",
         "direction": "South",
         "headsign": [
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133410,7 +132215,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133446,7 +132250,6 @@
         "stopName": "Dodge & Church",
         "direction": "South",
         "headsign": [
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133471,7 +132274,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133484,7 +132286,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133533,7 +132334,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133558,7 +132358,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133583,7 +132382,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133620,7 +132418,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133643,7 +132440,6 @@
         "stopName": "Davis Purple Line Station",
         "direction": "South",
         "headsign": [
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133667,7 +132463,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133726,7 +132521,6 @@
         "stopName": "Emerson & Asbury",
         "direction": "South",
         "headsign": [
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133739,7 +132533,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133752,7 +132545,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133764,7 +132556,6 @@
         "stopName": "Oak & Church",
         "direction": "South",
         "headsign": [
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133777,7 +132568,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133789,7 +132579,6 @@
         "stopName": "Foster & Troy",
         "direction": "South",
         "headsign": [
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133813,7 +132602,6 @@
         "stopName": "Dodge & Emerson",
         "direction": "South",
         "headsign": [
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133927,7 +132715,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133940,7 +132727,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133965,7 +132751,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -133988,7 +132773,6 @@
         "stopName": "Emerson & Dewey",
         "direction": "South",
         "headsign": [
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -134428,7 +133212,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -134441,7 +133224,6 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -134454,20 +133236,7 @@
         "direction": "South",
         "headsign": [
             "Foster/California",
-            "Kimball Brown Line",
             "Logan Square Blue Line"
-        ]
-    },
-    "93-3747-1": {
-        "type": "bus",
-        "route": "93",
-        "routeName": "California/Dodge",
-        "stop": "3747",
-        "stopName": "Lawrence & Spaulding",
-        "direction": "North",
-        "headsign": [
-            "Foster/Kedzie",
-            "Davis Purple Line"
         ]
     },
     "93-4774-1": {
@@ -134515,7 +133284,6 @@
         "stopName": "Foster & Francisco",
         "direction": "South",
         "headsign": [
-            "Kimball Brown Line",
             "Logan Square Blue Line"
         ]
     },
@@ -134527,30 +133295,7 @@
         "stopName": "Foster & Virginia",
         "direction": "South",
         "headsign": [
-            "Kimball Brown Line",
             "Logan Square Blue Line"
-        ]
-    },
-    "93-4818-0": {
-        "type": "bus",
-        "route": "93",
-        "routeName": "California/Dodge",
-        "stop": "4818",
-        "stopName": "Foster & Kedzie",
-        "direction": "South",
-        "headsign": [
-            "Kimball Brown Line"
-        ]
-    },
-    "93-4819-0": {
-        "type": "bus",
-        "route": "93",
-        "routeName": "California/Dodge",
-        "stop": "4819",
-        "stopName": "Foster & Spaulding",
-        "direction": "South",
-        "headsign": [
-            "Kimball Brown Line"
         ]
     },
     "94-10113-1": {
@@ -134911,17 +133656,6 @@
         "routeName": "California",
         "stop": "15218",
         "stopName": "California & Diversey",
-        "direction": "North",
-        "headsign": [
-            "Addison/Rockwell"
-        ]
-    },
-    "94-15231-1": {
-        "type": "bus",
-        "route": "94",
-        "routeName": "California",
-        "stop": "15231",
-        "stopName": "California & North Ave",
         "direction": "North",
         "headsign": [
             "Addison/Rockwell"
@@ -135538,50 +134272,6 @@
         "routeName": "California",
         "stop": "3183",
         "stopName": "California & Le Moyne",
-        "direction": "North",
-        "headsign": [
-            "Addison/Rockwell"
-        ]
-    },
-    "94-3185-1": {
-        "type": "bus",
-        "route": "94",
-        "routeName": "California",
-        "stop": "3185",
-        "stopName": "California & Wabansia",
-        "direction": "North",
-        "headsign": [
-            "Addison/Rockwell"
-        ]
-    },
-    "94-3186-1": {
-        "type": "bus",
-        "route": "94",
-        "routeName": "California",
-        "stop": "3186",
-        "stopName": "1750 N California",
-        "direction": "North",
-        "headsign": [
-            "Addison/Rockwell"
-        ]
-    },
-    "94-3187-1": {
-        "type": "bus",
-        "route": "94",
-        "routeName": "California",
-        "stop": "3187",
-        "stopName": "California & Cortland",
-        "direction": "North",
-        "headsign": [
-            "Addison/Rockwell"
-        ]
-    },
-    "94-3188-1": {
-        "type": "bus",
-        "route": "94",
-        "routeName": "California",
-        "stop": "3188",
-        "stopName": "California & Armitage",
         "direction": "North",
         "headsign": [
             "Addison/Rockwell"
@@ -137270,578 +135960,6 @@
             "74th/Damen"
         ]
     },
-    "95-10069-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10069",
-        "stopName": "67th Street & Stony Island",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10070-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10070",
-        "stopName": "67th Street & Blackstone",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10071-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10071",
-        "stopName": "67th Street & Dorchester",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10072-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10072",
-        "stopName": "67th Street & Kenwood",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10073-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10073",
-        "stopName": "67th Street & Kimbark",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10074-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10074",
-        "stopName": "67th Street & Woodlawn",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10075-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10075",
-        "stopName": "67th Street & Minerva",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10076-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10076",
-        "stopName": "67th Street & University",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10077-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10077",
-        "stopName": "67th Street & Greenwood",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10078-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10078",
-        "stopName": "67th Street & Ellis",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10079-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10079",
-        "stopName": "67th Street & Ingleside",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10080-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10080",
-        "stopName": "67th Street & Drexel",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10081-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10081",
-        "stopName": "67th Street & Cottage Grove",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10082-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10082",
-        "stopName": "67th Street & Langley",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10083-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10083",
-        "stopName": "67th Street & St. Lawrence",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10084-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10084",
-        "stopName": "Rhodes & 67th Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10085-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10085",
-        "stopName": "Rhodes & 68th Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10086-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10086",
-        "stopName": "Keefe & South Chicago",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10178-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10178",
-        "stopName": "69th Red Line Station",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10179-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10179",
-        "stopName": "69th Street & State",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10180-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10180",
-        "stopName": "Rhodes & 68th Street",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10181-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10181",
-        "stopName": "Rhodes & 67th Street",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10182-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10182",
-        "stopName": "67th Street & St. Lawrence",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10183-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10183",
-        "stopName": "67th Street & Langley",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10184-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10184",
-        "stopName": "67th Street & Cottage Grove",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10185-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10185",
-        "stopName": "67th Street & Drexel",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10186-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10186",
-        "stopName": "67th Street & Ingleside",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10187-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10187",
-        "stopName": "67th Street & Ellis",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10188-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10188",
-        "stopName": "67th Street & Greenwood",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10189-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10189",
-        "stopName": "67th Street & University",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10190-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10190",
-        "stopName": "67th Street & Minerva",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10191-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10191",
-        "stopName": "67th Street & Woodlawn",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10192-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10192",
-        "stopName": "67th Street & Kimbark",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10193-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10193",
-        "stopName": "67th Street & Kenwood",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10194-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10194",
-        "stopName": "67th Street & Dorchester",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10195-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10195",
-        "stopName": "67th Street & Blackstone",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10196-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10196",
-        "stopName": "67th Street & Stony Island",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10855-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10855",
-        "stopName": "75th Street & Kingston",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10856-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10856",
-        "stopName": "75th Street & Phillips",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10857-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10857",
-        "stopName": "75th Street & Yates",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10858-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10858",
-        "stopName": "75th Street & Crandon",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10859-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10859",
-        "stopName": "75th Street & Paxton",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10860-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10860",
-        "stopName": "75th Street & Clyde",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10861-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10861",
-        "stopName": "75th Street & Jeffery",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-10955-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10955",
-        "stopName": "75th Street & Clyde",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10956-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10956",
-        "stopName": "75th Street & Paxton",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10957-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10957",
-        "stopName": "75th Street & Crandon",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10958-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10958",
-        "stopName": "75th Street & Yates",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10959-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10959",
-        "stopName": "75th Street & Phillips",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10960-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10960",
-        "stopName": "75th Street & Kingston",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10962-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10962",
-        "stopName": "75th Street & Coles",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-10963-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "10963",
-        "stopName": "75th Street & South Shore",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
     "95-11927-1": {
         "type": "bus",
         "route": "95",
@@ -137850,8 +135968,7 @@
         "stopName": "93rd Street & Drexel",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11928-1": {
@@ -137862,8 +135979,7 @@
         "stopName": "93rd Street & Ellis",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11929-1": {
@@ -137874,8 +135990,7 @@
         "stopName": "93rd Street & Greenwood",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11930-1": {
@@ -137886,8 +136001,7 @@
         "stopName": "93rd Street & Woodlawn",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11931-1": {
@@ -137898,8 +136012,7 @@
         "stopName": "Woodlawn & 94th Street",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11932-1": {
@@ -137910,8 +136023,7 @@
         "stopName": "95th Street & Woodlawn",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11933-1": {
@@ -137922,8 +136034,7 @@
         "stopName": "1300 E 95th Street",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11934-1": {
@@ -137934,8 +136045,7 @@
         "stopName": "95th Street & Dorchester",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11935-1": {
@@ -137946,8 +136056,7 @@
         "stopName": "1500 E 95th Street",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11936-1": {
@@ -137958,8 +136067,7 @@
         "stopName": "93rd Street & East End",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11937-1": {
@@ -137970,8 +136078,7 @@
         "stopName": "93rd Street & Cregier",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11938-1": {
@@ -137982,8 +136089,7 @@
         "stopName": "93rd Street & Bennett",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11939-1": {
@@ -137994,8 +136100,7 @@
         "stopName": "93rd Street & Jeffery",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11940-1": {
@@ -138006,8 +136111,7 @@
         "stopName": "93rd Street & Clyde",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11941-1": {
@@ -138018,8 +136122,7 @@
         "stopName": "93rd Street & Paxton",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11943-1": {
@@ -138030,8 +136133,7 @@
         "stopName": "93rd Street & Oglesby",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11944-1": {
@@ -138042,8 +136144,7 @@
         "stopName": "93rd Street & Yates",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11945-1": {
@@ -138054,8 +136155,7 @@
         "stopName": "93rd Street & Essex",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11946-1": {
@@ -138066,8 +136166,7 @@
         "stopName": "93rd Street & Colfax",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11947-1": {
@@ -138078,8 +136177,7 @@
         "stopName": "93rd Street & Marquette Avenue",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11948-1": {
@@ -138090,8 +136188,7 @@
         "stopName": "93rd Street & Manistee",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11949-1": {
@@ -138102,8 +136199,7 @@
         "stopName": "93rd Street & Escanaba",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11950-1": {
@@ -138114,8 +136210,7 @@
         "stopName": "Exchange & South Chicago",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11951-1": {
@@ -138126,8 +136221,7 @@
         "stopName": "Exchange & 92nd Street",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-11953-1": {
@@ -138516,19 +136610,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
-        ]
-    },
-    "95-14139-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "14139",
-        "stopName": "69th Red Line Station",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-14541-1": {
@@ -138540,30 +136622,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
-        ]
-    },
-    "95-14884-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "14884",
-        "stopName": "75th Street & Coles",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-14893-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "14893",
-        "stopName": "75th Street & South Shore",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-15026-1": {
@@ -138575,8 +136634,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-15027-1": {
@@ -138588,8 +136646,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-15028-1": {
@@ -138601,18 +136658,6 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
-        ]
-    },
-    "95-15031-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "15031",
-        "stopName": "S. Shore Drive & 79th Street",
-        "direction": "West",
-        "headsign": [
             "95th Red Line"
         ]
     },
@@ -138624,8 +136669,7 @@
         "stopName": "95th Street & Hoyne",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-15160-0": {
@@ -138636,8 +136680,7 @@
         "stopName": "95th Street & Wentworth",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-15237-1": {
@@ -138651,17 +136694,6 @@
             "92nd/Buffalo"
         ]
     },
-    "95-15253-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "15253",
-        "stopName": "Commercial & 85th Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
     "95-15499-0": {
         "type": "bus",
         "route": "95",
@@ -138670,8 +136702,7 @@
         "stopName": "Western & 90th Street",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-17078-0": {
@@ -138682,8 +136713,7 @@
         "stopName": "95th Street & Vanderpoel",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-17433-0": {
@@ -138694,30 +136724,7 @@
         "stopName": "95th Street & Halsted",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
-        ]
-    },
-    "95-17545-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "17545",
-        "stopName": "Exchange & 83rd Street",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-17564-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "17564",
-        "stopName": "Jeffery & 71st Street",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-17790-0": {
@@ -138740,8 +136747,7 @@
         "stopName": "Western & 92nd Place",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-17860-1": {
@@ -138753,8 +136759,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-18103-0": {
@@ -138765,30 +136770,7 @@
         "stopName": "Damen & 87th Street",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
-        ]
-    },
-    "95-18230-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "18230",
-        "stopName": "75th Street & Colfax",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-18231-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "18231",
-        "stopName": "75th Street & Colfax",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
+            "87th/Damen"
         ]
     },
     "95-18687-1": {
@@ -138834,8 +136816,7 @@
         "stopName": "95th Street & Eberhart",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-2266-1": {
@@ -138846,8 +136827,7 @@
         "stopName": "95th Street & St. Lawrence",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-2362-0": {
@@ -138858,8 +136838,7 @@
         "stopName": "Western & 95th Street",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-2461-1": {
@@ -138870,8 +136849,7 @@
         "stopName": "95th Street & Langley",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-2462-1": {
@@ -138882,8 +136860,7 @@
         "stopName": "Cottage Grove & 95th Street",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-2464-1": {
@@ -138894,8 +136871,7 @@
         "stopName": "Cottage Grove & 93rd Street",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-2596-0": {
@@ -138942,8 +136918,7 @@
         "stopName": "95th Street & Michigan",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-2817-1": {
@@ -138954,8 +136929,7 @@
         "stopName": "95th Street & Indiana",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-2818-1": {
@@ -138966,8 +136940,7 @@
         "stopName": "95th Street & Forest",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-2819-1": {
@@ -138978,8 +136951,7 @@
         "stopName": "95th Street & King Drive",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-2979-0": {
@@ -139038,8 +137010,7 @@
         "stopName": "95th Street & Princeton",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3456-0": {
@@ -139050,8 +137021,7 @@
         "stopName": "95th Street & Eggleston",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3457-0": {
@@ -139062,8 +137032,7 @@
         "stopName": "95th Street & Normal",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3458-0": {
@@ -139074,8 +137043,7 @@
         "stopName": "95th Street & Wallace",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3459-0": {
@@ -139086,8 +137054,7 @@
         "stopName": "95th Street & Union",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3461-0": {
@@ -139098,8 +137065,7 @@
         "stopName": "95th Street & Peoria",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3462-0": {
@@ -139110,8 +137076,7 @@
         "stopName": "95th Street & Morgan",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3463-0": {
@@ -139122,8 +137087,7 @@
         "stopName": "95th Street & Vincennes (Metra Station)",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3464-0": {
@@ -139134,8 +137098,7 @@
         "stopName": "95th Street & Vincennes",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3465-0": {
@@ -139146,8 +137109,7 @@
         "stopName": "95th Street & Racine",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3466-0": {
@@ -139158,8 +137120,7 @@
         "stopName": "95th Street & Throop",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3467-0": {
@@ -139170,8 +137131,7 @@
         "stopName": "95th Street & Loomis",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3468-0": {
@@ -139182,8 +137142,7 @@
         "stopName": "95th Street & Bishop",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3469-0": {
@@ -139194,8 +137153,7 @@
         "stopName": "95th Street & Laflin",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3471-0": {
@@ -139206,8 +137164,7 @@
         "stopName": "95th Street & Ashland",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3473-0": {
@@ -139218,8 +137175,7 @@
         "stopName": "95th Street & Wood",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3474-0": {
@@ -139230,8 +137186,7 @@
         "stopName": "95th Street & Longwood",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3475-0": {
@@ -139242,8 +137197,7 @@
         "stopName": "95th Street & Damen",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3477-0": {
@@ -139254,8 +137208,7 @@
         "stopName": "95th Street & Leavitt",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3478-0": {
@@ -139266,8 +137219,7 @@
         "stopName": "95th Street & Oakley",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-3488-1": {
@@ -139279,8 +137231,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-3489-1": {
@@ -139292,8 +137243,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-3492-1": {
@@ -139305,8 +137255,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-3493-1": {
@@ -139318,8 +137267,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-3494-1": {
@@ -139331,8 +137279,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-3496-1": {
@@ -139344,8 +137291,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-3497-1": {
@@ -139357,8 +137303,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-3498-1": {
@@ -139370,8 +137315,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-3500-1": {
@@ -139383,8 +137327,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-3501-1": {
@@ -139396,8 +137339,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-3502-1": {
@@ -139409,8 +137351,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-3503-1": {
@@ -139422,8 +137363,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-3504-1": {
@@ -139435,8 +137375,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-3506-1": {
@@ -139448,8 +137387,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-3507-1": {
@@ -139461,8 +137399,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-3508-1": {
@@ -139474,8 +137411,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-3509-1": {
@@ -139487,8 +137423,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-3510-1": {
@@ -139500,8 +137435,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-3511-1": {
@@ -139513,557 +137447,6 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
-        ]
-    },
-    "95-5205-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5205",
-        "stopName": "67th Street & Cornell",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-5206-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5206",
-        "stopName": "67th Street & East End",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-5207-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5207",
-        "stopName": "67th Street & Cregier",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-5208-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5208",
-        "stopName": "67th Street & Bennett",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-5210-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5210",
-        "stopName": "Jeffery & 68th Street",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-5211-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5211",
-        "stopName": "Jeffery & 69th Street",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-5212-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5212",
-        "stopName": "Jeffery & 70th Street",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-5214-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5214",
-        "stopName": "Jeffery & 72nd Street",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-5215-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5215",
-        "stopName": "Jeffery & 73rd Street",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-5216-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5216",
-        "stopName": "Jeffery & 74th Street",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-5304-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5304",
-        "stopName": "Jeffery & 74th Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-5305-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5305",
-        "stopName": "Jeffery & 73rd Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-5306-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5306",
-        "stopName": "Jeffery & 72nd Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-5307-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5307",
-        "stopName": "Jeffery & 71st Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-5308-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5308",
-        "stopName": "Jeffery & 70th Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-5309-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5309",
-        "stopName": "Jeffery & 69th Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-5310-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5310",
-        "stopName": "Jeffery & 68th Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-5311-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5311",
-        "stopName": "67th Street & Jeffery",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-5312-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5312",
-        "stopName": "67th Street & Bennett",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-5313-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5313",
-        "stopName": "67th Street & Cregier",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-5314-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5314",
-        "stopName": "67th Street & East End",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-5315-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "5315",
-        "stopName": "67th Street & Cornell Drive",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7012-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7012",
-        "stopName": "Commercial & 86th Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7014-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7014",
-        "stopName": "Commercial & 83rd Place",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7015-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7015",
-        "stopName": "Exchange & 83rd Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7016-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7016",
-        "stopName": "83rd Street & Commercial",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7017-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7017",
-        "stopName": "83rd Street & Coles",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7018-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7018",
-        "stopName": "S. Shore Drive & 83rd Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7019-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7019",
-        "stopName": "S. Shore Drive & 82nd Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7020-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7020",
-        "stopName": "S. Shore Drive & 81st Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7021-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7021",
-        "stopName": "S. Shore Drive & 80th Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7022-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7022",
-        "stopName": "S. Shore Drive & 79th Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7023-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7023",
-        "stopName": "S. Shore Drive & Cheltenham",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7024-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7024",
-        "stopName": "S. Shore Drive & 78th Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7025-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7025",
-        "stopName": "S. Shore Drive & 77th Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7026-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7026",
-        "stopName": "S. Shore Drive & 76th Street",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7042-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7042",
-        "stopName": "67th Street & Jeffery",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7057-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7057",
-        "stopName": "S. Shore Drive & 76th Street",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7058-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7058",
-        "stopName": "S. Shore Drive & 77th Street",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7059-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7059",
-        "stopName": "S. Shore Drive & 78th Street",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7060-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7060",
-        "stopName": "S. Shore Drive & Cheltenham",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7062-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7062",
-        "stopName": "S. Shore Drive & 80th Street",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7063-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7063",
-        "stopName": "S. Shore Drive & 81st Street",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7064-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7064",
-        "stopName": "S. Shore Drive & 82nd Street",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7065-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7065",
-        "stopName": "S. Shore Drive & 83rd Street",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7066-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7066",
-        "stopName": "83rd Street & Coles",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7067-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7067",
-        "stopName": "83rd Street & Commercial",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7068-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7068",
-        "stopName": "Commercial & 83rd Place",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7069-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7069",
-        "stopName": "Commercial & 85th Street",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7070-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7070",
-        "stopName": "Commercial & 86th Street",
-        "direction": "West",
-        "headsign": [
             "95th Red Line"
         ]
     },
@@ -140075,8 +137458,7 @@
         "stopName": "Stony Island & 95th Street",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-7101-1": {
@@ -140087,8 +137469,7 @@
         "stopName": "Stony Island & 94th Street",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-7102-1": {
@@ -140099,8 +137480,7 @@
         "stopName": "Stony Island & 93rd Street",
         "direction": "East",
         "headsign": [
-            "92nd/Buffalo",
-            "Commercial/92nd"
+            "92nd/Buffalo"
         ]
     },
     "95-7210-0": {
@@ -140129,94 +137509,6 @@
             "95th/Stony Island"
         ]
     },
-    "95-7215-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7215",
-        "stopName": "69th Street & Wabash",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7216-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7216",
-        "stopName": "69th Street & Michigan",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7217-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7217",
-        "stopName": "69th Street & Indiana",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7218-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7218",
-        "stopName": "69th Street & Prairie",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7219-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7219",
-        "stopName": "69th Street & Calumet",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7220-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7220",
-        "stopName": "69th Street & King Drive",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7221-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7221",
-        "stopName": "69th Street & Anthony",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
-    "95-7222-0": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7222",
-        "stopName": "Keefe & South Chicago",
-        "direction": "West",
-        "headsign": [
-            "95th Red Line"
-        ]
-    },
     "95-7258-1": {
         "type": "bus",
         "route": "95",
@@ -140241,83 +137533,6 @@
             "95th/Stony Island"
         ]
     },
-    "95-7408-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7408",
-        "stopName": "69th Street & Anthony",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7409-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7409",
-        "stopName": "69th Street & King Drive",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7410-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7410",
-        "stopName": "69th Street & Calumet",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7411-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7411",
-        "stopName": "69th Street & Prairie",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7412-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7412",
-        "stopName": "69th Street & Indiana",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7413-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7413",
-        "stopName": "69th Street & Michigan",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
-    "95-7414-1": {
-        "type": "bus",
-        "route": "95",
-        "routeName": "95th",
-        "stop": "7414",
-        "stopName": "69th Street & Wabash",
-        "direction": "East",
-        "headsign": [
-            "Commercial/92nd"
-        ]
-    },
     "95-8439-1": {
         "type": "bus",
         "route": "95",
@@ -140327,8 +137542,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-8440-1": {
@@ -140340,8 +137554,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-8441-1": {
@@ -140353,8 +137566,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-8444-1": {
@@ -140366,8 +137578,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-8518-0": {
@@ -140378,8 +137589,7 @@
         "stopName": "Western & 94th Street",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-8521-0": {
@@ -140390,8 +137600,7 @@
         "stopName": "Western & 91st Street",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-8523-0": {
@@ -140402,8 +137611,7 @@
         "stopName": "Western & 89th Street",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-8525-0": {
@@ -140414,8 +137622,7 @@
         "stopName": "Western & 87th Street",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-8703-0": {
@@ -140426,8 +137633,7 @@
         "stopName": "Damen & 87th Street Terminal",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-8703-1": {
@@ -140439,8 +137645,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "95-9387-0": {
@@ -140451,8 +137656,7 @@
         "stopName": "87th Street & Longwood",
         "direction": "West",
         "headsign": [
-            "87th/Damen",
-            "95th Red Line"
+            "87th/Damen"
         ]
     },
     "95-9510-1": {
@@ -140464,8 +137668,7 @@
         "direction": "East",
         "headsign": [
             "92nd/Buffalo",
-            "95th Red Line",
-            "Commercial/92nd"
+            "95th Red Line"
         ]
     },
     "96-11870-1": {
@@ -151355,17 +148558,6 @@
             "McClurg/Huron"
         ]
     },
-    "120-17745-0": {
-        "type": "bus",
-        "route": "120",
-        "routeName": "Ogilvie/Streeterville Express",
-        "stop": "17745",
-        "stopName": "Ontario & McClurg",
-        "direction": "South",
-        "headsign": [
-            "Ogilvie Station"
-        ]
-    },
     "120-17746-0": {
         "type": "bus",
         "route": "120",
@@ -151598,17 +148790,6 @@
         "direction": "North",
         "headsign": [
             "McClurg/Huron"
-        ]
-    },
-    "121-17745-0": {
-        "type": "bus",
-        "route": "121",
-        "routeName": "Union/Streeterville Express",
-        "stop": "17745",
-        "stopName": "Ontario & McClurg",
-        "direction": "South",
-        "headsign": [
-            "Union Station"
         ]
     },
     "121-17746-0": {
@@ -151922,17 +149103,6 @@
             "Navy Pier"
         ]
     },
-    "124-18663-1": {
-        "type": "bus",
-        "route": "124",
-        "routeName": "Navy Pier",
-        "stop": "18663",
-        "stopName": "Monroe & Clinton",
-        "direction": "East",
-        "headsign": [
-            "Navy Pier"
-        ]
-    },
     "124-443-1": {
         "type": "bus",
         "route": "124",
@@ -152019,17 +149189,6 @@
         "direction": "West",
         "headsign": [
             "Ogilvie & Union Stations"
-        ]
-    },
-    "124-5027-1": {
-        "type": "bus",
-        "route": "124",
-        "routeName": "Navy Pier",
-        "stop": "5027",
-        "stopName": "Canal & Madison",
-        "direction": "East",
-        "headsign": [
-            "Navy Pier"
         ]
     },
     "124-5509-1": {
@@ -164668,17 +161827,6 @@
             "Belmont/Sheridan"
         ]
     },
-    "156-12713-0": {
-        "type": "bus",
-        "route": "156",
-        "routeName": "LaSalle",
-        "stop": "12713",
-        "stopName": "Adams & Canal",
-        "direction": "South",
-        "headsign": [
-            "Union Station"
-        ]
-    },
     "156-14058-0": {
         "type": "bus",
         "route": "156",
@@ -165351,18 +162499,6 @@
             "Belmont/Halsted"
         ]
     },
-    "156-6711-1": {
-        "type": "bus",
-        "route": "156",
-        "routeName": "LaSalle",
-        "stop": "6711",
-        "stopName": "Franklin & Jackson",
-        "direction": "North",
-        "headsign": [
-            "Belmont/Halsted",
-            "Belmont/Sheridan"
-        ]
-    },
     "156-68-1": {
         "type": "bus",
         "route": "156",
@@ -165772,18 +162908,6 @@
             "Chestnut/Lake Shore"
         ]
     },
-    "157-18663-1": {
-        "type": "bus",
-        "route": "157",
-        "routeName": "Streeterville/Taylor",
-        "stop": "18663",
-        "stopName": "Monroe & Clinton",
-        "direction": "East",
-        "headsign": [
-            "Metra Stations",
-            "Chestnut/Lake Shore"
-        ]
-    },
     "157-18665-1": {
         "type": "bus",
         "route": "157",
@@ -166031,18 +163155,6 @@
         "stopName": "Dewitt & Chestnut",
         "direction": "East",
         "headsign": [
-            "Chestnut/Lake Shore"
-        ]
-    },
-    "157-5027-1": {
-        "type": "bus",
-        "route": "157",
-        "routeName": "Streeterville/Taylor",
-        "stop": "5027",
-        "stopName": "Canal & Madison",
-        "direction": "East",
-        "headsign": [
-            "Metra Stations",
             "Chestnut/Lake Shore"
         ]
     },
@@ -168372,17 +165484,6 @@
             "Ogilvie Station"
         ]
     },
-    "192-18663-1": {
-        "type": "bus",
-        "route": "192",
-        "routeName": "University of Chicago Hospitals Express",
-        "stop": "18663",
-        "stopName": "Monroe & Clinton",
-        "direction": "North",
-        "headsign": [
-            "Ogilvie Station"
-        ]
-    },
     "192-316-0": {
         "type": "bus",
         "route": "192",
@@ -168392,17 +165493,6 @@
         "direction": "South",
         "headsign": [
             "UChicago Hospitals"
-        ]
-    },
-    "192-455-1": {
-        "type": "bus",
-        "route": "192",
-        "routeName": "University of Chicago Hospitals Express",
-        "stop": "455",
-        "stopName": "Madison & Clinton",
-        "direction": "North",
-        "headsign": [
-            "Ogilvie Station"
         ]
     },
     "192-4992-0": {
