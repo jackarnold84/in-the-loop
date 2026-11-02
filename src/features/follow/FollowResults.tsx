@@ -7,11 +7,13 @@ import useSWR from "swr";
 import Container from "../../components/Container";
 import Countdown from "../../components/Countdown";
 import Live from "../../components/Live";
+import Link from "../../components/Link";
 import Span from "../../components/Span";
 import TimeDisplay from "../../components/TimeDisplay";
 import TransitIcon from "../../components/TransitIcon";
 import * as styles from "./follow.module.css";
 import { followVehicleFetcher, Stop } from "./followApi";
+import { FollowStop, getFollowRows } from './followRows';
 
 const REFRESH_INTERVAL = 15000;
 const LIVE_THRESHOLD = 30000;
@@ -25,7 +27,7 @@ type FollowResultsProps = {
   transitType: 'train' | 'bus';
 };
 
-const columns: ColumnType<Stop>[] = [
+const columns: ColumnType<FollowStop>[] = [
   {
     title: 'Stop',
     dataIndex: 'stopName',
@@ -53,6 +55,7 @@ const columns: ColumnType<Stop>[] = [
 const FollowResults: React.FC<FollowResultsProps> = ({ runNumber, transitType }) => {
   const [isLive, setIsLive] = React.useState(false);
   const [isFirstLoad, setIsFirstLoad] = React.useState(true);
+  const [expandedRowKeys, setExpandedRowKeys] = React.useState<React.Key[]>([]);
 
   const { data, error, isValidating, mutate } = useSWR(
     runNumber ? { run: runNumber, transitType } : null,
@@ -66,6 +69,18 @@ const FollowResults: React.FC<FollowResultsProps> = ({ runNumber, transitType })
   const vehicleData = data?.response;
   const lastUpdated = data?.lastUpdated;
   const hasArrivals = vehicleData?.arrivals && vehicleData.arrivals.length > 0;
+  const rows = React.useMemo(() => getFollowRows(vehicleData?.arrivals || []), [vehicleData?.arrivals]);
+
+  React.useEffect(() => {
+    const keys = new Set(rows.map(row => row.rowKey));
+    setExpandedRowKeys(previous => previous.filter(key => keys.has(String(key))));
+  }, [rows]);
+
+  const toggleRow = (record: FollowStop) => {
+    setExpandedRowKeys(previous => previous.includes(record.rowKey)
+      ? previous.filter(key => key !== record.rowKey)
+      : [...previous, record.rowKey]);
+  };
 
   React.useEffect(() => {
     console.log('=== FollowResults Debug ===');
@@ -160,13 +175,30 @@ const FollowResults: React.FC<FollowResultsProps> = ({ runNumber, transitType })
 
           <Container>
             <h4 className={styles.alignLeft}>Upcoming Stops</h4>
-            <Table
+            <Table<FollowStop>
               columns={columns}
-              dataSource={vehicleData.arrivals}
+              dataSource={rows}
               pagination={false}
-              rowKey={(record) => record.stopId}
+              rowKey="rowKey"
               size="middle"
               showHeader={false}
+              expandable={{
+                expandedRowKeys,
+                onExpand: (_, record) => toggleRow(record),
+                expandedRowRender: record => (
+                  <Link
+                    to={`/nearby?${new URLSearchParams({ stop: record.stopId, run: runNumber })}`}
+                    className={styles.transferLink}
+                    onClick={event => event.stopPropagation()}
+                  >
+                    Transfer
+                  </Link>
+                ),
+              }}
+              onRow={record => ({
+                style: { cursor: 'pointer' },
+                onClick: () => toggleRow(record),
+              })}
             />
           </Container>
         </>

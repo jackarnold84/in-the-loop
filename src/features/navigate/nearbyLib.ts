@@ -1,5 +1,44 @@
-import { stationIndex, trackIndex } from "../../config/index";
-import { Coord, StationCoord } from "./Nearby";
+import { orderByDistance } from 'geolib';
+import { Coord, stationIndex, stopIndex, trackIndex } from "../../config/index";
+
+export type StationCoord = Coord & { id: string };
+
+const stationCoords: StationCoord[] = Object.entries(stationIndex).map(([id, station]) => ({
+  id, latitude: station.latitude, longitude: station.longitude,
+}));
+
+const stationByStop = new Map<string, string>();
+for (const [id, station] of Object.entries(stationIndex)) {
+  for (const stopId of Object.keys(station.stops)) {
+    if (!stationByStop.has(stopId)) stationByStop.set(stopId, id);
+  }
+}
+
+export const getTransferOrigin = (stopId: string | null) => {
+  if (!stopId || !/^\d+$/.test(stopId)) return undefined;
+  return stopIndex[stopId];
+};
+
+export const getTransferRequest = (search: string) => {
+  const params = new URLSearchParams(search);
+  if (!params.has('stop')) return null;
+  const run = params.get('run') || '';
+  return {
+    stopId: params.get('stop') || '',
+    run: /^\d+$/.test(run) ? run : '',
+  };
+};
+
+export const getNearbyStations = (origin: Coord, stopId?: string, total = 25): string[] => {
+  if (total <= 0) return [];
+  const sorted = orderByDistance(origin, stationCoords) as StationCoord[];
+  const originStation = stopId ? stationByStop.get(stopId) : undefined;
+  // Include connections within the arrival station before surrounding stations.
+  const ordered = originStation
+    ? [stationCoords.find(station => station.id === originStation)!, ...sorted.filter(station => station.id !== originStation)]
+    : sorted;
+  return pruneNearbyStations(ordered, total);
+};
 
 const openStreetURL = "https://nominatim.openstreetmap.org/reverse"
 
@@ -35,7 +74,7 @@ export const pruneNearbyStations = (stations: StationCoord[], total = 25, uniq =
     const tracks = Object.values(station.stops)
       .flat()
       .map((stopId) => trackIndex[stopId]);
-    const routes = Array.from(new Set(tracks.map((track) => track.route)));
+    const routes = Array.from(new Set(tracks.map((track) => track.route))).sort();
     const routeKey = JSON.stringify(routes);
 
     if ((routeCount[routeKey] || 0) < uniq) {

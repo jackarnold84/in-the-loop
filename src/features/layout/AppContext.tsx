@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
-import { Coord } from '../navigate/Nearby';
+import { Coord } from '../../config/index';
 
 interface AppContextProps {
   favoritesTab: {

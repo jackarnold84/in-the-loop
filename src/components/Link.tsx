@@ -4,7 +4,7 @@ import React from 'react';
 
 const Link: React.FC<GatsbyLinkProps<any>> = ({ to, state, ref, children, ...props }) => {
   const location = useLocation();
-  const source = location.pathname;
+  const source = location.pathname + location.search;
 
   return (
     <GatsbyLink

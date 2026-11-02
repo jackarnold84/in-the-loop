@@ -91,7 +91,7 @@ const FollowVehicle: React.FC<FollowVehicleProps> = ({ showSearch = true }) => {
             icon={<FaRoute />}
           />
         ) : (
-          <FollowResults runNumber={runNumber} transitType={transitType} />
+          <FollowResults key={`${transitType}:${runNumber}`} runNumber={runNumber} transitType={transitType} />
         )}
       </Container>
     </Container>

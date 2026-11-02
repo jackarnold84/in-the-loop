@@ -6,6 +6,7 @@ import React from 'react';
 import styled from 'styled-components';
 import config from '../../gatsby-config';
 import Container from './Container';
+import { normalizePath } from './navigation';
 
 type Path = {
   to: string;
@@ -20,11 +21,6 @@ type LocationState = {
   source?: string;
 };
 
-const normalizePath = (path: string) => {
-  const prefix = config.pathPrefix || '';
-  return path.replace(prefix, '').replace(/^\/+/, '').replace(/\/+$/, '');
-};
-
 const PaddedButton = styled(Button)`
   padding: 8px 16px 8px 0px;
 `;
@@ -35,7 +31,7 @@ const BackButton: React.FC<BackButtonProps> = ({ paths }) => {
   const source = state?.source;
 
   const matchedPath = source
-    ? paths.find((path) => normalizePath(path.to) === normalizePath(source))
+    ? paths.find((path) => normalizePath(path.to, config.pathPrefix) === normalizePath(source, config.pathPrefix))
     : undefined;
   const path = matchedPath || paths[0];
 

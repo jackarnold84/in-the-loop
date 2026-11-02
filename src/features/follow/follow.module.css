@@ -45,3 +45,13 @@
   font-size: 3rem;
   color: #ff4d4f;
 }
+
+.transferLink {
+  display: inline-block;
+  padding: 4px 15px;
+  color: #2166b1;
+}
+
+.transferLink:hover {
+  text-decoration: underline;
+}

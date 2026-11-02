@@ -14,7 +14,8 @@
     "serve": "gatsby serve -H 0.0.0.0",
     "clean": "gatsby clean",
     "deploy": "gatsby build --prefix-paths && node deploy.js",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.cjs"
   },
   "dependencies": {
     "@ant-design/icons": "^4.8.3",
@@ -48,6 +49,7 @@
     "@types/react-dom": "^19.0.3",
     "@types/react-loadable": "^5.5.11",
     "@types/react-plotly.js": "^2.6.3",
+    "jsdom": "^26.1.0",
     "typescript": "^5.7.3"
   }
 }

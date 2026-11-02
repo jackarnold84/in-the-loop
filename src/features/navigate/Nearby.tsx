@@ -1,23 +1,36 @@
-import { orderByDistance } from 'geolib';
 import React from 'react';
 import { FaLocationArrow } from "react-icons/fa6";
 import { MdOutlineWrongLocation } from "react-icons/md";
 import useSWR from 'swr';
 import Container from '../../components/Container';
-import { stationIndex } from '../../config/index';
 import { useAppContext } from '../layout/AppContext';
 import { MenuButton } from '../layout/Navigation';
 import Placeholder from './Placeholder';
 import StationList from './StationList';
-import { displayGeocode, pruneNearbyStations, reverseGeocode } from './nearbyLib';
+import { displayGeocode, getNearbyStations, getTransferOrigin, reverseGeocode } from './nearbyLib';
 
-export type Coord = {
-  latitude: number;
-  longitude: number;
-};
+export const TransferNearby = ({ stopId }: { stopId: string }) => {
+  const origin = getTransferOrigin(stopId);
+  const results = React.useMemo(
+    () => origin ? getNearbyStations(origin, stopId) : [],
+    [origin, stopId]
+  );
 
-export type StationCoord = Coord & {
-  id: string;
+  return (
+    <Container width={500}>
+      {origin ? (
+        <>
+          <Container><h2>Transfers near {origin.name}</h2></Container>
+          <Container><StationList stationIds={results} /></Container>
+        </>
+      ) : (
+        <Placeholder
+          description="The location of this transfer stop is unavailable"
+          icon={<MdOutlineWrongLocation />}
+        />
+      )}
+    </Container>
+  );
 };
 
 const Nearby = () => {
@@ -29,12 +42,6 @@ const Nearby = () => {
   } = useAppContext();
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState<string | null>(null);
-
-  const stationCoords = Object.entries(stationIndex).map(([key, value]) => ({
-    id: key,
-    latitude: value.latitude,
-    longitude: value.longitude,
-  })) as StationCoord[];
 
   const { data: geocodeAddress, isLoading } = useSWR(
     location ? ['reverseGeocode', location] : null,
@@ -77,10 +84,7 @@ const Nearby = () => {
 
   React.useEffect(() => {
     if (location) {
-      const sortedStations = orderByDistance(location, stationCoords) as StationCoord[];
-      const res = pruneNearbyStations(sortedStations, 25);
-
-      setResults(res);
+      setResults(getNearbyStations(location));
     }
   }, [location]);
 

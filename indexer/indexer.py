@@ -13,6 +13,7 @@ gtfs_download_url = 'https://www.transitchicago.com/downloads/sch_data/google_tr
 gtfs_out_dir = '.gtfs_data'
 tracks_out_file = 'src/config/index/tracks.json'
 stations_out_file = 'src/config/index/stations.json'
+stops_out_file = 'src/config/index/stops.json'
 
 # download gtfs data
 cmd = sys.argv[1] if len(sys.argv) > 1 else None
@@ -43,6 +44,14 @@ stops_df = pd.read_csv(
     usecols=['stop_id', 'stop_name', 'stop_lat', 'stop_lon'],
     dtype={'stop_id': str},
 )
+stop_index = {
+    row['stop_id']: {
+        'name': row['stop_name'],
+        'latitude': row['stop_lat'],
+        'longitude': row['stop_lon'],
+    }
+    for row in stops_df.sort_values('stop_id').to_dict(orient='records')
+}
 routes_df = pd.read_csv(
     filepath_or_buffer='.gtfs_data/routes.txt',
     usecols=['route_id', 'route_long_name'],
@@ -158,3 +167,7 @@ with open(tracks_out_file, 'w') as f:
 print(f'--> writing stations index: {stations_out_file}')
 with open(stations_out_file, 'w') as f:
     json.dump(station_index, f, indent=4)
+
+print(f'--> writing stop locations index: {stops_out_file}')
+with open(stops_out_file, 'w') as f:
+    json.dump(stop_index, f, indent=4, allow_nan=False)
